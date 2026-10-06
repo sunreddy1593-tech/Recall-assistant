@@ -32,10 +32,10 @@ Standard search forces you to supply exact keywords you’ve naturally forgotten
 <div style="display: flex; align-items: flex-start; gap: 12px;">
 <div style="width: 32px; height: 32px; border-radius: 9999px; background: #EAEDFF; color: #00685F; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 13px;">01</div>
 <div>
-<div style="font-size: 12px; font-weight: 700; color: #00685F; text-transform: uppercase;">Local Storage</div>
-<div style="font-weight: 600; font-size: 16px; color: #131B2E; margin-top: 2px;">Your Raw Photos</div>
+<div style="font-size: 12px; font-weight: 700; color: #00685F; text-transform: uppercase;">Demo Library</div>
+<div style="font-weight: 600; font-size: 16px; color: #131B2E; margin-top: 2px;">Simulated Photos</div>
 <p style="font-size: 14px; color: #515F74; margin-top: 4px; margin-bottom: 0;">
-Your camera roll remains stored privately on-device. Zero unencrypted uploads, zero metadata scraping.
+This is a demo library of 159 AI-generated and stock photos, not a real user's library.
 </p>
 </div>
 </div>
@@ -45,10 +45,10 @@ Your camera roll remains stored privately on-device. Zero unencrypted uploads, z
 <div style="display: flex; align-items: flex-start; gap: 12px;">
 <div style="width: 32px; height: 32px; border-radius: 9999px; background: #EAEDFF; color: #00685F; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 13px;">02</div>
 <div>
-<div style="font-size: 12px; font-weight: 700; color: #00685F; text-transform: uppercase;">Edge Inference</div>
-<div style="font-weight: 600; font-size: 16px; color: #131B2E; margin-top: 2px;">AI Labels Events Offline</div>
+<div style="font-size: 12px; font-weight: 700; color: #00685F; text-transform: uppercase;">Offline Step</div>
+<div style="font-weight: 600; font-size: 16px; color: #131B2E; margin-top: 2px;">Building the Index</div>
 <p style="font-size: 14px; color: #515F74; margin-top: 4px; margin-bottom: 0;">
-Clusters photos by temporal bursts, co-presence, and ambient setting—creating a lightweight semantic memory graph without external cloud dependencies.
+`build_index.py` groups photos into moments by time and place (no AI) and labels them with a Gemini vision model. People and face groups are simulated and labelled manually.
 </p>
 </div>
 </div>
@@ -59,9 +59,9 @@ Clusters photos by temporal bursts, co-presence, and ambient setting—creating 
 <div style="width: 32px; height: 32px; border-radius: 9999px; background: #EAEDFF; color: #00685F; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 13px;">03</div>
 <div>
 <div style="font-size: 12px; font-weight: 700; color: #00685F; text-transform: uppercase;">Natural Recall</div>
-<div style="font-weight: 600; font-size: 16px; color: #131B2E; margin-top: 2px;">You Answer What You Remember</div>
+<div style="font-weight: 600; font-size: 16px; color: #131B2E; margin-top: 2px;">Search time requests</div>
 <p style="font-size: 14px; color: #515F74; margin-top: 4px; margin-bottom: 0;">
-Provide a fuzzy timeframe, companions, or sensory anchors you actually recall—like "wearing that yellow kurta near the hostel" or "before COVID".
+Optional Gemini text requests (era phrase → date range; "Describe it" → cue chips; "Anything else" re-ranking). Photos are never sent to the AI at search time. Every AI step has a rule-based fallback; the app works with no API key.
 </p>
 </div>
 </div>
@@ -71,10 +71,10 @@ Provide a fuzzy timeframe, companions, or sensory anchors you actually recall—
 <div style="display: flex; align-items: flex-start; gap: 12px;">
 <div style="width: 32px; height: 32px; border-radius: 9999px; background: #EAEDFF; color: #00685F; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 13px;">04</div>
 <div>
-<div style="font-size: 12px; font-weight: 700; color: #00685F; text-transform: uppercase;">Instant Match</div>
-<div style="font-weight: 600; font-size: 16px; color: #131B2E; margin-top: 2px;">3–5 Moments to Recognise</div>
+<div style="font-size: 12px; font-weight: 700; color: #00685F; text-transform: uppercase;">Production Note</div>
+<div style="font-weight: 600; font-size: 16px; color: #131B2E; margin-top: 2px;">Google Photos Integration</div>
 <p style="font-size: 14px; color: #515F74; margin-top: 4px; margin-bottom: 0;">
-Recognition is effortless compared to recall. Your brain spots the exact moment in milliseconds when given a curated tray of candidate scenes.
+In production for Google Photos, this would run on Photos' existing labels and face groups.
 </p>
 </div>
 </div>
@@ -84,13 +84,13 @@ Recognition is effortless compared to recall. Your brain spots the exact moment 
 <div style="margin-bottom: 32px;">
 <h2 style="font-size: 20px; margin-bottom: 6px;">Where AI is used</h2>
 <p style="font-size: 14px; color: #515F74; margin-bottom: 16px;">
-Complete transparency into on-device intelligence vs. deterministic hardware metadata.
+Complete transparency into how the app uses AI in this MVP.
 </p>
 
 <div class="retrieval-step-row">
 <div>
 <div style="font-weight: 600; color: #131B2E;">Era → Date Range</div>
-<div style="font-size: 13px; color: #515F74;">Interprets human phrases like "college years" or "before COVID" into concrete calendar intervals.</div>
+<div style="font-size: 13px; color: #515F74;">Interprets human phrases like "college years" or "before COVID" into concrete calendar intervals using LLM (with rule-based fallback).</div>
 </div>
 <span class="memory-stream-pill" style="background:#89F5E7; color:#00201D; font-size:11px;">AI</span>
 </div>
@@ -98,15 +98,15 @@ Complete transparency into on-device intelligence vs. deterministic hardware met
 <div class="retrieval-step-row">
 <div>
 <div style="font-weight: 600; color: #131B2E;">Event Labels & Captions</div>
-<div style="font-size: 13px; color: #515F74;">Identifies clusters like "birthday dinner", "campus convocation", or "monsoon drive".</div>
+<div style="font-size: 13px; color: #515F74;">Identified and written by a Gemini Vision model during offline indexing.</div>
 </div>
 <span class="memory-stream-pill" style="background:#EAEDFF; color:#515F74; font-size:11px;">AI (Precomputed)</span>
 </div>
 
 <div class="retrieval-step-row">
 <div>
-<div style="font-weight: 600; color: #131B2E;">Anything-else Matching</div>
-<div style="font-size: 13px; color: #515F74;">Semantic vector matching for sensory details like "sparklers", "red saree", or "steaming tapri chai".</div>
+<div style="font-weight: 600; color: #131B2E;">Anything-else Re-ranking</div>
+<div style="font-size: 13px; color: #515F74;">LLM checks if precomputed captions match the sensory details like "sparklers" or "red saree".</div>
 </div>
 <span class="memory-stream-pill" style="background:#89F5E7; color:#00201D; font-size:11px;">AI</span>
 </div>
@@ -114,7 +114,7 @@ Complete transparency into on-device intelligence vs. deterministic hardware met
 <div class="retrieval-step-row">
 <div>
 <div style="font-weight: 600; color: #131B2E;">Place Names</div>
-<div style="font-size: 13px; color: #515F74;">Raw hardware GPS coordinates reverse-geocoded deterministically via OpenStreetMap.</div>
+<div style="font-size: 13px; color: #515F74;">Simulated location metadata.</div>
 </div>
 <span class="memory-stream-pill" style="background:#F2F3FF; color:#515F74; font-size:11px;">Location Data (No AI)</span>
 </div>
@@ -122,21 +122,9 @@ Complete transparency into on-device intelligence vs. deterministic hardware met
 <div class="retrieval-step-row">
 <div>
 <div style="font-weight: 600; color: #131B2E;">People & Faces</div>
-<div style="font-size: 13px; color: #515F74;">On-device facial clustering mapped directly to user-named local contacts.</div>
+<div style="font-size: 13px; color: #515F74;">Manually labelled simulated face groups.</div>
 </div>
-<span class="memory-stream-pill" style="background:#F2F3FF; color:#515F74; font-size:11px;">Face Groups</span>
-</div>
-</div>
-
-<div class="callout-card" style="background: linear-gradient(135deg, #00685F 0%, #008378 100%); color: #FFFFFF; padding: 20px;">
-<div style="display: flex; align-items: flex-start; gap: 12px;">
-<span style="font-size: 24px;">🔒</span>
-<div>
-<div style="font-weight: 700; font-size: 16px; color: #FFFFFF;">Zero Cloud Ingestion</div>
-<p style="font-size: 13px; color: #EAEDFF; margin-top: 4px; line-height: 1.5; margin-bottom: 0;">
-Photo clustering, vectors, and embedding indexes remain strictly on local storage. If you disconnect from the internet, Recall operates identically.
-</p>
-</div>
+<span class="memory-stream-pill" style="background:#F2F3FF; color:#515F74; font-size:11px;">Face Groups (No AI)</span>
 </div>
 </div>
 </div>"""

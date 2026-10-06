@@ -564,6 +564,9 @@ def render_moment_card(event, index):
             st.markdown(f"<span style='color:#515F74; font-size:13px; font-weight:500;'>📷 {n_photos} photos</span>", unsafe_allow_html=True)
         with col_btn:
             if st.button("Open moment →", key=f"open_{event['id']}_{index}", type="primary"):
+                if 'session_id' in st.session_state:
+                    from recall.logging_utils import log_event, get_step
+                    log_event(st.session_state.get('session_id'), st.session_state.get('participant'), st.session_state.get('task'), "moment_open", detail=event['id'], step=get_step())
                 st.session_state['viewing_event'] = event['id']
                 st.rerun()
         st.markdown("<div style='margin-bottom: 18px;'></div>", unsafe_allow_html=True)

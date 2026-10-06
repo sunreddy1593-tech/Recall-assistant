@@ -2388,15 +2388,15 @@
       "text_in_image": "",
       "mood": "neutral"
     },
-    "photos/bday_2019_p1.jpg": {
-      "id": "photos/bday_2019_p1.jpg",
+    "bday_2019_p1.jpg": {
+      "id": "bday_2019_p1.jpg",
       "taken_at": "NaT",
       "lat": null,
       "lon": null,
       "place": "Unknown place",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for photos/bday_2019_p1.jpg",
+      "caption": "Placeholder caption for bday_2019_p1.jpg",
       "scene": "outdoor",
       "activity": "unknown",
       "objects": [],
@@ -2404,15 +2404,15 @@
       "text_in_image": "",
       "mood": "neutral"
     },
-    "photos/bday_2019_p2.jpg": {
-      "id": "photos/bday_2019_p2.jpg",
+    "bday_2019_p2.jpg": {
+      "id": "bday_2019_p2.jpg",
       "taken_at": "NaT",
       "lat": null,
       "lon": null,
       "place": "Unknown place",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for photos/bday_2019_p2.jpg",
+      "caption": "Placeholder caption for bday_2019_p2.jpg",
       "scene": "outdoor",
       "activity": "unknown",
       "objects": [],
@@ -2420,15 +2420,15 @@
       "text_in_image": "",
       "mood": "neutral"
     },
-    "photos/bday_2019_p3.jpg": {
-      "id": "photos/bday_2019_p3.jpg",
+    "bday_2019_p3.jpg": {
+      "id": "bday_2019_p3.jpg",
       "taken_at": "NaT",
       "lat": null,
       "lon": null,
       "place": "Unknown place",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for photos/bday_2019_p3.jpg",
+      "caption": "Placeholder caption for bday_2019_p3.jpg",
       "scene": "outdoor",
       "activity": "unknown",
       "objects": [],
@@ -2436,15 +2436,15 @@
       "text_in_image": "",
       "mood": "neutral"
     },
-    "photos/bday_2020.jpg": {
-      "id": "photos/bday_2020.jpg",
+    "bday_2020.jpg": {
+      "id": "bday_2020.jpg",
       "taken_at": "NaT",
       "lat": null,
       "lon": null,
       "place": "Unknown place",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for photos/bday_2020.jpg",
+      "caption": "Placeholder caption for bday_2020.jpg",
       "scene": "outdoor",
       "activity": "unknown",
       "objects": [],
@@ -2452,15 +2452,15 @@
       "text_in_image": "",
       "mood": "neutral"
     },
-    "photos/bill_screenshot.jpg": {
-      "id": "photos/bill_screenshot.jpg",
+    "bill_screenshot.jpg": {
+      "id": "bill_screenshot.jpg",
       "taken_at": "NaT",
       "lat": null,
       "lon": null,
       "place": "Unknown place",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for photos/bill_screenshot.jpg",
+      "caption": "Placeholder caption for bill_screenshot.jpg",
       "scene": "outdoor",
       "activity": "unknown",
       "objects": [],
@@ -2468,15 +2468,15 @@
       "text_in_image": "",
       "mood": "neutral"
     },
-    "photos/flight_screenshot.jpg": {
-      "id": "photos/flight_screenshot.jpg",
+    "flight_screenshot.jpg": {
+      "id": "flight_screenshot.jpg",
       "taken_at": "NaT",
       "lat": null,
       "lon": null,
       "place": "Unknown place",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for photos/flight_screenshot.jpg",
+      "caption": "Placeholder caption for flight_screenshot.jpg",
       "scene": "outdoor",
       "activity": "unknown",
       "objects": [],
@@ -2484,15 +2484,15 @@
       "text_in_image": "",
       "mood": "neutral"
     },
-    "photos/goa_cafe.jpg": {
-      "id": "photos/goa_cafe.jpg",
+    "goa_cafe.jpg": {
+      "id": "goa_cafe.jpg",
       "taken_at": "NaT",
       "lat": null,
       "lon": null,
       "place": "Unknown place",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for photos/goa_cafe.jpg",
+      "caption": "Placeholder caption for goa_cafe.jpg",
       "scene": "outdoor",
       "activity": "unknown",
       "objects": [],
@@ -2500,15 +2500,15 @@
       "text_in_image": "",
       "mood": "neutral"
     },
-    "photos/goa_cafe_old.jpg": {
-      "id": "photos/goa_cafe_old.jpg",
+    "goa_cafe_old.jpg": {
+      "id": "goa_cafe_old.jpg",
       "taken_at": "NaT",
       "lat": null,
       "lon": null,
       "place": "Unknown place",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for photos/goa_cafe_old.jpg",
+      "caption": "Placeholder caption for goa_cafe_old.jpg",
       "scene": "outdoor",
       "activity": "unknown",
       "objects": [],
@@ -2516,15 +2516,15 @@
       "text_in_image": "",
       "mood": "neutral"
     },
-    "photos/goa_distractor.jpg": {
-      "id": "photos/goa_distractor.jpg",
+    "goa_distractor.jpg": {
+      "id": "goa_distractor.jpg",
       "taken_at": "NaT",
       "lat": null,
       "lon": null,
       "place": "Unknown place",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for photos/goa_distractor.jpg",
+      "caption": "Placeholder caption for goa_distractor.jpg",
       "scene": "outdoor",
       "activity": "unknown",
       "objects": [],
@@ -2532,15 +2532,15 @@
       "text_in_image": "",
       "mood": "neutral"
     },
-    "photos/ireland_distractor.jpg": {
-      "id": "photos/ireland_distractor.jpg",
+    "ireland_distractor.jpg": {
+      "id": "ireland_distractor.jpg",
       "taken_at": "NaT",
       "lat": null,
       "lon": null,
       "place": "Unknown place",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for photos/ireland_distractor.jpg",
+      "caption": "Placeholder caption for ireland_distractor.jpg",
       "scene": "outdoor",
       "activity": "unknown",
       "objects": [],
@@ -2548,15 +2548,15 @@
       "text_in_image": "",
       "mood": "neutral"
     },
-    "photos/ireland_job.jpg": {
-      "id": "photos/ireland_job.jpg",
+    "ireland_job.jpg": {
+      "id": "ireland_job.jpg",
       "taken_at": "NaT",
       "lat": null,
       "lon": null,
       "place": "Unknown place",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for photos/ireland_job.jpg",
+      "caption": "Placeholder caption for ireland_job.jpg",
       "scene": "outdoor",
       "activity": "unknown",
       "objects": [],
@@ -2564,15 +2564,15 @@
       "text_in_image": "",
       "mood": "neutral"
     },
-    "photos/meme_screenshot.jpg": {
-      "id": "photos/meme_screenshot.jpg",
+    "meme_screenshot.jpg": {
+      "id": "meme_screenshot.jpg",
       "taken_at": "NaT",
       "lat": null,
       "lon": null,
       "place": "Unknown place",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for photos/meme_screenshot.jpg",
+      "caption": "Placeholder caption for meme_screenshot.jpg",
       "scene": "outdoor",
       "activity": "unknown",
       "objects": [],
@@ -2580,15 +2580,15 @@
       "text_in_image": "",
       "mood": "neutral"
     },
-    "photos/scotland_distractor1.jpg": {
-      "id": "photos/scotland_distractor1.jpg",
+    "scotland_distractor1.jpg": {
+      "id": "scotland_distractor1.jpg",
       "taken_at": "NaT",
       "lat": null,
       "lon": null,
       "place": "Unknown place",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for photos/scotland_distractor1.jpg",
+      "caption": "Placeholder caption for scotland_distractor1.jpg",
       "scene": "outdoor",
       "activity": "unknown",
       "objects": [],
@@ -2596,15 +2596,15 @@
       "text_in_image": "",
       "mood": "neutral"
     },
-    "photos/scotland_mask.jpg": {
-      "id": "photos/scotland_mask.jpg",
+    "scotland_mask.jpg": {
+      "id": "scotland_mask.jpg",
       "taken_at": "NaT",
       "lat": null,
       "lon": null,
       "place": "Unknown place",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for photos/scotland_mask.jpg",
+      "caption": "Placeholder caption for scotland_mask.jpg",
       "scene": "outdoor",
       "activity": "unknown",
       "objects": [],
@@ -2612,15 +2612,15 @@
       "text_in_image": "",
       "mood": "neutral"
     },
-    "photos/sibling_award.jpg": {
-      "id": "photos/sibling_award.jpg",
+    "sibling_award.jpg": {
+      "id": "sibling_award.jpg",
       "taken_at": "NaT",
       "lat": null,
       "lon": null,
       "place": "Unknown place",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for photos/sibling_award.jpg",
+      "caption": "Placeholder caption for sibling_award.jpg",
       "scene": "outdoor",
       "activity": "unknown",
       "objects": [],
@@ -2628,15 +2628,15 @@
       "text_in_image": "",
       "mood": "neutral"
     },
-    "photos/sibling_distractor.jpg": {
-      "id": "photos/sibling_distractor.jpg",
+    "sibling_distractor.jpg": {
+      "id": "sibling_distractor.jpg",
       "taken_at": "NaT",
       "lat": null,
       "lon": null,
       "place": "Unknown place",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for photos/sibling_distractor.jpg",
+      "caption": "Placeholder caption for sibling_distractor.jpg",
       "scene": "outdoor",
       "activity": "unknown",
       "objects": [],
@@ -2657,7 +2657,7 @@
       ],
       "place": "Hyderabad",
       "people": [],
-      "event_label": "Event at Hyderabad",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -2671,7 +2671,7 @@
       ],
       "place": "Hyderabad",
       "people": [],
-      "event_label": "Event at Hyderabad",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -2683,7 +2683,7 @@
       ],
       "place": "Hyderabad",
       "people": [],
-      "event_label": "Event at Hyderabad",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -2699,7 +2699,7 @@
       ],
       "place": "Hyderabad",
       "people": [],
-      "event_label": "Event at Hyderabad",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -2713,7 +2713,7 @@
       ],
       "place": "Hyderabad",
       "people": [],
-      "event_label": "Event at Hyderabad",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -2729,7 +2729,7 @@
       ],
       "place": "Hyderabad",
       "people": [],
-      "event_label": "Event at Hyderabad",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -2742,7 +2742,7 @@
       ],
       "place": "Hyderabad",
       "people": [],
-      "event_label": "Event at Hyderabad",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -2758,7 +2758,7 @@
       ],
       "place": "Pune",
       "people": [],
-      "event_label": "Event at Pune",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -2770,7 +2770,7 @@
       ],
       "place": "Pune",
       "people": [],
-      "event_label": "Event at Pune",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -2783,7 +2783,7 @@
       ],
       "place": "Pune",
       "people": [],
-      "event_label": "Event at Pune",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -2797,8 +2797,8 @@
       "people": [
         "Kabir"
       ],
-      "event_label": "School Event",
-      "event_type": "school"
+      "event_label": "Placeholder Event",
+      "event_type": "other"
     },
     {
       "id": "evt_20190214T155054_3",
@@ -2811,12 +2811,12 @@
       ],
       "place": "Pune Viman Nagar",
       "people": [
-        "Meera",
+        "Arjun",
         "Riya",
-        "Arjun"
+        "Meera"
       ],
-      "event_label": "Birthday Party",
-      "event_type": "celebration"
+      "event_label": "Placeholder Event",
+      "event_type": "other"
     },
     {
       "id": "evt_20190321T201501_1",
@@ -2827,7 +2827,7 @@
       ],
       "place": "Pune",
       "people": [],
-      "event_label": "Event at Pune",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -2844,7 +2844,7 @@
       ],
       "place": "Pune",
       "people": [],
-      "event_label": "Event at Pune",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -2861,11 +2861,11 @@
       ],
       "place": "Goa Panjim",
       "people": [
-        "Meera",
+        "Arjun",
         "Riya",
-        "Arjun"
+        "Meera"
       ],
-      "event_label": "Event at Goa Panjim",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -2877,10 +2877,10 @@
       ],
       "place": "Pune Koregaon Park",
       "people": [
-        "Meera",
-        "Riya"
+        "Riya",
+        "Meera"
       ],
-      "event_label": "Event at Pune Koregaon Park",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -2893,7 +2893,7 @@
       ],
       "place": "Pune",
       "people": [],
-      "event_label": "Event at Pune",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -2906,7 +2906,7 @@
       ],
       "place": "Pune",
       "people": [],
-      "event_label": "Event at Pune",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -2925,7 +2925,7 @@
       ],
       "place": "Pune",
       "people": [],
-      "event_label": "Event at Pune",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -2937,7 +2937,7 @@
       ],
       "place": "Pune",
       "people": [],
-      "event_label": "Event at Pune",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -2949,7 +2949,7 @@
       ],
       "place": "Pune",
       "people": [],
-      "event_label": "Event at Pune",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -2964,10 +2964,10 @@
       ],
       "place": "Bengaluru Koramangala",
       "people": [
-        "Rohan",
-        "Ananya"
+        "Ananya",
+        "Rohan"
       ],
-      "event_label": "Event at Bengaluru Koramangala",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -2986,7 +2986,7 @@
       "people": [
         "Rohan"
       ],
-      "event_label": "Event at Bengaluru Indiranagar",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -3003,11 +3003,11 @@
       ],
       "place": "Goa Anjuna",
       "people": [
-        "Riya",
-        "Arjun"
+        "Arjun",
+        "Riya"
       ],
-      "event_label": "Out for Food",
-      "event_type": "food"
+      "event_label": "Placeholder Event",
+      "event_type": "other"
     },
     {
       "id": "evt_20230310T082655_4",
@@ -3023,7 +3023,7 @@
       "people": [
         "Rohan"
       ],
-      "event_label": "Event at Bengaluru Whitefield",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -3039,7 +3039,7 @@
       ],
       "place": "Coorg",
       "people": [],
-      "event_label": "Event at Coorg",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -3053,7 +3053,7 @@
       "people": [
         "Rohan"
       ],
-      "event_label": "Event at Bengaluru",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -3067,7 +3067,7 @@
       "people": [
         "Rohan"
       ],
-      "event_label": "Event at Bengaluru",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -3081,7 +3081,7 @@
       "people": [
         "Ananya"
       ],
-      "event_label": "Event at Edinburgh",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -3096,7 +3096,7 @@
       "people": [
         "Ananya"
       ],
-      "event_label": "Event at Edinburgh",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -3113,7 +3113,7 @@
       "people": [
         "Ananya"
       ],
-      "event_label": "Event at Edinburgh",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -3136,7 +3136,7 @@
       "people": [
         "Ananya"
       ],
-      "event_label": "Event at Edinburgh",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -3150,7 +3150,7 @@
       "people": [
         "Ananya"
       ],
-      "event_label": "Event at Edinburgh",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -3166,7 +3166,7 @@
       "people": [
         "Ananya"
       ],
-      "event_label": "Event at Edinburgh",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -3180,7 +3180,7 @@
       "people": [
         "Ananya"
       ],
-      "event_label": "Event at Edinburgh Portobello",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -3193,7 +3193,7 @@
       ],
       "place": "Isle of Skye",
       "people": [],
-      "event_label": "Event at Isle of Skye",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -3208,7 +3208,7 @@
       ],
       "place": "Dublin",
       "people": [],
-      "event_label": "Event at Dublin",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -3227,8 +3227,8 @@
       "people": [
         "Tom"
       ],
-      "event_label": "At Work",
-      "event_type": "work"
+      "event_label": "Placeholder Event",
+      "event_type": "other"
     },
     {
       "id": "evt_20250322T180832_2",
@@ -3240,7 +3240,7 @@
       ],
       "place": "Dublin Temple Bar",
       "people": [],
-      "event_label": "Event at Dublin Temple Bar",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -3252,7 +3252,7 @@
       ],
       "place": "Howth",
       "people": [],
-      "event_label": "Event at Howth",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -3264,7 +3264,7 @@
       ],
       "place": "Galway",
       "people": [],
-      "event_label": "Event at Galway",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -3276,7 +3276,7 @@
       ],
       "place": "Cork",
       "people": [],
-      "event_label": "Event at Cork",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -3288,7 +3288,7 @@
       ],
       "place": "Unknown place",
       "people": [],
-      "event_label": "Event at Unknown place",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -3300,7 +3300,7 @@
       ],
       "place": "Unknown place",
       "people": [],
-      "event_label": "Event at Unknown place",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -3312,7 +3312,7 @@
       ],
       "place": "Unknown place",
       "people": [],
-      "event_label": "Event at Unknown place",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -3324,7 +3324,7 @@
       ],
       "place": "Unknown place",
       "people": [],
-      "event_label": "Event at Unknown place",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -3336,7 +3336,7 @@
       ],
       "place": "Unknown place",
       "people": [],
-      "event_label": "Event at Unknown place",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -3348,7 +3348,7 @@
       ],
       "place": "Unknown place",
       "people": [],
-      "event_label": "Event at Unknown place",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -3360,7 +3360,7 @@
       ],
       "place": "Unknown place",
       "people": [],
-      "event_label": "Event at Unknown place",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -3372,7 +3372,7 @@
       ],
       "place": "Unknown place",
       "people": [],
-      "event_label": "Event at Unknown place",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -3384,7 +3384,7 @@
       ],
       "place": "Unknown place",
       "people": [],
-      "event_label": "Event at Unknown place",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -3396,7 +3396,7 @@
       ],
       "place": "Unknown place",
       "people": [],
-      "event_label": "Event at Unknown place",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -3408,8 +3408,8 @@
       ],
       "place": "Unknown place",
       "people": [],
-      "event_label": "Screenshot",
-      "event_type": "screenshot"
+      "event_label": "Placeholder Event",
+      "event_type": "other"
     },
     {
       "id": "evt_20261005T164538_1",
@@ -3420,7 +3420,7 @@
       ],
       "place": "Unknown place",
       "people": [],
-      "event_label": "Event at Unknown place",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -3432,7 +3432,7 @@
       ],
       "place": "Unknown place",
       "people": [],
-      "event_label": "Event at Unknown place",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -3444,7 +3444,7 @@
       ],
       "place": "Unknown place",
       "people": [],
-      "event_label": "Event at Unknown place",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -3456,7 +3456,7 @@
       ],
       "place": "Unknown place",
       "people": [],
-      "event_label": "Event at Unknown place",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -3464,11 +3464,11 @@
       "start": "NaT",
       "end": "NaT",
       "photo_ids": [
-        "photos/bday_2019_p1.jpg"
+        "bday_2019_p1.jpg"
       ],
       "place": "Unknown place",
       "people": [],
-      "event_label": "Event at Unknown place",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -3476,11 +3476,11 @@
       "start": "NaT",
       "end": "NaT",
       "photo_ids": [
-        "photos/bday_2019_p2.jpg"
+        "bday_2019_p2.jpg"
       ],
       "place": "Unknown place",
       "people": [],
-      "event_label": "Event at Unknown place",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -3488,11 +3488,11 @@
       "start": "NaT",
       "end": "NaT",
       "photo_ids": [
-        "photos/bday_2019_p3.jpg"
+        "bday_2019_p3.jpg"
       ],
       "place": "Unknown place",
       "people": [],
-      "event_label": "Event at Unknown place",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -3500,11 +3500,11 @@
       "start": "NaT",
       "end": "NaT",
       "photo_ids": [
-        "photos/bday_2020.jpg"
+        "bday_2020.jpg"
       ],
       "place": "Unknown place",
       "people": [],
-      "event_label": "Event at Unknown place",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -3512,11 +3512,11 @@
       "start": "NaT",
       "end": "NaT",
       "photo_ids": [
-        "photos/bill_screenshot.jpg"
+        "bill_screenshot.jpg"
       ],
       "place": "Unknown place",
       "people": [],
-      "event_label": "Event at Unknown place",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -3524,11 +3524,11 @@
       "start": "NaT",
       "end": "NaT",
       "photo_ids": [
-        "photos/flight_screenshot.jpg"
+        "flight_screenshot.jpg"
       ],
       "place": "Unknown place",
       "people": [],
-      "event_label": "Event at Unknown place",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -3536,11 +3536,11 @@
       "start": "NaT",
       "end": "NaT",
       "photo_ids": [
-        "photos/goa_cafe.jpg"
+        "goa_cafe.jpg"
       ],
       "place": "Unknown place",
       "people": [],
-      "event_label": "Event at Unknown place",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -3548,11 +3548,11 @@
       "start": "NaT",
       "end": "NaT",
       "photo_ids": [
-        "photos/goa_cafe_old.jpg"
+        "goa_cafe_old.jpg"
       ],
       "place": "Unknown place",
       "people": [],
-      "event_label": "Event at Unknown place",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -3560,11 +3560,11 @@
       "start": "NaT",
       "end": "NaT",
       "photo_ids": [
-        "photos/goa_distractor.jpg"
+        "goa_distractor.jpg"
       ],
       "place": "Unknown place",
       "people": [],
-      "event_label": "Event at Unknown place",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -3572,11 +3572,11 @@
       "start": "NaT",
       "end": "NaT",
       "photo_ids": [
-        "photos/ireland_distractor.jpg"
+        "ireland_distractor.jpg"
       ],
       "place": "Unknown place",
       "people": [],
-      "event_label": "Event at Unknown place",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -3584,11 +3584,11 @@
       "start": "NaT",
       "end": "NaT",
       "photo_ids": [
-        "photos/ireland_job.jpg"
+        "ireland_job.jpg"
       ],
       "place": "Unknown place",
       "people": [],
-      "event_label": "Event at Unknown place",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -3596,11 +3596,11 @@
       "start": "NaT",
       "end": "NaT",
       "photo_ids": [
-        "photos/meme_screenshot.jpg"
+        "meme_screenshot.jpg"
       ],
       "place": "Unknown place",
       "people": [],
-      "event_label": "Event at Unknown place",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -3608,11 +3608,11 @@
       "start": "NaT",
       "end": "NaT",
       "photo_ids": [
-        "photos/scotland_distractor1.jpg"
+        "scotland_distractor1.jpg"
       ],
       "place": "Unknown place",
       "people": [],
-      "event_label": "Event at Unknown place",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -3620,11 +3620,11 @@
       "start": "NaT",
       "end": "NaT",
       "photo_ids": [
-        "photos/scotland_mask.jpg"
+        "scotland_mask.jpg"
       ],
       "place": "Unknown place",
       "people": [],
-      "event_label": "Event at Unknown place",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -3632,11 +3632,11 @@
       "start": "NaT",
       "end": "NaT",
       "photo_ids": [
-        "photos/sibling_award.jpg"
+        "sibling_award.jpg"
       ],
       "place": "Unknown place",
       "people": [],
-      "event_label": "Event at Unknown place",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     },
     {
@@ -3644,11 +3644,11 @@
       "start": "NaT",
       "end": "NaT",
       "photo_ids": [
-        "photos/sibling_distractor.jpg"
+        "sibling_distractor.jpg"
       ],
       "place": "Unknown place",
       "people": [],
-      "event_label": "Event at Unknown place",
+      "event_label": "Placeholder Event",
       "event_type": "other"
     }
   ],
@@ -3697,12 +3697,12 @@
     }
   ],
   "people": [
-    "Arjun",
-    "Tom",
     "Riya",
-    "Meera",
-    "Rohan",
+    "Arjun",
     "Ananya",
+    "Rohan",
+    "Tom",
+    "Meera",
     "Kabir"
   ]
 }

@@ -133,12 +133,15 @@ if st.session_state['viewing_event']:
         col_img, col_info = st.columns([1, 1])
         with col_img:
             st.image(f"library/photos/{confirmed_pid}", use_container_width=True)
-            st.markdown(f"""
-                <div class="metadata-strip">
-                    <span>📷 {confirmed_photo.get('camera', 'Sony Alpha A7')}</span>
-                    <span>{confirmed_photo.get('filesize', '4.2 MB')} · RAW / DNG</span>
-                </div>
-            """, unsafe_allow_html=True)
+            camera = confirmed_photo.get('camera')
+            filesize = confirmed_photo.get('filesize')
+            metadata_html = ""
+            if camera or filesize:
+                cam_span = f"<span>📷 {camera}</span>" if camera else ""
+                size_span = f"<span>{filesize}</span>" if filesize else ""
+                metadata_html = f'<div class="metadata-strip">{cam_span}{size_span}</div>'
+                
+            st.markdown(metadata_html, unsafe_allow_html=True)
             
         with col_info:
             start_dt = datetime.fromisoformat(event["start"])
@@ -153,10 +156,6 @@ if st.session_state['viewing_event']:
                     <div>
                         <div style="font-size: 24px; font-weight: 700; color: #00685F;">{elapsed}</div>
                         <div style="font-size: 12px; color: #00201D;">surfaced in {step_count} cues</div>
-                    </div>
-                    <div style="text-align: right;">
-                        <div style="font-size: 11px; text-decoration: line-through; color: #515F74;">4m 12s scroll</div>
-                        <div style="font-size: 13px; font-weight: 700; color: #00685F;">6.6x faster</div>
                     </div>
                 </div>
             """, unsafe_allow_html=True)
@@ -233,12 +232,15 @@ if st.session_state['viewing_event']:
     col_hero, col_cta = st.columns([1.5, 1])
     with col_hero:
         st.image(f"library/photos/{focus_pid}", use_container_width=True)
-        st.markdown(f"""
-            <div class="metadata-strip">
-                <span>📷 {focus_photo.get('camera', 'Sony Alpha A7 · Portrait Mode')}</span>
-                <span>{focus_photo.get('filesize', '4.2 MB')} · RAW / DNG</span>
-            </div>
-        """, unsafe_allow_html=True)
+        camera = focus_photo.get('camera')
+        filesize = focus_photo.get('filesize')
+        metadata_html = ""
+        if camera or filesize:
+            cam_span = f"<span>📷 {camera}</span>" if camera else ""
+            size_span = f"<span>{filesize}</span>" if filesize else ""
+            metadata_html = f'<div class="metadata-strip">{cam_span}{size_span}</div>'
+            
+        st.markdown(metadata_html, unsafe_allow_html=True)
         
     with col_cta:
         st.markdown(f"""
@@ -319,6 +321,7 @@ if st.session_state['viewing_event']:
                 st.image(f"library/photos/{tl_ev['photo_ids'][0]}", use_container_width=True)
             if not is_current:
                 if st.button(f"Inspect cluster →", key=f"tl_btn_{tl_ev['id']}", use_container_width=True):
+                    log_event(st.session_state.get('session_id'), st.session_state.get('participant'), st.session_state.get('task'), "moment_open", detail=tl_ev['id'], step=get_step())
                     st.session_state['viewing_event'] = tl_ev['id']
                     st.session_state['selected_photo_pid'] = None
                     st.rerun()
@@ -336,7 +339,7 @@ if st.session_state['app_mode'] == 'search':
     with col_s1:
         query = st.text_input("Search photos", placeholder="Search your photos (e.g. Goa 2021, Scotland rain, Chai tapri)...", key="photoSearchInput", label_visibility="collapsed")
     with col_s2:
-        if st.button("✨ Help me remember", type="primary", use_container_width=True):
+        if st.button("✨ Help me remember", type="primary", key="btn_help_remember_main", use_container_width=True):
             st.session_state['app_mode'] = 'help'
             st.session_state['help_step'] = 1
             log_event(st.session_state.get('session_id'), st.session_state.get('participant'), st.session_state.get('task'), "entered_help_mode", step=get_step())
@@ -427,6 +430,7 @@ if st.session_state['app_mode'] == 'search':
                         # Find event for this photo
                         ev = next((e for e in index['events'] if pid in e['photo_ids']), None)
                         if ev:
+                            log_event(st.session_state.get('session_id'), st.session_state.get('participant'), st.session_state.get('task'), "moment_open", detail=ev['id'], step=get_step())
                             st.session_state['viewing_event'] = ev['id']
                             st.session_state['selected_photo_pid'] = pid
                             st.rerun()
@@ -465,6 +469,7 @@ if st.session_state['app_mode'] == 'search':
                         if st.button("Open moment", key=f"home_open_{pid}_{idx}", use_container_width=True):
                             ev = next((e for e in index['events'] if pid in e['photo_ids']), None)
                             if ev:
+                                log_event(st.session_state.get('session_id'), st.session_state.get('participant'), st.session_state.get('task'), "moment_open", detail=ev['id'], step=get_step())
                                 st.session_state['viewing_event'] = ev['id']
                                 st.session_state['selected_photo_pid'] = pid
                                 st.rerun()
@@ -792,7 +797,6 @@ elif st.session_state['app_mode'] == 'help':
         st.markdown(f"""
             <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
                 <span class="memory-stream-pill" style="background:#89F5E7; color:#00201D; font-size:12px;">✨ RECALL RESULTS · {len(ranked_events)} MATCHING MOMENTS</span>
-                <span class="memory-stream-pill" style="font-size:12px;">97% match confidence</span>
             </div>
             <h2 style="margin-top: 4px; margin-bottom: 2px;">Is it one of these?</h2>
             <div style="font-size: 14px; color: #515F74; margin-bottom: 16px;">

@@ -9,10 +9,12 @@ os.makedirs("logs", exist_ok=True)
 LOG_FILE = "logs/events.jsonl"
 
 def log_event(session_id, participant, task, event, detail=None, filters=None, n_photos=None, n_moments=None, step=None):
+    source = "participant" if participant in [f"P{i}" for i in range(1, 10)] else "test"
     event_data = {
         "ts": datetime.utcnow().isoformat() + "Z",
         "session_id": session_id,
         "participant": participant,
+        "source": source,
         "task": task,
         "event": event,
         "detail": detail,
@@ -33,7 +35,7 @@ def log_event(session_id, participant, task, event, detail=None, filters=None, n
     if 'LOG_WEBHOOK_URL' in st.secrets:
         webhook_url = st.secrets['LOG_WEBHOOK_URL']
         
-    if webhook_url:
+    if webhook_url and source == "participant":
         try:
             requests.post(webhook_url, json=event_data, timeout=5)
         except:

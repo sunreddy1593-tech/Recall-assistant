@@ -118,7 +118,11 @@ def apply_filters(index, filters):
                 
         matched_events.append({**ev, "matched_photo_ids": list(ev_photos)})
         
-    return matched_events, matched_photos
+    final_photos = set()
+    for ev in matched_events:
+        final_photos.update(ev["matched_photo_ids"])
+        
+    return matched_events, final_photos
 
 def get_facet_counts(index, current_filters):
     # To do true faceted search, we compute options by applying all OTHER filters
