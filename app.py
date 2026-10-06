@@ -780,10 +780,22 @@ elif st.session_state['app_mode'] == 'help':
         col_b1, col_b2, col_b3 = st.columns([1, 1, 2])
         with col_b1:
             if st.button("Not sure", key="btn_not_sure_1", use_container_width=True):
-                advance_step('chapters', 'Not sure', 1)
+                for f in ['chapters', 'years', 'year', 'date_range', 'era_chip']:
+                    st.session_state['filters'].pop(f, None)
+                for w in ['pills_q1_chaps', 'pills_q1_years', 'era_box']:
+                    st.session_state.pop(w, None)
+                log_event(st.session_state.get('session_id'), st.session_state.get('participant'), st.session_state.get('task'), "help_q1_skipped", detail="Not sure", step=get_step())
+                st.session_state['help_step'] += 1
+                st.rerun()
         with col_b2:
             if st.button("Skip", key="btn_skip_1", use_container_width=True):
-                advance_step('chapters', 'Skip', 1)
+                for f in ['chapters', 'years', 'year', 'date_range', 'era_chip']:
+                    st.session_state['filters'].pop(f, None)
+                for w in ['pills_q1_chaps', 'pills_q1_years', 'era_box']:
+                    st.session_state.pop(w, None)
+                log_event(st.session_state.get('session_id'), st.session_state.get('participant'), st.session_state.get('task'), "help_q1_skipped", detail="Skip", step=get_step())
+                st.session_state['help_step'] += 1
+                st.rerun()
         with col_b3:
             if st.button("Next: Who was there →", type="primary", key="btn_q1_next", use_container_width=True):
                 clean_chaps = [s.rsplit(' (', 1)[0] for s in sel_chaps] if sel_chaps else []

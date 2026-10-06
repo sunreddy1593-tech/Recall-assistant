@@ -521,39 +521,37 @@ def render_moment_card(event, index):
     photo_ids = event.get("matched_photo_ids", event["photo_ids"])
     n_photos = len(photo_ids)
     
+    import html
     # Generate avatar circles for attendees
     avatars_html = ""
     if people:
         avatars_html = '<div class="attendee-badges">'
         classes = ["c1", "c2", "c3"]
         for i, person in enumerate(people[:3]):
-            initial = person[0].upper()
+            initial = html.escape(person[0].upper())
+            person_safe = html.escape(person)
             c = classes[i % len(classes)]
-            avatars_html += f'<div class="avatar-circle {c}" title="{person}">{initial}</div>'
+            avatars_html += f'<div class="avatar-circle {c}" title="{person_safe}">{initial}</div>'
         avatars_html += '</div>'
     
-    import html
     event_label_safe = html.escape(event_label)
     place_safe = html.escape(place)
     people_str_safe = html.escape(people_str)
     
-    html_content = f'''
-<div class="moment-card-box">
-    <div class="moment-header-row">
-        <div>
-            <div class="moment-card-title">{event_label_safe}</div>
-            <div class="moment-meta-line">
-                {date_str} &middot; <b>{place_safe}</b>
-            </div>
-        </div>
-        <span style="color:#515F74; font-size:18px;">🔖</span>
-    </div>
-    <div class="moment-meta-line" style="margin-bottom: 12px;">
-        {avatars_html}
-        <span>{people_str_safe}</span>
-    </div>
-</div>
-'''
+    html_content = (
+        f'<div class="moment-card-box">'
+        f'<div class="moment-header-row">'
+        f'<div>'
+        f'<div class="moment-card-title">{event_label_safe}</div>'
+        f'<div class="moment-meta-line">{date_str} &middot; <b>{place_safe}</b></div>'
+        f'</div>'
+        f'<span style="color:#515F74; font-size:18px;">🔖</span>'
+        f'</div>'
+        f'<div class="moment-meta-line" style="margin-bottom: 12px;">'
+        f'{avatars_html}<span>{people_str_safe}</span>'
+        f'</div>'
+        f'</div>'
+    )
     with st.container():
         st.markdown(html_content, unsafe_allow_html=True)
         

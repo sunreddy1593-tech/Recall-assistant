@@ -77,3 +77,92 @@ def test_reject_all_suggestions(mock_post):
     
     assert at.session_state['help_step'] == 1
     assert "Let's try different clues" in at.info[0].value
+
+from recall.ui import render_moment_card
+from unittest.mock import MagicMock
+
+def test_moment_card_rendering():
+    event_empty_people = {
+        "id": "e1",
+        "start": "2024-10-14T10:00:00Z",
+        "people": [],
+        "place": "Dublin & Co",
+        "event_label": "Test <Event>",
+        "photo_ids": ["p1", "p2"]
+    }
+    event_named_people = {
+        "id": "e2",
+        "start": "2024-10-14T10:00:00Z",
+        "people": ["Tom <Smith>", "Alice & Bob"],
+        "place": "Dublin",
+        "event_label": "Test",
+        "photo_ids": ["p1", "p2"]
+    }
+    
+    with patch('recall.ui.st') as mock_st:
+        mock_st.columns.side_effect = lambda x: [MagicMock() for _ in range(x)] if isinstance(x, int) else [MagicMock() for _ in x]
+        
+        render_moment_card(event_empty_people, 0)
+        calls = mock_st.markdown.call_args_list
+        html_content = calls[0][0][0]
+        
+        assert "Just me" in html_content
+        assert "&lt;Event&gt;" in html_content
+        assert "Dublin &amp; Co" in html_content
+        assert "\n    " not in html_content
+        
+        mock_st.markdown.reset_mock()
+        render_moment_card(event_named_people, 1)
+        calls = mock_st.markdown.call_args_list
+        html_content = calls[0][0][0]
+        
+        assert "Tom &lt;Smith&gt;" in html_content
+        assert 'title="Tom &lt;Smith&gt;"' in html_content
+
+@patch('recall.logging_utils.requests.post')
+def test_when_step_skip_clears_time(mock_post):
+    at = AppTest.from_file("../app.py").run()
+    at.sidebar.button[0].click().run()
+    at.button("btn_help_remember_main").click().run()
+    
+    years_opts = at.pills("pills_q1_years").options
+    at.pills("pills_q1_years").set_value([years_opts[0]]).run()
+    at.button("btn_q1_next").click().run()
+    
+    assert 'years' in at.session_state['filters']
+    
+    at.button("back_to_1").click().run()
+    assert 'years' in at.session_state['filters']
+    
+    at.button("btn_q1_next").click().run()
+    assert 'years' in at.session_state['filters']
+    
+    at.button("back_to_1").click().run()
+    at.button("btn_skip_1").click().run()
+    
+    assert 'years' not in at.session_state['filters']
+    assert 'chapters' not in at.session_state['filters']
+    
+    at.button("back_to_1").click().run()
+    assert 'pills_q1_years' not in at.session_state or not at.session_state['pills_q1_years']
+
+@patch('recall.logging_utils.requests.post')
+def test_when_step_not_sure_clears_time(mock_post):
+    at = AppTest.from_file("../app.py").run()
+    at.sidebar.button[0].click().run()
+    at.button("btn_help_remember_main").click().run()
+    
+    at.text_input("era_box").input("college").run()
+    at.session_state['filters']['date_range'] = ("2019", "2020")
+    at.session_state['filters']['era_chip'] = "Parsed"
+    
+    at.button("btn_q1_next").click().run()
+    at.button("back_to_1").click().run()
+    
+    at.button("btn_not_sure_1").click().run()
+    
+    assert 'date_range' not in at.session_state['filters']
+    assert 'era_chip' not in at.session_state['filters']
+    
+    at.button("back_to_1").click().run()
+    assert 'era_box' not in at.session_state or not at.session_state['era_box']
