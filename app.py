@@ -79,6 +79,7 @@ with st.sidebar:
             st.session_state['viewing_event'] = None
             st.session_state['selected_photo_pid'] = None
             st.session_state['photo_found_confirmed'] = None
+            st.session_state.pop('confirmed_elapsed_time', None)
             st.session_state['step_history'] = []
             st.session_state['rejected_photos'] = set()
             st.session_state['app_mode'] = 'search'
@@ -129,12 +130,7 @@ if st.session_state['viewing_event']:
     if st.session_state.get('photo_found_confirmed'):
         confirmed_pid = st.session_state['photo_found_confirmed']
         confirmed_photo = index['photos'].get(confirmed_pid, {})
-        elapsed = "0:38s"
-        if st.session_state.get('task_start_time'):
-            sec = int(time.time() - st.session_state['task_start_time'])
-            mins = sec // 60
-            secs = sec % 60
-            elapsed = f"{mins}:{secs:02d}s"
+        elapsed = st.session_state.get('confirmed_elapsed_time', 'Time unavailable')
             
         step_count = st.session_state.get('step_count', 5)
         
@@ -178,60 +174,41 @@ if st.session_state['viewing_event']:
             """, unsafe_allow_html=True)
             
             # Retrieval Path
-            retrieval_html = f"""
-                <div class="callout-card" style="margin-top: 14px;">
-                    <div class="callout-header">
-                        <span>🌳</span>
-                        <span>Applied cues</span>
-                    </div>
-            """
-            
+            import html
             filters = st.session_state.get('filters', {})
             step_idx = 1
-            if filters.get('chapters'):
-                retrieval_html += f"""
-                    <div class="retrieval-step-row">
-                        <span><b>{step_idx}. When:</b> {filters['chapters'][0]}</span>
-                    </div>"""
+            rows = []
+            
+            if filters.get('chapters') and filters['chapters']:
+                val = html.escape(str(filters['chapters'][0]))
+                rows.append(f'<div class="retrieval-step-row"><span><b>{step_idx}. When:</b> {val}</span></div>')
                 step_idx += 1
-            if filters.get('who'):
-                retrieval_html += f"""
-                    <div class="retrieval-step-row">
-                        <span><b>{step_idx}. Who:</b> {', '.join(filters['who'])}</span>
-                    </div>"""
+            if filters.get('who') and filters['who']:
+                val = html.escape(', '.join(filters['who']))
+                rows.append(f'<div class="retrieval-step-row"><span><b>{step_idx}. Who:</b> {val}</span></div>')
                 step_idx += 1
-            if filters.get('where'):
-                retrieval_html += f"""
-                    <div class="retrieval-step-row">
-                        <span><b>{step_idx}. Where:</b> {filters['where'][0]}</span>
-                    </div>"""
+            if filters.get('where') and filters['where']:
+                val = html.escape(str(filters['where'][0]))
+                rows.append(f'<div class="retrieval-step-row"><span><b>{step_idx}. Where:</b> {val}</span></div>')
                 step_idx += 1
-            if filters.get('what'):
-                retrieval_html += f"""
-                    <div class="retrieval-step-row">
-                        <span><b>{step_idx}. Activity:</b> {filters['what'][0]}</span>
-                    </div>"""
+            if filters.get('what') and filters['what']:
+                val = html.escape(str(filters['what'][0]))
+                rows.append(f'<div class="retrieval-step-row"><span><b>{step_idx}. Activity:</b> {val}</span></div>')
                 step_idx += 1
-            if filters.get('type'):
-                retrieval_html += f"""
-                    <div class="retrieval-step-row">
-                        <span><b>{step_idx}. Type:</b> {filters['type'][0]}</span>
-                    </div>"""
+            if filters.get('type') and filters['type']:
+                val = html.escape(str(filters['type'][0]))
+                rows.append(f'<div class="retrieval-step-row"><span><b>{step_idx}. Type:</b> {val}</span></div>')
                 step_idx += 1
             if filters.get('anything_else'):
-                retrieval_html += f"""
-                    <div class="retrieval-step-row">
-                        <span><b>{step_idx}. Detail:</b> {filters['anything_else']}</span>
-                    </div>"""
+                val = html.escape(str(filters['anything_else']))
+                rows.append(f'<div class="retrieval-step-row"><span><b>{step_idx}. Detail:</b> {val}</span></div>')
                 step_idx += 1
                 
-            retrieval_html += f"""
-                    <div class="retrieval-step-row" style="background-color: #BDECE2; border-color: #00685F;">
-                        <span><b>✓ Target Confirmed:</b> {confirmed_pid}</span>
-                        <span style="font-weight: 600; color: #00685F;">{elapsed}</span>
-                    </div>
-                </div>
-            """
+            pid_escaped = html.escape(str(confirmed_pid))
+            elapsed_escaped = html.escape(str(elapsed))
+            rows.append(f'<div class="retrieval-step-row" style="background-color: #BDECE2; border-color: #00685F;"><span><b>✓ Target Confirmed:</b> {pid_escaped}</span><span style="font-weight: 600; color: #00685F;">{elapsed_escaped}</span></div>')
+            
+            retrieval_html = '<div class="callout-card" style="margin-top: 14px;"><div class="callout-header"><span>🌳</span><span>Applied cues</span></div>' + "".join(rows) + '</div>'
             st.markdown(retrieval_html, unsafe_allow_html=True)
             
             if st.button("Try another recall task →", type="primary", use_container_width=True):
@@ -239,6 +216,7 @@ if st.session_state['viewing_event']:
                 st.session_state['viewing_event'] = None
                 st.session_state['selected_photo_pid'] = None
                 st.session_state['photo_found_confirmed'] = None
+                st.session_state.pop('confirmed_elapsed_time', None)
                 st.session_state['app_mode'] = 'search'
                 st.session_state['help_step'] = 1
                 st.rerun()
@@ -326,6 +304,21 @@ if st.session_state['viewing_event']:
                 if st.session_state.get('task_active'):
                     log_event(st.session_state.get('session_id'), st.session_state.get('participant'), st.session_state.get('task'), "photo_confirmed", detail=f"{focus_pid} in {event['id']}", step=get_step())
                     st.session_state['task_active'] = False
+                
+                if 'confirmed_elapsed_time' not in st.session_state:
+                    task_start = st.session_state.get('task_start_time')
+                    if task_start is not None and isinstance(task_start, (int, float)):
+                        import time
+                        sec = int(time.time() - task_start)
+                        if sec >= 0:
+                            mins = sec // 60
+                            secs = sec % 60
+                            st.session_state['confirmed_elapsed_time'] = f"{mins}:{secs:02d}s"
+                        else:
+                            st.session_state['confirmed_elapsed_time'] = "Time unavailable"
+                    else:
+                        st.session_state['confirmed_elapsed_time'] = "Time unavailable"
+
                 st.session_state['photo_found_confirmed'] = focus_pid
                 st.balloons()
                 st.rerun()
