@@ -259,7 +259,7 @@ if st.session_state['viewing_event']:
         with col_c1:
             if st.button("✅ This is the photo", type="primary", key=f"confirm_focus_{focus_pid}", use_container_width=True):
                 if st.session_state.get('task_active'):
-                    log_event(st.session_state.get('session_id'), st.session_state.get('participant'), st.session_state.get('task'), "photo_confirmed", detail=focus_pid, step=get_step())
+                    log_event(st.session_state.get('session_id'), st.session_state.get('participant'), st.session_state.get('task'), "photo_confirmed", detail=f"{focus_pid} in {event['id']}", step=get_step())
                     st.session_state['task_active'] = False
                 st.session_state['photo_found_confirmed'] = focus_pid
                 st.balloons()

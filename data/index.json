@@ -2390,7 +2390,7 @@
     },
     "bday_2019_p1.jpg": {
       "id": "bday_2019_p1.jpg",
-      "taken_at": "NaT",
+      "taken_at": "2019-01-01T00:00:00",
       "lat": null,
       "lon": null,
       "place": "Unknown place",
@@ -2406,7 +2406,7 @@
     },
     "bday_2019_p2.jpg": {
       "id": "bday_2019_p2.jpg",
-      "taken_at": "NaT",
+      "taken_at": "2019-01-01T00:00:00",
       "lat": null,
       "lon": null,
       "place": "Unknown place",
@@ -2422,7 +2422,7 @@
     },
     "bday_2019_p3.jpg": {
       "id": "bday_2019_p3.jpg",
-      "taken_at": "NaT",
+      "taken_at": "2019-01-01T00:00:00",
       "lat": null,
       "lon": null,
       "place": "Unknown place",
@@ -2438,7 +2438,7 @@
     },
     "bday_2020.jpg": {
       "id": "bday_2020.jpg",
-      "taken_at": "NaT",
+      "taken_at": "2019-01-01T00:00:00",
       "lat": null,
       "lon": null,
       "place": "Unknown place",
@@ -2454,7 +2454,7 @@
     },
     "bill_screenshot.jpg": {
       "id": "bill_screenshot.jpg",
-      "taken_at": "NaT",
+      "taken_at": "2019-01-01T00:00:00",
       "lat": null,
       "lon": null,
       "place": "Unknown place",
@@ -2470,7 +2470,7 @@
     },
     "flight_screenshot.jpg": {
       "id": "flight_screenshot.jpg",
-      "taken_at": "NaT",
+      "taken_at": "2019-01-01T00:00:00",
       "lat": null,
       "lon": null,
       "place": "Unknown place",
@@ -2486,7 +2486,7 @@
     },
     "goa_cafe.jpg": {
       "id": "goa_cafe.jpg",
-      "taken_at": "NaT",
+      "taken_at": "2019-01-01T00:00:00",
       "lat": null,
       "lon": null,
       "place": "Unknown place",
@@ -2502,7 +2502,7 @@
     },
     "goa_cafe_old.jpg": {
       "id": "goa_cafe_old.jpg",
-      "taken_at": "NaT",
+      "taken_at": "2019-01-01T00:00:00",
       "lat": null,
       "lon": null,
       "place": "Unknown place",
@@ -2518,7 +2518,7 @@
     },
     "goa_distractor.jpg": {
       "id": "goa_distractor.jpg",
-      "taken_at": "NaT",
+      "taken_at": "2019-01-01T00:00:00",
       "lat": null,
       "lon": null,
       "place": "Unknown place",
@@ -2534,7 +2534,7 @@
     },
     "ireland_distractor.jpg": {
       "id": "ireland_distractor.jpg",
-      "taken_at": "NaT",
+      "taken_at": "2019-01-01T00:00:00",
       "lat": null,
       "lon": null,
       "place": "Unknown place",
@@ -2550,7 +2550,7 @@
     },
     "ireland_job.jpg": {
       "id": "ireland_job.jpg",
-      "taken_at": "NaT",
+      "taken_at": "2019-01-01T00:00:00",
       "lat": null,
       "lon": null,
       "place": "Unknown place",
@@ -2566,7 +2566,7 @@
     },
     "meme_screenshot.jpg": {
       "id": "meme_screenshot.jpg",
-      "taken_at": "NaT",
+      "taken_at": "2019-01-01T00:00:00",
       "lat": null,
       "lon": null,
       "place": "Unknown place",
@@ -2582,7 +2582,7 @@
     },
     "scotland_distractor1.jpg": {
       "id": "scotland_distractor1.jpg",
-      "taken_at": "NaT",
+      "taken_at": "2019-01-01T00:00:00",
       "lat": null,
       "lon": null,
       "place": "Unknown place",
@@ -2598,7 +2598,7 @@
     },
     "scotland_mask.jpg": {
       "id": "scotland_mask.jpg",
-      "taken_at": "NaT",
+      "taken_at": "2019-01-01T00:00:00",
       "lat": null,
       "lon": null,
       "place": "Unknown place",
@@ -2614,7 +2614,7 @@
     },
     "sibling_award.jpg": {
       "id": "sibling_award.jpg",
-      "taken_at": "NaT",
+      "taken_at": "2019-01-01T00:00:00",
       "lat": null,
       "lon": null,
       "place": "Unknown place",
@@ -2630,7 +2630,7 @@
     },
     "sibling_distractor.jpg": {
       "id": "sibling_distractor.jpg",
-      "taken_at": "NaT",
+      "taken_at": "2019-01-01T00:00:00",
       "lat": null,
       "lon": null,
       "place": "Unknown place",
@@ -3460,9 +3460,9 @@
       "event_type": "other"
     },
     {
-      "id": "evt_NaT_1",
-      "start": "NaT",
-      "end": "NaT",
+      "id": "evt_2019-01-01T00:00:00_1",
+      "start": "2019-01-01T00:00:00",
+      "end": "2019-01-01T00:00:00",
       "photo_ids": [
         "bday_2019_p1.jpg"
       ],
@@ -3472,9 +3472,9 @@
       "event_type": "other"
     },
     {
-      "id": "evt_NaT_1",
-      "start": "NaT",
-      "end": "NaT",
+      "id": "evt_2019-01-01T00:00:00_1",
+      "start": "2019-01-01T00:00:00",
+      "end": "2019-01-01T00:00:00",
       "photo_ids": [
         "bday_2019_p2.jpg"
       ],
@@ -3484,9 +3484,9 @@
       "event_type": "other"
     },
     {
-      "id": "evt_NaT_1",
-      "start": "NaT",
-      "end": "NaT",
+      "id": "evt_2019-01-01T00:00:00_1",
+      "start": "2019-01-01T00:00:00",
+      "end": "2019-01-01T00:00:00",
       "photo_ids": [
         "bday_2019_p3.jpg"
       ],
@@ -3496,9 +3496,9 @@
       "event_type": "other"
     },
     {
-      "id": "evt_NaT_1",
-      "start": "NaT",
-      "end": "NaT",
+      "id": "evt_2019-01-01T00:00:00_1",
+      "start": "2019-01-01T00:00:00",
+      "end": "2019-01-01T00:00:00",
       "photo_ids": [
         "bday_2020.jpg"
       ],
@@ -3508,9 +3508,9 @@
       "event_type": "other"
     },
     {
-      "id": "evt_NaT_1",
-      "start": "NaT",
-      "end": "NaT",
+      "id": "evt_2019-01-01T00:00:00_1",
+      "start": "2019-01-01T00:00:00",
+      "end": "2019-01-01T00:00:00",
       "photo_ids": [
         "bill_screenshot.jpg"
       ],
@@ -3520,9 +3520,9 @@
       "event_type": "other"
     },
     {
-      "id": "evt_NaT_1",
-      "start": "NaT",
-      "end": "NaT",
+      "id": "evt_2019-01-01T00:00:00_1",
+      "start": "2019-01-01T00:00:00",
+      "end": "2019-01-01T00:00:00",
       "photo_ids": [
         "flight_screenshot.jpg"
       ],
@@ -3532,9 +3532,9 @@
       "event_type": "other"
     },
     {
-      "id": "evt_NaT_1",
-      "start": "NaT",
-      "end": "NaT",
+      "id": "evt_2019-01-01T00:00:00_1",
+      "start": "2019-01-01T00:00:00",
+      "end": "2019-01-01T00:00:00",
       "photo_ids": [
         "goa_cafe.jpg"
       ],
@@ -3544,9 +3544,9 @@
       "event_type": "other"
     },
     {
-      "id": "evt_NaT_1",
-      "start": "NaT",
-      "end": "NaT",
+      "id": "evt_2019-01-01T00:00:00_1",
+      "start": "2019-01-01T00:00:00",
+      "end": "2019-01-01T00:00:00",
       "photo_ids": [
         "goa_cafe_old.jpg"
       ],
@@ -3556,9 +3556,9 @@
       "event_type": "other"
     },
     {
-      "id": "evt_NaT_1",
-      "start": "NaT",
-      "end": "NaT",
+      "id": "evt_2019-01-01T00:00:00_1",
+      "start": "2019-01-01T00:00:00",
+      "end": "2019-01-01T00:00:00",
       "photo_ids": [
         "goa_distractor.jpg"
       ],
@@ -3568,9 +3568,9 @@
       "event_type": "other"
     },
     {
-      "id": "evt_NaT_1",
-      "start": "NaT",
-      "end": "NaT",
+      "id": "evt_2019-01-01T00:00:00_1",
+      "start": "2019-01-01T00:00:00",
+      "end": "2019-01-01T00:00:00",
       "photo_ids": [
         "ireland_distractor.jpg"
       ],
@@ -3580,9 +3580,9 @@
       "event_type": "other"
     },
     {
-      "id": "evt_NaT_1",
-      "start": "NaT",
-      "end": "NaT",
+      "id": "evt_2019-01-01T00:00:00_1",
+      "start": "2019-01-01T00:00:00",
+      "end": "2019-01-01T00:00:00",
       "photo_ids": [
         "ireland_job.jpg"
       ],
@@ -3592,9 +3592,9 @@
       "event_type": "other"
     },
     {
-      "id": "evt_NaT_1",
-      "start": "NaT",
-      "end": "NaT",
+      "id": "evt_2019-01-01T00:00:00_1",
+      "start": "2019-01-01T00:00:00",
+      "end": "2019-01-01T00:00:00",
       "photo_ids": [
         "meme_screenshot.jpg"
       ],
@@ -3604,9 +3604,9 @@
       "event_type": "other"
     },
     {
-      "id": "evt_NaT_1",
-      "start": "NaT",
-      "end": "NaT",
+      "id": "evt_2019-01-01T00:00:00_1",
+      "start": "2019-01-01T00:00:00",
+      "end": "2019-01-01T00:00:00",
       "photo_ids": [
         "scotland_distractor1.jpg"
       ],
@@ -3616,9 +3616,9 @@
       "event_type": "other"
     },
     {
-      "id": "evt_NaT_1",
-      "start": "NaT",
-      "end": "NaT",
+      "id": "evt_2019-01-01T00:00:00_1",
+      "start": "2019-01-01T00:00:00",
+      "end": "2019-01-01T00:00:00",
       "photo_ids": [
         "scotland_mask.jpg"
       ],
@@ -3628,9 +3628,9 @@
       "event_type": "other"
     },
     {
-      "id": "evt_NaT_1",
-      "start": "NaT",
-      "end": "NaT",
+      "id": "evt_2019-01-01T00:00:00_1",
+      "start": "2019-01-01T00:00:00",
+      "end": "2019-01-01T00:00:00",
       "photo_ids": [
         "sibling_award.jpg"
       ],
@@ -3640,9 +3640,9 @@
       "event_type": "other"
     },
     {
-      "id": "evt_NaT_1",
-      "start": "NaT",
-      "end": "NaT",
+      "id": "evt_2019-01-01T00:00:00_1",
+      "start": "2019-01-01T00:00:00",
+      "end": "2019-01-01T00:00:00",
       "photo_ids": [
         "sibling_distractor.jpg"
       ],
