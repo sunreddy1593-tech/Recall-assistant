@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import os
 import json
+from recall.session_metrics import process_sessions
 from recall.ui import load_css, render_top_banner, render_brand_header
 
 st.set_page_config(page_title="Recall · Test Results", layout="wide")
@@ -54,28 +55,27 @@ else:
         if df.empty:
             st.info("No logs matching selected source.")
         else:
-            tasks_started = df[df['event'] == 'task_start']
-            tasks_completed = df[df['event'] == 'photo_confirmed']
-            tasks_gave_up = df[df['event'] == 'gave_up']
-        
-            n_started = len(tasks_started)
-            n_completed = len(tasks_completed)
-            n_gave_up = len(tasks_gave_up)
-            success_rate = f"{(n_completed / n_started * 100):.0f}%" if n_started > 0 else "N/A"
+            sessions = process_sessions(df)
             
-            # Calculate medians
-            median_time = "N/A"
-            median_steps = "N/A"
-            if not tasks_completed.empty:
-                valid_times = tasks_completed['elapsed_s'].dropna()
-                if not valid_times.empty:
-                    median_time = f"{valid_times.median():.1f}s"
-                valid_steps = tasks_completed['step'].dropna()
-                if not valid_steps.empty:
-                    median_steps = f"{valid_steps.median():.0f}"
-                    
+            # Exclude FREE from study summaries
+            study_sessions = [s for s in sessions if s['task'] != "FREE"]
+            
+            n_started = len(study_sessions)
+            n_completed = sum(1 for s in study_sessions if s['confirmed_photo'] is not None)
+            
+            conf_rate = f"{(n_completed / n_started * 100):.0f}%" if n_started > 0 else "N/A"
+            
+            # Summaries for eligible confirmed sessions
+            confirmed_sessions = [s for s in study_sessions if s['confirmed_photo'] is not None]
+            valid_times = [s['max_elapsed'] for s in confirmed_sessions if s['max_elapsed'] is not None]
+            valid_steps = [s['max_step'] for s in confirmed_sessions if s['max_step'] is not None]
+            
+            median_time = f"{pd.Series(valid_times).median():.1f}s" if valid_times else "N/A"
+            median_steps = f"{pd.Series(valid_steps).median():.0f}" if valid_steps else "N/A"
+            
             # KPI Metric Tiles
             st.markdown("### Evaluation Summary")
+            st.markdown("<p style='font-size: 14px; color: #515F74;'><em>Note: Confirmation rate indicates the participant made a selection. Offline scoring determines task correctness.</em></p>", unsafe_allow_html=True)
             kpi1, kpi2, kpi3, kpi4, kpi5 = st.columns(5)
             
             with kpi1:
@@ -90,15 +90,15 @@ else:
                 st.markdown(f"""
                     <div class="callout-card" style="text-align: center; padding: 12px 8px;">
                         <div style="font-size: 24px; font-weight: 700; color: #00685F;">{n_completed}</div>
-                        <div style="font-size: 12px; color: #515F74; font-weight: 600; text-transform: uppercase;">Completed</div>
+                        <div style="font-size: 12px; color: #515F74; font-weight: 600; text-transform: uppercase;">Sessions with a photo confirmation</div>
                     </div>
                 """, unsafe_allow_html=True)
     
             with kpi3:
                 st.markdown(f"""
                     <div class="callout-card" style="text-align: center; padding: 12px 8px; background-color: #BDECE2;">
-                        <div style="font-size: 24px; font-weight: 700; color: #00201D;">{success_rate}</div>
-                        <div style="font-size: 12px; color: #00201D; font-weight: 600; text-transform: uppercase;">Success Rate</div>
+                        <div style="font-size: 24px; font-weight: 700; color: #00201D;">{conf_rate}</div>
+                        <div style="font-size: 12px; color: #00201D; font-weight: 600; text-transform: uppercase;">Confirmation Rate</div>
                     </div>
                 """, unsafe_allow_html=True)
                 
@@ -106,7 +106,7 @@ else:
                 st.markdown(f"""
                     <div class="callout-card" style="text-align: center; padding: 12px 8px;">
                         <div style="font-size: 24px; font-weight: 700; color: #00685F;">{median_time}</div>
-                        <div style="font-size: 12px; color: #515F74; font-weight: 600; text-transform: uppercase;">Median Time</div>
+                        <div style="font-size: 12px; color: #515F74; font-weight: 600; text-transform: uppercase;">Median Time (Confirmed)</div>
                     </div>
                 """, unsafe_allow_html=True)
     
@@ -114,7 +114,7 @@ else:
                 st.markdown(f"""
                     <div class="callout-card" style="text-align: center; padding: 12px 8px;">
                         <div style="font-size: 24px; font-weight: 700; color: #00685F;">{median_steps}</div>
-                        <div style="font-size: 12px; color: #515F74; font-weight: 600; text-transform: uppercase;">Median Steps</div>
+                        <div style="font-size: 12px; color: #515F74; font-weight: 600; text-transform: uppercase;">Median Steps (Confirmed)</div>
                     </div>
                 """, unsafe_allow_html=True)
 

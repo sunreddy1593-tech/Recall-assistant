@@ -1079,9 +1079,9 @@
         "Riya",
         "Arjun"
       ],
-      "caption": "A view of the scene",
-      "scene": "outdoor",
-      "activity": "unknown",
+      "caption": "Eating late-night street food with friends in Viman Nagar.",
+      "scene": "outdoor; night",
+      "activity": "eating; street food",
       "objects": [
         "person",
         "table"
@@ -1092,7 +1092,8 @@
       "text_in_image": "birthday college friends",
       "mood": "neutral",
       "label_source": "offline",
-      "type": "photo"
+      "type": "photo",
+      "description": "Eating late-night street food with friends in Viman Nagar."
     },
     "2019-02-14_Pune-Koregaon-Park/IMG_20190214_002.jpg": {
       "id": "2019-02-14_Pune-Koregaon-Park/IMG_20190214_002.jpg",
@@ -1106,20 +1107,18 @@
         "Meera",
         "Arjun"
       ],
-      "caption": "Birthday night out with college friends",
-      "scene": "outdoor",
-      "activity": "unknown",
-      "objects": [
-        "person",
-        "table"
-      ],
+      "caption": "A group of college friends celebrating a birthday at a lively pub in Koregaon Park.",
+      "scene": "indoor; pub; dimly lit",
+      "activity": "birthday celebration; pub night out",
+      "objects": "cake; drinks; glasses; party hats",
       "clothing_colours": [
         "casual"
       ],
       "text_in_image": "birthday college friends",
       "mood": "neutral",
       "label_source": "offline",
-      "type": "photo"
+      "type": "photo",
+      "description": "A group of college friends celebrating a birthday at a lively pub in Koregaon Park."
     },
     "2019-02-14_Pune-FC-Road/IMG_20190214_001.jpg": {
       "id": "2019-02-14_Pune-FC-Road/IMG_20190214_001.jpg",
@@ -1133,9 +1132,9 @@
         "Meera",
         "Arjun"
       ],
-      "caption": "A view of the scene",
-      "scene": "outdoor",
-      "activity": "unknown",
+      "caption": "Walking down FC Road at night after the party.",
+      "scene": "outdoor; street; night",
+      "activity": "walking",
       "objects": [
         "person",
         "table"
@@ -1146,7 +1145,8 @@
       "text_in_image": "birthday college friends",
       "mood": "neutral",
       "label_source": "offline",
-      "type": "photo"
+      "type": "photo",
+      "description": "Walking down FC Road at night after the party."
     },
     "2019-03-21_Pune/IMG_20190321_001.jpg": {
       "id": "2019-03-21_Pune/IMG_20190321_001.jpg",
@@ -1156,9 +1156,9 @@
       "place": "Pune",
       "city": null,
       "people": [],
-      "caption": "A view of the scene",
-      "scene": "outdoor",
-      "activity": "unknown",
+      "caption": "College friends hanging out at a cafe during the day.",
+      "scene": "indoor; cafe",
+      "activity": "hanging out",
       "objects": [
         "person",
         "table"
@@ -1169,7 +1169,8 @@
       "text_in_image": "",
       "mood": "neutral",
       "label_source": "offline",
-      "type": "photo"
+      "type": "photo",
+      "description": "College friends hanging out at a cafe during the day."
     },
     "2019-09-28_Pune/IMG_20190928_005.jpg": {
       "id": "2019-09-28_Pune/IMG_20190928_005.jpg",
@@ -1271,9 +1272,9 @@
       "place": "Pune",
       "city": null,
       "people": [],
-      "caption": "A view of the scene",
-      "scene": "outdoor",
-      "activity": "unknown",
+      "caption": "Celebrating a different birthday with family on a rooftop.",
+      "scene": "outdoor; rooftop",
+      "activity": "birthday celebration; rooftop",
       "objects": [
         "person",
         "table"
@@ -1284,7 +1285,8 @@
       "text_in_image": "",
       "mood": "neutral",
       "label_source": "offline",
-      "type": "photo"
+      "type": "photo",
+      "description": "Celebrating a different birthday with family on a rooftop."
     },
     "2019-09-28_Pune/IMG_20190928_004.jpg": {
       "id": "2019-09-28_Pune/IMG_20190928_004.jpg",
@@ -1294,20 +1296,18 @@
       "place": "Pune",
       "city": null,
       "people": [],
-      "caption": "A view of the scene",
-      "scene": "outdoor",
-      "activity": "unknown",
-      "objects": [
-        "person",
-        "table"
-      ],
+      "caption": "Cutting the birthday cake on the rooftop terrace.",
+      "scene": "outdoor; terrace",
+      "activity": "cutting cake",
+      "objects": "cake; candles",
       "clothing_colours": [
         "casual"
       ],
       "text_in_image": "",
       "mood": "neutral",
       "label_source": "offline",
-      "type": "photo"
+      "type": "photo",
+      "description": "Cutting the birthday cake on the rooftop terrace."
     },
     "2019-12-28_Goa-Panjim/IMG_20191228_002.jpg": {
       "id": "2019-12-28_Goa-Panjim/IMG_20191228_002.jpg",
@@ -1390,20 +1390,19 @@
       "place": "Goa Panjim",
       "city": null,
       "people": [],
-      "caption": "A view of the scene",
-      "scene": "outdoor",
+      "caption": "Standing in front of a yellow Portuguese house in Panjim.",
+      "scene": "outdoor; historic house",
       "activity": "unknown",
       "objects": [
         "person",
         "table"
       ],
-      "clothing_colours": [
-        "casual"
-      ],
+      "clothing_colours": "white",
       "text_in_image": "",
       "mood": "neutral",
       "label_source": "offline",
-      "type": "photo"
+      "type": "photo",
+      "description": "Standing in front of a yellow Portuguese house in Panjim."
     },
     "2019-12-28_Goa-Panjim/IMG_20191228_006.jpg": {
       "id": "2019-12-28_Goa-Panjim/IMG_20191228_006.jpg",
@@ -1413,9 +1412,9 @@
       "place": "Goa Panjim",
       "city": null,
       "people": [],
-      "caption": "A view of the scene",
-      "scene": "outdoor",
-      "activity": "unknown",
+      "caption": "Walking through the historic streets of Fontainhas in Panjim.",
+      "scene": "outdoor; street; historic",
+      "activity": "sightseeing",
       "objects": [
         "person",
         "table"
@@ -1426,7 +1425,8 @@
       "text_in_image": "",
       "mood": "neutral",
       "label_source": "offline",
-      "type": "photo"
+      "type": "photo",
+      "description": "Walking through the historic streets of Fontainhas in Panjim."
     },
     "2019-12-28_Goa-Panjim/IMG_20191228_004.jpg": {
       "id": "2019-12-28_Goa-Panjim/IMG_20191228_004.jpg",
@@ -1462,9 +1462,9 @@
         "Riya",
         "Meera"
       ],
-      "caption": "A view of the scene",
-      "scene": "outdoor",
-      "activity": "unknown",
+      "caption": "Having dinner at a restaurant in Koregaon Park.",
+      "scene": "indoor; restaurant",
+      "activity": "dining",
       "objects": [
         "person",
         "table"
@@ -1475,7 +1475,8 @@
       "text_in_image": "",
       "mood": "neutral",
       "label_source": "offline",
-      "type": "photo"
+      "type": "photo",
+      "description": "Having dinner at a restaurant in Koregaon Park."
     },
     "2021-12-18_Pune/IMG_20211218_001.jpg": {
       "id": "2021-12-18_Pune/IMG_20211218_001.jpg",
@@ -2079,20 +2080,18 @@
       "place": "Goa Anjuna",
       "city": null,
       "people": [],
-      "caption": "A view of the scene",
-      "scene": "outdoor",
-      "activity": "unknown",
-      "objects": [
-        "person",
-        "table"
-      ],
+      "caption": "A close-up of the delicious breakfast spread at the colourful Anjuna cafe.",
+      "scene": "outdoor; colourful cafe",
+      "activity": "eating breakfast",
+      "objects": "food; plates; coffee",
       "clothing_colours": [
         "casual"
       ],
       "text_in_image": "colourful cafe",
       "mood": "neutral",
       "label_source": "offline",
-      "type": "photo"
+      "type": "photo",
+      "description": "A close-up of the delicious breakfast spread at the colourful Anjuna cafe."
     },
     "2022-12-30_Goa-Anjuna/IMG_20221230_005.jpg": {
       "id": "2022-12-30_Goa-Anjuna/IMG_20221230_005.jpg",
@@ -2102,20 +2101,18 @@
       "place": "Goa Anjuna",
       "city": null,
       "people": [],
-      "caption": "Colourful cafe on a Goa trip",
-      "scene": "outdoor",
-      "activity": "unknown",
-      "objects": [
-        "person",
-        "table"
-      ],
+      "caption": "Sitting at a colourful caf\u00e9 in Anjuna, Goa, with bright murals on the walls.",
+      "scene": "outdoor; colourful cafe",
+      "activity": "relaxing at a cafe",
+      "objects": "painted chairs; table; mural; iced coffee",
       "clothing_colours": [
         "casual"
       ],
       "text_in_image": "colourful cafe",
       "mood": "neutral",
       "label_source": "offline",
-      "type": "photo"
+      "type": "photo",
+      "description": "Sitting at a colourful caf\u00e9 in Anjuna, Goa, with bright murals on the walls."
     },
     "2022-12-30_Goa-Anjuna/IMG_20221230_001.jpg": {
       "id": "2022-12-30_Goa-Anjuna/IMG_20221230_001.jpg",
@@ -2128,9 +2125,9 @@
         "Riya",
         "Arjun"
       ],
-      "caption": "A view of the scene",
-      "scene": "outdoor",
-      "activity": "unknown",
+      "caption": "A view of the Anjuna beach from a beach shack.",
+      "scene": "outdoor; beach",
+      "activity": "relaxing",
       "objects": [
         "person",
         "table"
@@ -2141,7 +2138,8 @@
       "text_in_image": "",
       "mood": "neutral",
       "label_source": "offline",
-      "type": "photo"
+      "type": "photo",
+      "description": "A view of the Anjuna beach from a beach shack."
     },
     "2022-12-30_Goa-Anjuna/IMG_20221230_003.jpg": {
       "id": "2022-12-30_Goa-Anjuna/IMG_20221230_003.jpg",
@@ -2689,20 +2687,19 @@
       "people": [
         "Ananya"
       ],
-      "caption": "A view of the scene",
+      "caption": "A quick selfie in the mirror wearing a scarf.",
       "scene": "outdoor",
-      "activity": "unknown",
+      "activity": "getting ready",
       "objects": [
         "person",
         "table"
       ],
-      "clothing_colours": [
-        "casual"
-      ],
+      "clothing_colours": "red scarf",
       "text_in_image": "",
       "mood": "neutral",
       "label_source": "offline",
-      "type": "photo"
+      "type": "photo",
+      "description": "A quick selfie in the mirror wearing a scarf."
     },
     "2023-11-20_Edinburgh/IMG_20231120_003.jpg": {
       "id": "2023-11-20_Edinburgh/IMG_20231120_003.jpg",
@@ -2714,9 +2711,9 @@
       "people": [
         "Ananya"
       ],
-      "caption": "A view of the scene",
-      "scene": "outdoor",
-      "activity": "unknown",
+      "caption": "View out the window of a rainy Scottish street.",
+      "scene": "outdoor; street",
+      "activity": "looking outside",
       "objects": [
         "person",
         "table"
@@ -2727,7 +2724,8 @@
       "text_in_image": "",
       "mood": "neutral",
       "label_source": "offline",
-      "type": "photo"
+      "type": "photo",
+      "description": "View out the window of a rainy Scottish street."
     },
     "2023-11-20_Edinburgh/IMG_20231120_005.jpg": {
       "id": "2023-11-20_Edinburgh/IMG_20231120_005.jpg",
@@ -2789,9 +2787,9 @@
       "people": [
         "Ananya"
       ],
-      "caption": "A view of the scene",
-      "scene": "outdoor",
-      "activity": "unknown",
+      "caption": "Working at a desk with a laptop and a mug.",
+      "scene": "indoor; study",
+      "activity": "working",
       "objects": [
         "person",
         "table"
@@ -2802,7 +2800,8 @@
       "text_in_image": "",
       "mood": "neutral",
       "label_source": "offline",
-      "type": "photo"
+      "type": "photo",
+      "description": "Working at a desk with a laptop and a mug."
     },
     "2023-11-20_Edinburgh/IMG_20231120_004.jpg": {
       "id": "2023-11-20_Edinburgh/IMG_20231120_004.jpg",
@@ -2814,20 +2813,18 @@
       "people": [
         "Ananya"
       ],
-      "caption": "A view of the scene",
+      "caption": "A cup of coffee and a book on a table.",
       "scene": "outdoor",
-      "activity": "unknown",
-      "objects": [
-        "person",
-        "table"
-      ],
+      "activity": "reading",
+      "objects": "coffee; book; table",
       "clothing_colours": [
         "casual"
       ],
       "text_in_image": "",
       "mood": "neutral",
       "label_source": "offline",
-      "type": "photo"
+      "type": "photo",
+      "description": "A cup of coffee and a book on a table."
     },
     "2023-11-20_Edinburgh/IMG_20231120_001.jpg": {
       "id": "2023-11-20_Edinburgh/IMG_20231120_001.jpg",
@@ -2864,20 +2861,16 @@
       "people": [
         "Ananya"
       ],
-      "caption": "Crouched on the floor wearing a face mask",
-      "scene": "outdoor",
-      "activity": "unknown",
-      "objects": [
-        "person",
-        "table"
-      ],
-      "clothing_colours": [
-        "casual"
-      ],
+      "caption": "Crouched on the floor at home wearing a blue face mask.",
+      "scene": "indoor; bedroom",
+      "activity": "resting at home; self isolation",
+      "objects": "face mask; floor; rug",
+      "clothing_colours": "black",
       "text_in_image": "crouched on floor wearing face mask",
       "mood": "neutral",
       "label_source": "offline",
-      "type": "photo"
+      "type": "photo",
+      "description": "Crouched on the floor at home wearing a blue face mask."
     },
     "2024-01-08_Edinburgh/IMG_20240108_004.jpg": {
       "id": "2024-01-08_Edinburgh/IMG_20240108_004.jpg",
@@ -2964,20 +2957,19 @@
       "people": [
         "Ananya"
       ],
-      "caption": "A view of the scene",
-      "scene": "outdoor",
+      "caption": "Bundled up walking down a snowy street in Edinburgh.",
+      "scene": "outdoor; snow",
       "activity": "unknown",
       "objects": [
         "person",
         "table"
       ],
-      "clothing_colours": [
-        "casual"
-      ],
+      "clothing_colours": "black jacket",
       "text_in_image": "",
       "mood": "neutral",
       "label_source": "offline",
-      "type": "photo"
+      "type": "photo",
+      "description": "Bundled up walking down a snowy street in Edinburgh."
     },
     "2024-03-16_Edinburgh-Portobello/IMG_20240316_001.jpg": {
       "id": "2024-03-16_Edinburgh-Portobello/IMG_20240316_001.jpg",
@@ -3290,9 +3282,9 @@
       "place": "Dublin Temple Bar",
       "city": null,
       "people": [],
-      "caption": "A view of the scene",
-      "scene": "outdoor",
-      "activity": "unknown",
+      "caption": "A vibrant red pub in Temple Bar, Dublin.",
+      "scene": "outdoor; street; pub",
+      "activity": "sightseeing",
       "objects": [
         "person",
         "table"
@@ -3303,7 +3295,8 @@
       "text_in_image": "",
       "mood": "neutral",
       "label_source": "offline",
-      "type": "photo"
+      "type": "photo",
+      "description": "A vibrant red pub in Temple Bar, Dublin."
     },
     "2025-03-22_Dublin-Temple-Bar/IMG_20250322_002.jpg": {
       "id": "2025-03-22_Dublin-Temple-Bar/IMG_20250322_002.jpg",
@@ -3954,8 +3947,8 @@
         "Riya",
         "Arjun"
       ],
-      "event_label": "Event at 2019-02-14_Pune-Viman-Nagar",
-      "event_type": "family_home",
+      "event_label": "Late-night street food",
+      "event_type": "eating_out",
       "type": "photo",
       "label_source": "offline"
     },
@@ -3968,8 +3961,8 @@
       ],
       "place": "Pune",
       "people": [],
-      "event_label": "Event at 2019-03-21_Pune",
-      "event_type": "family_home",
+      "event_label": "College Cafe Hangout",
+      "event_type": "hangout",
       "type": "photo",
       "label_source": "offline"
     },
@@ -3987,8 +3980,8 @@
       ],
       "place": "Pune",
       "people": [],
-      "event_label": "Event at 2019-09-28_Pune",
-      "event_type": "family_home",
+      "event_label": "Family Rooftop Birthday",
+      "event_type": "birthday_party",
       "type": "photo",
       "label_source": "offline"
     },
@@ -4010,8 +4003,8 @@
         "Riya",
         "Arjun"
       ],
-      "event_label": "Event at 2019-12-28_Goa-Panjim",
-      "event_type": "trip_sightseeing",
+      "event_label": "Exploring Fontainhas",
+      "event_type": "sightseeing",
       "type": "photo",
       "label_source": "offline"
     },
@@ -4027,8 +4020,8 @@
         "Riya",
         "Meera"
       ],
-      "event_label": "Event at 2020-02-15_Pune-Koregaon-Park",
-      "event_type": "family_home",
+      "event_label": "Dinner in Koregaon Park",
+      "event_type": "dinner",
       "type": "photo",
       "label_source": "offline"
     },
@@ -4169,8 +4162,8 @@
         "Riya",
         "Arjun"
       ],
-      "event_label": "Event at 2022-12-30_Goa-Anjuna",
-      "event_type": "trip_sightseeing",
+      "event_label": "Colourful Cafe & Beach in Anjuna",
+      "event_type": "cafe_visit",
       "type": "photo",
       "label_source": "offline"
     },
@@ -4315,8 +4308,8 @@
       "people": [
         "Ananya"
       ],
-      "event_label": "Event at 2023-11-20_Edinburgh",
-      "event_type": "college_campus",
+      "event_label": "Sick Day in Edinburgh",
+      "event_type": "sick_day",
       "type": "photo",
       "label_source": "offline"
     },
@@ -4331,8 +4324,8 @@
       "people": [
         "Ananya"
       ],
-      "event_label": "Event at 2024-01-08_Edinburgh",
-      "event_type": "college_campus",
+      "event_label": "Snowy Walk",
+      "event_type": "walk",
       "type": "photo",
       "label_source": "offline"
     },
@@ -4349,8 +4342,8 @@
       "people": [
         "Ananya"
       ],
-      "event_label": "Event at 2024-01-08_Edinburgh",
-      "event_type": "college_campus",
+      "event_label": "Snowy Walk",
+      "event_type": "walk",
       "type": "photo",
       "label_source": "offline"
     },
@@ -4433,8 +4426,8 @@
       ],
       "place": "Dublin Temple Bar",
       "people": [],
-      "event_label": "Event at 2025-03-22_Dublin-Temple-Bar",
-      "event_type": "office_work",
+      "event_label": "Temple Bar Visit",
+      "event_type": "pub_visit",
       "type": "photo",
       "label_source": "offline"
     },

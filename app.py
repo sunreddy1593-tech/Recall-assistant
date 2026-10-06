@@ -30,6 +30,8 @@ if 'help_step' not in st.session_state:
     st.session_state['help_step'] = 1
 if 'step_history' not in st.session_state:
     st.session_state['step_history'] = []
+if 'rejected_photos' not in st.session_state:
+    st.session_state['rejected_photos'] = set()
 
 # Sidebar: Test Session
 with st.sidebar:
@@ -43,7 +45,13 @@ with st.sidebar:
             </div>
     """, unsafe_allow_html=True)
     
-    participant = st.selectbox("Participant code", ["P-Ananya · Study A", "P1", "P2", "P3", "P4", "P5", "P6", "P7", "P8", "P9", "Guest"], key="sb_participant")
+    participants = ["P-Ananya · Study A", "P1", "P2", "P3", "P4", "P5", "P6", "P7", "P8", "P9", "Guest"]
+    default_p = 0
+    if 'saved_participant' in st.session_state and st.session_state['saved_participant'] in participants:
+        default_p = participants.index(st.session_state['saved_participant'])
+        
+    participant = st.selectbox("Participant code", participants, index=default_p, key="sb_participant")
+    
     task_map = {
         "Task 1": "S1",
         "Task 2": "S2",
@@ -53,11 +61,18 @@ with st.sidebar:
         "Task 6": "S6",
         "Free search": "FREE"
     }
-    task = st.selectbox("Task", list(task_map.keys()), key="sb_task")
+    task_keys = list(task_map.keys())
+    default_t = 0
+    if 'saved_task' in st.session_state and st.session_state['saved_task'] in task_keys:
+        default_t = task_keys.index(st.session_state['saved_task'])
+        
+    task = st.selectbox("Task", task_keys, index=default_t, key="sb_task")
     
     col_st1, col_st2 = st.columns([1.5, 1])
     with col_st1:
         if st.button("▶ Start task", type="primary", use_container_width=True):
+            st.session_state['saved_participant'] = participant
+            st.session_state['saved_task'] = task
             p_code = participant.split(" · ")[0]
             start_task(p_code, task_map[task])
             st.session_state['filters'] = {}
@@ -65,6 +80,7 @@ with st.sidebar:
             st.session_state['selected_photo_pid'] = None
             st.session_state['photo_found_confirmed'] = None
             st.session_state['step_history'] = []
+            st.session_state['rejected_photos'] = set()
             st.session_state['app_mode'] = 'search'
             st.session_state['help_step'] = 1
             st.success("Task started!")
@@ -127,7 +143,7 @@ if st.session_state['viewing_event']:
         st.markdown(f"""
             <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
                 <span class="memory-stream-pill" style="background:#89F5E7; color:#00201D; font-size:13px;">✓ Memory Identified</span>
-                <span style="font-size: 13px; color: #515F74; font-weight: 500;">✨ Verified memory match</span>
+                <span style="font-size: 13px; color: #515F74; font-weight: 500;">✨ You selected this photo.</span>
             </div>
         """, unsafe_allow_html=True)
         
@@ -156,36 +172,67 @@ if st.session_state['viewing_event']:
                 <div class="metric-highlight-box">
                     <div>
                         <div style="font-size: 24px; font-weight: 700; color: #00685F;">{elapsed}</div>
-                        <div style="font-size: 12px; color: #00201D;">surfaced in {step_count} cues</div>
+                        <div style="font-size: 12px; color: #00201D;">{step_count} logged interactions</div>
                     </div>
                 </div>
             """, unsafe_allow_html=True)
             
             # Retrieval Path
-            st.markdown(f"""
+            retrieval_html = f"""
                 <div class="callout-card" style="margin-top: 14px;">
                     <div class="callout-header">
                         <span>🌳</span>
-                        <span>Retrieval Path</span>
+                        <span>Applied cues</span>
                     </div>
+            """
+            
+            filters = st.session_state.get('filters', {})
+            step_idx = 1
+            if filters.get('chapters'):
+                retrieval_html += f"""
                     <div class="retrieval-step-row">
-                        <span><b>1. When:</b> {st.session_state['filters'].get('chapters', ['Life chapter'])[0] if st.session_state['filters'].get('chapters') else 'Selected timeframe'}</span>
-                        <span style="font-size:12px; color:#515F74;">Narrowed</span>
-                    </div>
+                        <span><b>{step_idx}. When:</b> {filters['chapters'][0]}</span>
+                    </div>"""
+                step_idx += 1
+            if filters.get('who'):
+                retrieval_html += f"""
                     <div class="retrieval-step-row">
-                        <span><b>2. Who:</b> {', '.join(st.session_state['filters'].get('who', ['Companion'])) if st.session_state['filters'].get('who') else 'Companions'}</span>
-                        <span style="font-size:12px; color:#515F74;">Filtered</span>
-                    </div>
+                        <span><b>{step_idx}. Who:</b> {', '.join(filters['who'])}</span>
+                    </div>"""
+                step_idx += 1
+            if filters.get('where'):
+                retrieval_html += f"""
                     <div class="retrieval-step-row">
-                        <span><b>3. Where:</b> {st.session_state['filters'].get('where', ['Place'])[0] if st.session_state['filters'].get('where') else 'Location'}</span>
-                        <span style="font-size:12px; color:#515F74;">Isolated</span>
-                    </div>
+                        <span><b>{step_idx}. Where:</b> {filters['where'][0]}</span>
+                    </div>"""
+                step_idx += 1
+            if filters.get('what'):
+                retrieval_html += f"""
+                    <div class="retrieval-step-row">
+                        <span><b>{step_idx}. Activity:</b> {filters['what'][0]}</span>
+                    </div>"""
+                step_idx += 1
+            if filters.get('type'):
+                retrieval_html += f"""
+                    <div class="retrieval-step-row">
+                        <span><b>{step_idx}. Type:</b> {filters['type'][0]}</span>
+                    </div>"""
+                step_idx += 1
+            if filters.get('anything_else'):
+                retrieval_html += f"""
+                    <div class="retrieval-step-row">
+                        <span><b>{step_idx}. Detail:</b> {filters['anything_else']}</span>
+                    </div>"""
+                step_idx += 1
+                
+            retrieval_html += f"""
                     <div class="retrieval-step-row" style="background-color: #BDECE2; border-color: #00685F;">
                         <span><b>✓ Target Confirmed:</b> {confirmed_pid}</span>
                         <span style="font-weight: 600; color: #00685F;">{elapsed}</span>
                     </div>
                 </div>
-            """, unsafe_allow_html=True)
+            """
+            st.markdown(retrieval_html, unsafe_allow_html=True)
             
             if st.button("Try another recall task →", type="primary", use_container_width=True):
                 st.session_state['filters'] = {}
@@ -200,6 +247,23 @@ if st.session_state['viewing_event']:
     # Screen 09: Moment View
     render_brand_header(show_stream_pill=False)
     
+    # Filter out rejected photos
+    eligible_pids = [pid for pid in event['photo_ids'] if pid not in st.session_state.get('rejected_photos', set())]
+    
+    if not eligible_pids:
+        st.warning("All photos in this candidate moment have been rejected.")
+        col_r1, col_r2 = st.columns(2)
+        with col_r1:
+            if st.button("Restore rejected photos", use_container_width=True):
+                st.session_state['rejected_photos'] = set()
+                st.rerun()
+        with col_r2:
+            if st.button("← Back to candidates", use_container_width=True):
+                st.session_state['viewing_event'] = None
+                st.session_state['selected_photo_pid'] = None
+                st.rerun()
+        st.stop()
+
     col_back, col_title = st.columns([1, 6])
     with col_back:
         if st.button("← Back", key="btn_back_to_results"):
@@ -210,7 +274,7 @@ if st.session_state['viewing_event']:
     with col_title:
         st.markdown(f"""
             <div style="display: flex; align-items: center; justify-content: space-between;">
-                <span class="memory-stream-pill" style="background:#EAEDFF; color:#515F74;">Candidate moment · {len(event['photo_ids'])} photos</span>
+                <span class="memory-stream-pill" style="background:#EAEDFF; color:#515F74;">Candidate moment · {len(eligible_pids)} photos</span>
             </div>
         """, unsafe_allow_html=True)
 
@@ -224,8 +288,8 @@ if st.session_state['viewing_event']:
     """, unsafe_allow_html=True)
 
     # In-focus main photo
-    if not st.session_state.get('selected_photo_pid') or st.session_state['selected_photo_pid'] not in event['photo_ids']:
-        st.session_state['selected_photo_pid'] = event['photo_ids'][0]
+    if not st.session_state.get('selected_photo_pid') or st.session_state['selected_photo_pid'] not in eligible_pids:
+        st.session_state['selected_photo_pid'] = eligible_pids[0]
         
     focus_pid = st.session_state['selected_photo_pid']
     focus_photo = index['photos'].get(focus_pid, {})
@@ -251,7 +315,7 @@ if st.session_state['viewing_event']:
                     <span>In focus · {focus_pid}</span>
                 </div>
                 <p style="font-size: 13px; color: #515F74; margin-bottom: 14px;">
-                    {focus_photo.get('description', 'High visual match for candidate cues')}
+                    {focus_photo.get('description', 'Candidate photo—inspect it to decide.')}
                 </p>
             </div>
         """, unsafe_allow_html=True)
@@ -268,15 +332,19 @@ if st.session_state['viewing_event']:
                 
         with col_c2:
             if st.button("Not it", key=f"reject_focus_{focus_pid}", use_container_width=True):
-                st.session_state['viewing_event'] = None
+                st.session_state['rejected_photos'].add(focus_pid)
+                # Auto-return to candidate list if we just rejected the last one
+                if len(eligible_pids) <= 1:
+                    st.session_state['viewing_event'] = None
+                st.session_state['selected_photo_pid'] = None
                 st.rerun()
                 
         st.markdown("<p style='font-size: 12px; color: #515F74; text-align: center; margin-top: 6px;'>Selecting locks this photograph as the verified memory cue</p>", unsafe_allow_html=True)
 
     # Photos in this moment grid
     st.markdown("### Photos in this moment")
-    cols_photos = st.columns(min(len(event['photo_ids']), 6))
-    for i, pid in enumerate(event['photo_ids']):
+    cols_photos = st.columns(min(len(eligible_pids), 6))
+    for i, pid in enumerate(eligible_pids):
         with cols_photos[i % len(cols_photos)]:
             path = f"library/photos/{pid}"
             if os.path.exists(path):
@@ -777,6 +845,19 @@ elif st.session_state['app_mode'] == 'help':
     else:
         # Rank moments
         ranked_events = rank_moments(matched_events, max_results=None)
+        
+        # Filter out rejected photos
+        filtered_ranked_events = []
+        for ev in ranked_events:
+            ev_copy = ev.copy()
+            eligible = [pid for pid in ev['photo_ids'] if pid not in st.session_state.get('rejected_photos', set())]
+            if eligible:
+                ev_copy['photo_ids'] = eligible
+                # Also filter matched_photo_ids if present
+                if 'matched_photo_ids' in ev_copy:
+                    ev_copy['matched_photo_ids'] = [pid for pid in ev_copy['matched_photo_ids'] if pid in eligible]
+                filtered_ranked_events.append(ev_copy)
+        ranked_events = filtered_ranked_events
         
         # Detail re-rank if "anything else" is supplied
         detail = st.session_state['filters'].get('anything_else')
