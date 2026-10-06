@@ -532,24 +532,30 @@ def render_moment_card(event, index):
             avatars_html += f'<div class="avatar-circle {c}" title="{person}">{initial}</div>'
         avatars_html += '</div>'
     
-    with st.container():
-        st.markdown(f"""
-            <div class="moment-card-box">
-                <div class="moment-header-row">
-                    <div>
-                        <div class="moment-card-title">{event_label}</div>
-                        <div class="moment-meta-line">
-                            {date_str} &middot; <b>{place}</b>
-                        </div>
-                    </div>
-                    <span style="color:#515F74; font-size:18px;">🔖</span>
-                </div>
-                <div class="moment-meta-line" style="margin-bottom: 12px;">
-                    {avatars_html}
-                    <span>{people_str}</span>
-                </div>
+    import html
+    event_label_safe = html.escape(event_label)
+    place_safe = html.escape(place)
+    people_str_safe = html.escape(people_str)
+    
+    html_content = f'''
+<div class="moment-card-box">
+    <div class="moment-header-row">
+        <div>
+            <div class="moment-card-title">{event_label_safe}</div>
+            <div class="moment-meta-line">
+                {date_str} &middot; <b>{place_safe}</b>
             </div>
-        """, unsafe_allow_html=True)
+        </div>
+        <span style="color:#515F74; font-size:18px;">🔖</span>
+    </div>
+    <div class="moment-meta-line" style="margin-bottom: 12px;">
+        {avatars_html}
+        <span>{people_str_safe}</span>
+    </div>
+</div>
+'''
+    with st.container():
+        st.markdown(html_content, unsafe_allow_html=True)
         
         # 4 thumbnails in 4 columns
         cols = st.columns(4)

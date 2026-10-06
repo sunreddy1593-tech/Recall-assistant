@@ -34,9 +34,6 @@ if 'rejected_photos' not in st.session_state:
     st.session_state['rejected_photos'] = set()
 
 WIDGET_KEYS = ['photoSearchInput', 'desc_input_box', 'era_box', 'pills_q1_chaps', 'pills_q1_years', 'seg_group_dynamic', 'pills_q2_who', 'unnamed_person_box', 'pills_vibe', 'pills_q3_where', 'pills_q4_type', 'pills_q4_what', 'q4_detail_box', 'rerank_detail_box', 'show_describe_box', 'last_query']
-if st.session_state.pop('pending_reset', False):
-    for k in WIDGET_KEYS:
-        st.session_state.pop(k, None)
 
 
 # Sidebar: Test Session
@@ -91,6 +88,10 @@ with st.sidebar:
             st.session_state['rejected_photos'] = set()
             st.session_state['app_mode'] = 'search'
             st.session_state['help_step'] = 1
+            st.session_state['search_retries'] = 0
+            st.session_state['last_query'] = ''
+            for k in WIDGET_KEYS:
+                st.session_state.pop(k, None)
             st.success("Task started!")
             st.rerun()
 
@@ -151,7 +152,7 @@ st.markdown(f"""
             <div style="font-size: 12px; color: #64748B; font-weight: 500;">{status_text}</div>
         </div>
         <div style="font-size: 14px; color: #334155; margin-bottom: 12px;">{prompt_text}</div>
-        <div style="font-size: 12px; color: #64748B; font-style: italic;">Imagine this demo library represents your photos. Find the photo described below.</div>
+        <div style="font-size: 12px; color: #64748B; font-style: italic;">Find the photo described above in the demo library.</div>
     </div>
 """, unsafe_allow_html=True)
 
@@ -261,6 +262,10 @@ if st.session_state['viewing_event']:
                 st.session_state['pending_reset'] = True
                 st.session_state['app_mode'] = 'search'
                 st.session_state['help_step'] = 1
+                st.session_state['search_retries'] = 0
+                st.session_state['last_query'] = ''
+                for k in WIDGET_KEYS:
+                    st.session_state.pop(k, None)
                 st.rerun()
         st.stop()
 
@@ -511,13 +516,15 @@ if st.session_state['app_mode'] == 'search':
         n = len(matched)
 
         # SCREEN 02: SEARCH FLOODED
-        if n == 0 or n > 40 or st.session_state['search_retries'] >= 2:
+        is_broad = n > 40 or (n > 1 and st.session_state.get('search_retries', 0) >= 2)
+        if n == 0 or is_broad:
+            broad_pill = '<span class="memory-stream-pill" style="background:#FFDAD6; color:#BA1A1A; font-size:11px; margin-left: 8px;">BROAD SEARCH</span>' if is_broad else ''
+            header_text = f"{n} photos found" if is_broad else "0 photos found"
             st.markdown(f"""
                 <div style="margin-top: 12px; margin-bottom: 8px; display: flex; align-items: center; justify-content: space-between;">
                     <div>
-                        <h2 style="margin: 0; display: inline;">{n} photos found</h2>
-                        <span class="memory-stream-pill" style="background:#FFDAD6; color:#BA1A1A; font-size:11px; margin-left: 8px;">BROAD SEARCH</span>
-                        <div style="font-size: 13px; color: #515F74; margin-top: 2px;">Across multiple years · Pune, Edinburgh, Dublin, Bengaluru</div>
+                        <h2 style="margin: 0; display: inline;">{header_text}</h2>
+                        {broad_pill}
                     </div>
                 </div>
             """, unsafe_allow_html=True)
@@ -557,7 +564,15 @@ if st.session_state['app_mode'] == 'search':
                 st.markdown("#### Photo search results:")
                 cols = st.columns(min(n, 6))
                 for i, pid in enumerate(matched[:6]):
-                    cols[i].image(f"library/photos/{pid}", use_container_width=True)
+                    with cols[i]:
+                        st.image(f"library/photos/{pid}", use_container_width=True)
+                        if st.button("View photo", key=f"srch_view_broad_{pid}", use_container_width=True):
+                            ev = next((e for e in index['events'] if pid in e['photo_ids']), None)
+                            if ev:
+                                log_event(st.session_state.get('session_id'), st.session_state.get('participant'), st.session_state.get('task'), "moment_open", detail=ev['id'], step=get_step())
+                                st.session_state['viewing_event'] = ev['id']
+                                st.session_state['selected_photo_pid'] = pid
+                                st.rerun()
         else:
             st.markdown(f"<h3>Found {n} photos</h3>", unsafe_allow_html=True)
             cols = st.columns(min(n, 4))
@@ -659,7 +674,7 @@ elif st.session_state['app_mode'] == 'help':
             <div style="background-color: #F2F3FF; border-radius: 12px; padding: 10px 14px; margin-bottom: 12px;">
                 <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px;">
                     <span style="font-size: 11px; font-weight: 700; color: #515F74; text-transform: uppercase;">Your memory so far</span>
-                    <span style="font-size: 11px; color: #00685F;">Tap chip to edit</span>
+                    <span style="font-size: 11px; color: #00685F;">Use Back or Edit answers to change your clues.</span>
                 </div>
         """, unsafe_allow_html=True)
 
@@ -679,7 +694,8 @@ elif st.session_state['app_mode'] == 'help':
 
         if st.button("Clear all filters", key="btn_clear_all_filters"):
             st.session_state['filters'] = {}
-            st.session_state['pending_reset'] = True
+            for k in WIDGET_KEYS:
+                st.session_state.pop(k, None)
             st.session_state['help_step'] = 1
             log_event(st.session_state.get('session_id'), st.session_state.get('participant'), st.session_state.get('task'), "filter_change", detail="Clear all", step=get_step())
             st.rerun()
@@ -706,21 +722,6 @@ elif st.session_state['app_mode'] == 'help':
 
         st.session_state['help_step'] += 1
         st.rerun()
-
-    # Early Narrowing Alert
-    if n_moments <= 5 and n_moments > 0 and step > 1 and step < 5:
-        st.markdown(f"""
-            <div style="background-color: #BDECE2; border: 1px solid #00685F; border-radius: 12px; padding: 12px 16px; margin-bottom: 14px; display: flex; align-items: center; justify-content: space-between;">
-                <div>
-                    <span style="font-weight: 700; color: #00201D;">🎯 We've narrowed it down to {n_moments} moments!</span>
-                    <div style="font-size: 13px; color: #00201D;">Ready to see the candidate moments?</div>
-                </div>
-            </div>
-        """, unsafe_allow_html=True)
-        if st.button("Show matching moments now →", type="primary", key="btn_early_results"):
-            st.session_state['help_step'] = 5
-            st.rerun()
-
     # ==========================================
     # STEP 1: WHEN (Screen 04)
     # ==========================================
@@ -733,18 +734,30 @@ elif st.session_state['app_mode'] == 'help':
         # Section 1: Life chapters
         st.markdown("#### A phase of your life")
         chap_opts = [f"{k} ({v})" for k, v in facets['chapters'].items() if v > 0]
-        sel_chaps = st.pills("Select life chapters", chap_opts, selection_mode="multi", key="pills_q1_chaps", label_visibility="collapsed")
+        active_chaps = st.session_state.get('filters', {}).get('chapters', [])
+        default_chaps = [opt for opt in chap_opts if any(opt.startswith(ac + " (") for ac in active_chaps)]
+        sel_chaps = st.pills("Select life chapters", chap_opts, selection_mode="multi", key="pills_q1_chaps", default=default_chaps, label_visibility="collapsed")
 
         # Section 2: Specific Years
-        st.markdown("#### Or specific years")
+        temp_filters = {k: v for k, v in active_filters.items() if k != 'years'}
+        _, matched_photos_no_years = apply_filters(index, temp_filters)
         year_counts = {}
-        for p in matched_photos:
+        for p in matched_photos_no_years:
             photo_obj = index['photos'].get(p, {}) if isinstance(p, str) else p
-            y = photo_obj.get('year') if isinstance(photo_obj, dict) else None
-            if y:
-                year_counts[str(y)] = year_counts.get(str(y), 0) + 1
-        year_opts = [f"{y} ({c})" for y, c in sorted(year_counts.items())]
-        sel_years = st.pills("Select years", year_opts, selection_mode="multi", key="pills_q1_years", label_visibility="collapsed")
+            if isinstance(photo_obj, dict) and 'taken_at' in photo_obj:
+                try:
+                    y = datetime.fromisoformat(photo_obj['taken_at'].replace('Z', '+00:00')).year
+                    year_counts[str(y)] = year_counts.get(str(y), 0) + 1
+                except Exception:
+                    pass
+        if year_counts:
+            st.markdown("#### Or specific years")
+            year_opts = [f"{y} ({c})" for y, c in sorted(year_counts.items())]
+            active_years = st.session_state.get('filters', {}).get('years', [])
+            default_years = [opt for opt in year_opts if any(opt.startswith(str(ay) + " (") for ay in active_years)]
+            sel_years = st.pills("Select years", year_opts, selection_mode="multi", key="pills_q1_years", default=default_years, label_visibility="collapsed")
+        else:
+            sel_years = []
 
         # Section 3: Natural language era description
         st.markdown("#### Describe the time in your own words")
@@ -775,15 +788,25 @@ elif st.session_state['app_mode'] == 'help':
             if st.button("Next: Who was there →", type="primary", key="btn_q1_next", use_container_width=True):
                 clean_chaps = [s.rsplit(' (', 1)[0] for s in sel_chaps] if sel_chaps else []
                 clean_years = [s.rsplit(' (', 1)[0] for s in sel_years] if sel_years else []
+                
                 if clean_chaps:
                     st.session_state['filters']['chapters'] = clean_chaps
+                    log_event(st.session_state.get('session_id'), st.session_state.get('participant'), st.session_state.get('task'), "help_q1_answered", detail=f"chapters={clean_chaps}", step=get_step())
                 else:
                     st.session_state['filters'].pop('chapters', None)
+                
                 if clean_years:
                     st.session_state['filters']['years'] = clean_years
+                    if not clean_chaps:
+                        log_event(st.session_state.get('session_id'), st.session_state.get('participant'), st.session_state.get('task'), "help_q1_answered", detail=f"years={clean_years}", step=get_step())
                 else:
                     st.session_state['filters'].pop('years', None)
-                advance_step('chapters', clean_chaps or clean_years or 'Skip', 1)
+                
+                if not clean_chaps and not clean_years:
+                    log_event(st.session_state.get('session_id'), st.session_state.get('participant'), st.session_state.get('task'), "help_q1_skipped", detail="Skip", step=get_step())
+
+                st.session_state['help_step'] += 1
+                st.rerun()
 
     # ==========================================
     # STEP 2: WHO (Screen 05)
@@ -792,19 +815,19 @@ elif st.session_state['app_mode'] == 'help':
         st.markdown("<h2>Who was there?</h2>", unsafe_allow_html=True)
         st.markdown("<p style='font-size: 14px; color: #515F74;'>Pick the people you remember being with, or describe the group dynamic.</p>", unsafe_allow_html=True)
 
-        # Group dynamic
-        st.markdown("#### Group dynamic")
-        dyn_opts = ["Just me", "A group", "Not sure"]
-        sel_dyn = st.segmented_control("Group dynamic", dyn_opts, default="A group", key="seg_group_dynamic", label_visibility="collapsed")
+
 
         # People pills with counts
         st.markdown("#### People")
         people_opts = [f"{k} ({v})" for k, v in facets['who'].items() if v > 0]
-        sel_who = st.pills("Select people", people_opts, selection_mode="multi", key="pills_q2_who", label_visibility="collapsed")
+        active_who = st.session_state.get('filters', {}).get('who', [])
+        default_who = [opt for opt in people_opts if any(opt.startswith(aw + " (") for aw in active_who)]
+        sel_who = st.pills("Select people", people_opts, selection_mode="multi", key="pills_q2_who", default=default_who, label_visibility="collapsed")
 
         # Unnamed person sensory clue
         st.markdown("#### Or describe someone you don't have named")
-        unnamed = st.text_input("Unnamed person / appearance", placeholder="e.g. chai stall uncle, professor with beard, friend with yellow jacket...", key="unnamed_person_box", label_visibility="collapsed")
+        default_anything = st.session_state.get('filters', {}).get('anything_else', '')
+        unnamed = st.text_input("Unnamed person / appearance", value=default_anything, placeholder="e.g. chai stall uncle, professor with beard, friend with yellow jacket...", key="unnamed_person_box", label_visibility="collapsed")
         if unnamed:
             st.session_state['filters']['anything_else'] = unnamed
         else:
@@ -838,15 +861,14 @@ elif st.session_state['app_mode'] == 'help':
         st.markdown("<h2>Where was this?</h2>", unsafe_allow_html=True)
         st.markdown("<p style='font-size: 14px; color: #515F74;'>Pick locations you recall visiting, or search by neighborhood or vibe.</p>", unsafe_allow_html=True)
 
-        # Location vibe chips
-        st.markdown("#### Setting vibe")
-        vibe_opts = ["🏫 On campus", "☕ Café / restaurant", "🚗 Road trip", "🌳 Outdoors", "🏠 Indoors"]
-        st.pills("Setting vibe", vibe_opts, selection_mode="multi", key="pills_vibe", label_visibility="collapsed")
+
 
         # Places with counts
         st.markdown("#### Places & Neighborhoods")
         where_opts = [f"{k} ({v})" for k, v in facets['where'].items() if v > 0]
-        sel_where = st.pills("Select places", where_opts, selection_mode="multi", key="pills_q3_where", label_visibility="collapsed")
+        active_where = st.session_state.get('filters', {}).get('where', [])
+        default_where = [opt for opt in where_opts if any(opt.startswith(aw + " (") for aw in active_where)]
+        sel_where = st.pills("Select places", where_opts, selection_mode="multi", key="pills_q3_where", default=default_where, label_visibility="collapsed")
 
         st.markdown("<div style='margin-top: 20px;'></div>", unsafe_allow_html=True)
         col_b1, col_b2, col_b3, col_b4 = st.columns([1, 1, 1, 2])
@@ -879,16 +901,21 @@ elif st.session_state['app_mode'] == 'help':
         # Content type selector
         st.markdown("#### Content type")
         type_opts = [f"{k} ({v})" for k, v in facets['type'].items() if v > 0]
-        sel_type = st.pills("Content type", type_opts, selection_mode="multi", key="pills_q4_type", label_visibility="collapsed")
+        active_type = st.session_state.get('filters', {}).get('type', [])
+        default_type = [opt for opt in type_opts if any(opt.startswith(at + " (") for at in active_type)]
+        sel_type = st.pills("Content type", type_opts, selection_mode="multi", key="pills_q4_type", default=default_type, label_visibility="collapsed")
 
         # Activity / Event options
         st.markdown("#### Event or activity")
         what_opts = [f"{k} ({v})" for k, v in facets['what'].items() if v > 0]
-        sel_what = st.pills("Event type", what_opts, selection_mode="multi", key="pills_q4_what", label_visibility="collapsed")
+        active_what = st.session_state.get('filters', {}).get('what', [])
+        default_what = [opt for opt in what_opts if any(opt.startswith(aw + " (") for aw in active_what)]
+        sel_what = st.pills("Event type", what_opts, selection_mode="multi", key="pills_q4_what", default=default_what, label_visibility="collapsed")
 
         # Anything else detail input
         st.markdown("#### Anything else you remember?")
-        detail_val = st.text_input("Detail clue", placeholder="e.g. wearing a mask, sparklers, red saree, graduation cap, rainy cobblestones...", key="q4_detail_box", label_visibility="collapsed")
+        default_anything = st.session_state.get('filters', {}).get('anything_else', '')
+        detail_val = st.text_input("Detail clue", value=default_anything, placeholder="e.g. wearing a mask, sparklers, red saree, graduation cap, rainy cobblestones...", key="q4_detail_box", label_visibility="collapsed")
         if detail_val:
             st.session_state['filters']['anything_else'] = detail_val
         else:

@@ -58,7 +58,7 @@ def test_pending_reset_boundaries(mock_post):
     at.sidebar.button[0].click().run()
     
     # Search input should be cleared
-    assert 'photoSearchInput' not in at.session_state
+    assert 'photoSearchInput' not in at.session_state or at.session_state['photoSearchInput'] == ''
 
 @patch('recall.logging_utils.requests.post')
 def test_reject_all_suggestions(mock_post):
