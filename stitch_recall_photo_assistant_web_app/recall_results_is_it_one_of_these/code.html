@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#faf8ff;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "outline-variant": "#bcc9c6", "on-tertiary-fixed": "#00201c", "surface-container": "#eaedff", "secondary-fixed-dim": "#b9c7df", "error-container": "#ffdad6", "on-primary-fixed": "#00201d", "surface-container-low": "#f2f3ff", "tertiary-fixed": "#bdece2", "background": "#faf8ff", "error": "#ba1a1a", "surface-dim": "#d2d9f4", "secondary-container": "#d5e3fc", "on-primary-container": "#f4fffc", "on-tertiary-fixed-variant": "#224e47", "on-secondary": "#ffffff", "surface-variant": "#dae2fd", "on-error": "#ffffff", "primary-fixed-dim": "#6bd8cb", "secondary": "#515f74", "tertiary": "#38645c", "primary": "#00685f", "primary-container": "#008378", "on-tertiary-container": "#f4fffb", "primary-fixed": "#89f5e7", "on-tertiary": "#ffffff", "secondary-fixed": "#d5e3fc", "outline": "#6d7a77", "surface-bright": "#faf8ff", "on-primary-fixed-variant": "#005049", "on-background": "#131b2e", "surface-tint": "#006a61", "inverse-primary": "#6bd8cb", "surface": "#faf8ff", "surface-container-highest": "#dae2fd", "on-error-container": "#93000a", "inverse-on-surface": "#eef0ff", "inverse-surface": "#283044", "on-surface-variant": "#3d4947", "tertiary-container": "#517d75", "tertiary-fixed-dim": "#a2d0c6", "on-primary": "#ffffff", "on-secondary-fixed": "#0d1c2e", "surface-container-high": "#e2e7ff", "on-secondary-fixed-variant": "#3a485b", "on-secondary-container": "#57657a", "on-surface": "#131b2e", "surface-container-lowest": "#ffffff" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter-mobile": "0.75rem", "margin-mobile": "1rem", "gutter": "1.5rem", "space-xl": "2.5rem", "space-xs": "0.375rem", "space-lg": "1.5rem", "space-md": "1rem", "space-sm": "0.5rem", "margin": "2.5rem" }, fontFamily: { "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "label-sm": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "body-md": ["Inter"], "label-md": ["Inter"], "headline-xl": ["Plus Jakarta Sans"], "label-lg": ["Inter"] }, fontSize: { "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg-mobile": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "label-sm": ["14px", { "lineHeight": "18px", "fontWeight": "600" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "label-md": ["14px", { "lineHeight": "20px", "fontWeight": "500" }], "headline-xl": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-lg": ["15px", { "lineHeight": "20px", "fontWeight": "500" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-surface text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="w-full bg-surface-container-low px-margin-mobile py-space-xs flex items-center justify-center gap-1.5"><span class="material-symbols-outlined text-secondary text-[14px]">info</span><span class="font-label-sm text-label-sm text-secondary tracking-tight text-center truncate">Demo library · AI-generated and stock images · not your real photos</span></div><div class="h-16 px-gutter-mobile flex items-center justify-between"><div class="flex items-center gap-space-xs"><button aria-label="Go back" class="min-w-[44px] min-h-[44px] flex items-center justify-center text-on-surface hover:text-primary transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="Recall Brandmark" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V-atcjrU6s2aTvpO-Vmv2iWOOF3HgaV-2ZgLjB08e6oXUBrEf1l-qyXom3GYsW_0ERYqR7-uPyF1uDA0CzjPqM-ny5FhDXy_Bwdd_USREjf3GafqX89QG96DyvPQqgdArmVMVSbXjfnMkq4QSdjnJnxb6fwKtMOuKX7oH_wZV6fW8SzJEH4yg2V8h6sDBndgIObMYqwqOIiCZ45TXq2tvOIIGKOqW6b0cUTqIfnAknHRXCSN2dtCI7FeSE"/><h1 class="font-headline-md text-headline-md tracking-tight text-on-surface truncate">Memory Cue Inspector</h1></div><div class="flex items-center gap-space-xs"><button aria-label="Return to library" class="min-w-[44px] min-h-[44px] flex items-center justify-center text-secondary hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">grid_view</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-24 pb-safe bg-surface"><div class="flex flex-col w-full pb-16">
+<!-- Discovery Narrative Header -->
+<section class="px-margin-mobile pt-space-md pb-space-lg flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">auto_awesome</span>
+        RECALL RESULTS · 4 MATCHING MOMENTS
+      </span>
+<span class="bg-primary-container/15 text-primary text-[11px] font-semibold px-2 py-0.5 rounded-full">
+        97% match confidence
+      </span>
+</div>
+<h2 class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface tracking-tight mt-1">
+      Is it one of these?
+    </h2>
+<p class="font-body-md text-body-md text-secondary">
+      Narrowed down from <span class="font-medium text-on-surface">143 memories</span> based on your cues.
+    </p>
+<!-- Active Memory Cues Chips -->
+<div class="flex flex-wrap items-center gap-2 pt-space-xs">
+<button class="bg-surface-container-lowest text-on-surface px-3 py-1.5 rounded-full shadow-sm flex items-center gap-1.5 hover:bg-surface-container transition-colors group">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">College</span>
+<span class="material-symbols-outlined text-[15px] text-secondary group-hover:text-error transition-colors">close</span>
+</button>
+<button class="bg-surface-container-lowest text-on-surface px-3 py-1.5 rounded-full shadow-sm flex items-center gap-1.5 hover:bg-surface-container transition-colors group">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Riya</span>
+<span class="material-symbols-outlined text-[15px] text-secondary group-hover:text-error transition-colors">close</span>
+</button>
+<button class="bg-surface-container-lowest text-on-surface px-3 py-1.5 rounded-full shadow-sm flex items-center gap-1.5 hover:bg-surface-container transition-colors group">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Pune</span>
+<span class="material-symbols-outlined text-[15px] text-secondary group-hover:text-error transition-colors">close</span>
+</button>
+<button class="bg-primary-fixed text-on-primary-fixed px-3 py-1.5 rounded-full shadow-sm flex items-center gap-1.5 hover:bg-primary-fixed-dim transition-colors group">
+<span class="font-label-sm text-label-sm font-semibold">Birthday</span>
+<span class="material-symbols-outlined text-[15px] text-on-primary-fixed-variant group-hover:text-error transition-colors">close</span>
+</button>
+<button class="font-label-sm text-label-sm text-primary hover:text-on-primary-fixed-variant px-2 py-1 transition-colors underline underline-offset-4 decoration-primary/40 font-medium">
+        Clear all
+      </button>
+</div>
+</section>
+<!-- Moments Stack -->
+<section class="px-margin-mobile flex flex-col gap-space-lg">
+<!-- Card 1: Birthday night out -->
+<article class="bg-surface-container-lowest rounded-2xl shadow-sm overflow-hidden flex flex-col transition-all active:scale-[0.99]">
+<div class="p-space-md flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col">
+<h3 class="font-headline-md text-headline-md text-on-surface">Birthday night out</h3>
+<p class="font-body-md text-body-md text-secondary mt-0.5">
+              14 Feb 2019 · evening · <span class="text-on-surface-variant font-medium">Koregaon Park, Pune</span>
+</p>
+</div>
+<span class="material-symbols-outlined text-secondary text-[20px] pt-1">bookmark_border</span>
+</div>
+<!-- Attendees -->
+<div class="flex items-center gap-2 pt-1">
+<div class="flex -space-x-1.5 overflow-hidden">
+<div class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-label-sm text-[11px] font-bold shadow-xs">R</div>
+<div class="w-6 h-6 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center font-label-sm text-[11px] font-bold shadow-xs">M</div>
+<div class="w-6 h-6 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-label-sm text-[11px] font-bold shadow-xs">A</div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary">Riya, Meera, Arjun</span>
+</div>
+</div>
+<!-- 2x2 Collage -->
+<div class="px-space-md pb-space-xs">
+<div class="grid grid-cols-2 gap-1.5 rounded-xl overflow-hidden aspect-[4/3] bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Intimate warm restaurant dinner table lit by small gentle candles, cozy glasses, soft ambient bokeh, nostalgic photograph aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCE57I_rebaF3ZgwIyPv_Pt6-rF7Q2gvpNce0Lt2AuzfGiJZNmKLqQvfjdGedcNU_ZGvI48vpM5sl0xj-8uhiHFkj89UsL1P577omQxjblKUJpm0oIx7ngs4DCMTL9tE_5Jav2tWaMqn8wokk2BnJkWd6iHfVfIOydGyy-lRYq3Tjoqn6DsUz5FNubga7qmT5pcK56FqTPAhkroOPEE1LKa81fR67Kxgp8xWixvclzt"/>
+<img class="w-full h-full object-cover" data-alt="Young woman smiling and laughing happily on a Pune rooftop bar balcony at night with warm city lights glowing in background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6K3uvmniyuio_9r0rLqB2zF2JxZQEsuQSSCQnxi-LSaQ_0QXkqZHJk4Zscj--yLIBX2U78T7iC_Cn3Z-lXGouC45-8PcdnJ7LF5Y1svkN0Cs8dizlarue3Krz5kt1muX-QGIIbxG5sWcfsLUhUjLNB5siKmHYtMiFA0gTDPOztczuu7Bmph0Hc22O3GaNYS9O0kCg8VyENJSytDCveuoIzwkjJKDiE7c5XxcrDRY_"/>
+<img class="w-full h-full object-cover" data-alt="Close up of a decorated birthday chocolate cake with burning sparkler candle on a wooden table, warm ambient glow." src="https://lh3.googleusercontent.com/aida-public/AB6AXuArsGGc2Z0zq0J-iiCpvgHm9T72_pCqth3riSnJutTuYRZzgE0TCE4h3nM-YliggdEXJj0UTLuh2gbPz4Uvz1zBR1cTjbMTVmLX_5XZXQKZby78vgU8NP2WAyFPVfEOtB7R6rJOMoyfvGOSvPwgXNehCYxq67oXhauaYKR380xMkfGyFsgN82Tx2RjFk-rsn25_LW0bwQM_IeaS6ZRookj_9-5UVf9_t2P1Pgf2ofKT"/>
+<img class="w-full h-full object-cover" data-alt="Friends raising glass cocktail tumblers in celebration across a wooden pub table, warm candid indoor lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDc42EtoLGulL_K4WTal0F39fr2YQ4Rno4tN5DKDmwgsBfLSNpseuKfzz9lJqX954AhtSPslRH8YazNyWF3PxdQ8SxefhrQyNJdUloEkZe2al1pDREnZ6acFEHc5alrIgDgosXIN2Z9y9gUGGMuAEULLM_BEvezqjVKjq5PACgc5pKsByFu0csCIZ5d6oEAbOOwpq_xRLbVDx9YwFa0I23qRdneQtGRjvhp78reddbA"/>
+</div>
+</div>
+<!-- Footer Bar -->
+<div class="p-space-md pt-space-xs flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[18px]">photo_library</span>
+<span class="font-label-sm text-label-sm">6 photos</span>
+</div>
+<button class="bg-primary text-on-primary px-4 py-2 rounded-lg font-label-sm text-label-sm flex items-center gap-1.5 shadow-sm active:bg-primary-container transition-colors">
+<span>Open moment</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Card 2: Campus chai & late celebration -->
+<article class="bg-surface-container-lowest rounded-2xl shadow-sm overflow-hidden flex flex-col transition-all active:scale-[0.99]">
+<div class="p-space-md flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col">
+<h3 class="font-headline-md text-headline-md text-on-surface">Campus chai &amp; late celebration</h3>
+<p class="font-body-md text-body-md text-secondary mt-0.5">
+              18 Aug 2021 · late afternoon · <span class="text-on-surface-variant font-medium">FC Road, Pune</span>
+</p>
+</div>
+<span class="material-symbols-outlined text-secondary text-[20px] pt-1">bookmark_border</span>
+</div>
+<!-- Attendees -->
+<div class="flex items-center gap-2 pt-1">
+<div class="flex -space-x-1.5 overflow-hidden">
+<div class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-label-sm text-[11px] font-bold shadow-xs">R</div>
+<div class="w-6 h-6 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center font-label-sm text-[11px] font-bold shadow-xs">K</div>
+<div class="w-6 h-6 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center font-label-sm text-[11px] font-bold shadow-xs">A</div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary">Riya, Kabir, Ananya</span>
+</div>
+</div>
+<!-- 2x2 Collage -->
+<div class="px-space-md pb-space-xs">
+<div class="grid grid-cols-2 gap-1.5 rounded-xl overflow-hidden aspect-[4/3] bg-surface-container">
+<img alt="College chai corner in Pune with friends" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VoH_f0757foJYMe26uWpETatlaWxuT3t12BhQU4RUQIyFAZ6Kt12GeCxDqNHWojZ9YtoR0zs1aFR3SCECRyNkDuglQKNbyU6s6vyG0UvoA6LwpUWvKI9l-C1__e-uGBRWb5b6XlrX0Tefx3F-gcs0V8QdQk8eMvCGFrkwx_ysM2JvneH0qYwyof9DPM87RM27ocDZ2iliCbuHfZXtb_p4nzkCHFZAizhyOhNFijzleCfKkpbj-YIT1pWhL"/>
+<img class="w-full h-full object-cover" data-alt="College students sitting outdoor on university stone steps under green banyan trees, smiling and talking playfully, warm daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0VlD9RcY4h_jeqAxGwdlhhkW2R3YIA2HorRj9quiD4bdz7xiwxWlFfF4bry9Mz1OC9cYyvrm_Bd9MTSnmXl8CsxBcqd3Ib8JFIAgnPCcntNm33vI5mTR7v9EKc0pkcj1Eio4GLAr8lCCimrCbIWtQJR13DB9uR2riScoZTimbR2nYBAu_gJo4f4LBRknBSOalTqM1QYOZxVL_vTFcnlbe-WXnF2-jTMN7ms3m1uw9"/>
+<img class="w-full h-full object-cover" data-alt="Close up of traditional Indian cutting chai glass cutting cups on rustic metal caddy outdoors on campus pavement." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqa217k5gP4GWV2f2yZh0MahOiGfVoc-l7z4703TeTJQYxjZnUAFN_V2qV7GjYlZxpmlXBeyMd9jb8AvghQOS_FqEF6Q8pQ4jIPhK7AWvqlqXB3m7g0iKIaeZFWHydH6qiYJ8F2ksdzHQZmvckigReEIj6F8GM2Ifj31ZJhig_xZAO-VUvSpXJ57Q637Hs_1zEPKm7N1SSdC92leZBNHLvIbp8qr8G3baeF2I4Rxtq"/>
+<img class="w-full h-full object-cover" data-alt="Small paper pastry box with festive bakery snack, mini celebratory cupcake outdoors on a bench." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8JpV7izcOLSe3KZbpqEjF26_8KLm2JVZJGbnmVNzaSgaJno7tnyxHcLVJIgMU670oFw5qAsPoq_rc56BuB3nthjET9u1L6yc9_Du7JcBVAGa_ffGuauPyKZfy6_eVkBL13NLjbga5MujTAHiPUzjRdz9YSUXrabG9A6sQ0B7t7YvOakdWP2LzBKSKj7VuPVUVRs2fbVlqKGShEiOtmsVCmz-Veg2T3Yauq4zKeOOH"/>
+</div>
+</div>
+<!-- Footer Bar -->
+<div class="p-space-md pt-space-xs flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[18px]">photo_library</span>
+<span class="font-label-sm text-label-sm">8 photos</span>
+</div>
+<button class="bg-primary text-on-primary px-4 py-2 rounded-lg font-label-sm text-label-sm flex items-center gap-1.5 shadow-sm active:bg-primary-container transition-colors">
+<span>Open moment</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Card 3: Screenshot document variant -->
+<article class="bg-surface-container-lowest rounded-2xl shadow-sm overflow-hidden flex flex-col transition-all active:scale-[0.99]">
+<div class="p-space-md flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5 mb-1">
+<span class="bg-surface-container-high text-secondary text-[11px] font-bold px-2 py-0.5 rounded uppercase tracking-wide flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">screenshot</span>
+                SCREENSHOT
+              </span>
+<span class="text-secondary text-[12px]">· Matched text "Pune"</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Electricity bill · 5 Oct 2026</h3>
+<p class="font-body-md text-body-md text-secondary mt-0.5">
+              Saved screenshot · <span class="text-on-surface-variant font-medium">Pune apartment</span>
+</p>
+</div>
+<span class="material-symbols-outlined text-secondary text-[20px] pt-1">bookmark_border</span>
+</div>
+</div>
+<!-- Document Mock Graphic Preview -->
+<div class="px-space-md pb-space-xs">
+<div class="rounded-xl overflow-hidden bg-surface-container-low p-4 flex flex-col gap-3 aspect-[16/9] justify-between">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded bg-primary-container/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-[12px] text-on-surface font-semibold">MSEDCL Pune Urban Circle</span>
+<span class="font-body-md text-[11px] text-secondary">Consumer No. 04901844921</span>
+</div>
+</div>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed text-[11px] font-semibold px-2 py-0.5 rounded">PAID</span>
+</div>
+<!-- Abstract Bill Lines and Barcode -->
+<div class="space-y-1.5 bg-surface-container-lowest p-2.5 rounded-lg shadow-xs">
+<div class="flex justify-between text-[12px] font-body-md text-secondary">
+<span>Billing Unit: Kothrud Subdiv</span>
+<span class="font-medium text-on-surface">₹ 2,410.00</span>
+</div>
+<div class="h-1.5 bg-surface-container rounded w-3/4"></div>
+<div class="h-1.5 bg-surface-container rounded w-1/2"></div>
+</div>
+<div class="flex items-center justify-between text-[11px] text-secondary pt-0.5">
+<div class="flex items-center gap-1 font-mono">
+<span class="material-symbols-outlined text-[14px]">qr_code_2</span>
+<span>REF-TXN-849102-PN</span>
+</div>
+<span>Auto-archived</span>
+</div>
+</div>
+</div>
+<!-- Footer Bar -->
+<div class="p-space-md pt-space-xs flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+<span class="font-label-sm text-label-sm">1 file · Image receipt</span>
+</div>
+<button class="bg-surface-container-high text-on-surface px-4 py-2 rounded-lg font-label-sm text-label-sm flex items-center gap-1.5 active:bg-surface-container-highest transition-colors font-medium">
+<span>Open item</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Card 4: Hostel terrace cake cut -->
+<article class="bg-surface-container-lowest rounded-2xl shadow-sm overflow-hidden flex flex-col transition-all active:scale-[0.99]">
+<div class="p-space-md flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col">
+<h3 class="font-headline-md text-headline-md text-on-surface">Hostel terrace cake cut</h3>
+<p class="font-body-md text-body-md text-secondary mt-0.5">
+              22 Nov 2019 · 11:45 PM · <span class="text-on-surface-variant font-medium">Senapati Bapat Rd, Pune</span>
+</p>
+</div>
+<span class="material-symbols-outlined text-secondary text-[20px] pt-1">bookmark_border</span>
+</div>
+<!-- Attendees -->
+<div class="flex items-center gap-2 pt-1">
+<div class="flex -space-x-1.5 overflow-hidden">
+<div class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-label-sm text-[11px] font-bold shadow-xs">R</div>
+<div class="w-6 h-6 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-label-sm text-[11px] font-bold shadow-xs">A</div>
+<div class="w-6 h-6 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center font-label-sm text-[11px] font-bold shadow-xs">A</div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary">Riya, Arjun, Ananya</span>
+</div>
+</div>
+<!-- 2x2 Collage -->
+<div class="px-space-md pb-space-xs">
+<div class="grid grid-cols-2 gap-1.5 rounded-xl overflow-hidden aspect-[4/3] bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Hostel rooftop at midnight decorated with strung warm yellow fairy lights against deep dark starry night sky, cozy party mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC51CN8GaS-Yt8tTp8ztHLmfkuPqXQ46KyGh-HXl2WqtoCiGpMMH9knpS3NskTj6C6XZtrg0T9UhIjoxvEsZOIiSIBpGNfvfHuJIWuLMf9ndi0CEAf8aCClVq7FY24W3lnPCSdhCwZ0sPykJYkr2SvaV_GlspfAa8f7gcXU7OE071OnZ0vyel0ikRThiMXN8X-5VNhm7eQ7ququ_o-7lI6ekV_-nR7JMpqkVEEd7Yhr"/>
+<img class="w-full h-full object-cover" data-alt="Rich chocolate frosted birthday cake with colorful sprinkles and glowing candles placed on a plastic stool outdoors at night." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwTb7SUNooS5RX4YKZFK-S0Mj2O04H6YH7_EYraPXXxmwVQJWWgDjbqGeBv7VJawegL6df7KP8vHA5CCX31JPvSYX33Z8atitXG-Q4R-XlJlyk5nSCCbl6QnbnJl1pn2A91fc31JnbNGLZY75yXEFboK1veKRl20sTLG7dCXGTkt6kzlyZcHerQ5XQeUYieMdEm_zGi5oEsaSEukMFAhkWxbJU2X0F4xt1PfCrhAV1"/>
+<img class="w-full h-full object-cover" data-alt="Candid nighttime selfie of three smiling Indian college friends wearing playful paper cone birthday party hats." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYb8jKqLAzwtneC_oy_BbmAgpgV7mby6OLNOt0kJaL3yarTkD99DkAxl7eXWKc4j6QBhOgPafIH7WV13yWCUZ13hmO7t5XaqniQSAqlnQuVFY7NJvifisblSuKvc4YcIMoPsph6aZAUfElAHSPE8c3ToSTgiNnkfE1vkUahxcsapTwCjc5CiRvsoV0AnE5lgKv1gwcVLVRyV3RFxRizlccu9A2gKdkxTMG9ALaEQts"/>
+<img class="w-full h-full object-cover" data-alt="Paper party hats, confetti, and half-eaten paper cake plates scattered on a terrace parapet wall under fairy lights." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVg-r2ICfV4bpAmrrHHtKBEOlEmTyy3rEjvy82u_fz3mwKzJs7c2ASunjMXiwlmuV5B6OlboERaRVUcahlunXJsGTWs9AREaB2-vrfKEE1d3Z3oSMcfZPtLFHy_rgDVJF2wnp4zEVu2FuK8s9hULJHyKR42AGcLdr1ZwkflkMn_s-hFD695LjUlJDGHGiux1Hw7MMUGoChhcT2OfFDxJey_-P9kGrUPSzDoI7aGbx1"/>
+</div>
+</div>
+<!-- Footer Bar -->
+<div class="p-space-md pt-space-xs flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[18px]">photo_library</span>
+<span class="font-label-sm text-label-sm">4 photos</span>
+</div>
+<button class="bg-primary text-on-primary px-4 py-2 rounded-lg font-label-sm text-label-sm flex items-center gap-1.5 shadow-sm active:bg-primary-container transition-colors">
+<span>Open moment</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</article>
+</section>
+<!-- Interactive Progressive Narrowing Prompt -->
+<section class="px-margin-mobile pt-space-xl flex flex-col gap-space-md">
+<div class="bg-surface-container-low rounded-2xl p-space-md flex flex-col gap-space-sm shadow-sm relative overflow-hidden">
+<div class="flex items-start gap-2.5">
+<div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">psychology_alt</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-semibold">Help me remember cue</span>
+<h4 class="font-headline-md text-[17px] text-on-surface mt-0.5">Narrow it down: was it indoors or outdoors?</h4>
+</div>
+</div>
+<p class="font-body-md text-body-md text-secondary pl-10">
+        Filter the candidate moments by location atmosphere:
+      </p>
+<!-- Narrowing buttons -->
+<div class="grid grid-cols-2 gap-2.5 pt-1">
+<button class="bg-surface-container-lowest text-on-surface hover:bg-surface-container-highest px-3 py-2.5 rounded-xl font-label-md text-label-md shadow-xs flex items-center justify-center gap-2 active:scale-95 transition-transform">
+<span>🏠 Indoors</span>
+<span class="bg-surface-container px-1.5 py-0.5 rounded text-[12px] text-secondary">2</span>
+</button>
+<button class="bg-surface-container-lowest text-on-surface hover:bg-surface-container-highest px-3 py-2.5 rounded-xl font-label-md text-label-md shadow-xs flex items-center justify-center gap-2 active:scale-95 transition-transform">
+<span>🌳 Outdoors</span>
+<span class="bg-surface-container px-1.5 py-0.5 rounded text-[12px] text-secondary">2</span>
+</button>
+</div>
+<div class="flex justify-center pt-1">
+<button class="font-label-sm text-label-sm text-secondary hover:text-on-surface py-1 px-3">
+          Not sure about this cue
+        </button>
+</div>
+</div>
+<!-- Secondary Action: Show More -->
+<div class="flex justify-center pt-space-xs pb-space-lg">
+<button class="bg-surface-container-lowest text-on-surface hover:bg-surface-container px-5 py-3 rounded-full font-label-md text-label-md shadow-sm flex items-center gap-2 transition-colors">
+<span>Show 5 more candidate moments</span>
+<span class="material-symbols-outlined text-[18px] text-secondary">expand_more</span>
+</button>
+</div>
+</section>
+<!-- Sticky Testing Session Indicator / Persona Info -->
+<div class="px-margin-mobile pb-space-md">
+<div class="bg-surface-container-highest/70 text-on-surface-variant rounded-xl px-3.5 py-2 flex items-center justify-between text-[12px] font-body-md shadow-xs backdrop-blur-md">
+<div class="flex items-center gap-1.5 truncate">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse shrink-0"></span>
+<span class="font-mono font-medium text-on-surface truncate">TEST SESSION #402</span>
+<span class="text-secondary">· Persona: Ananya</span>
+</div>
+<span class="text-primary font-medium shrink-0 ml-2">Goal: Spot birthday photo</span>
+</div>
+</div>
+</div></main></body></html>

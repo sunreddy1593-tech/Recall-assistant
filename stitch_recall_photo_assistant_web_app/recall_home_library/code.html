@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#faf8ff;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "outline-variant": "#bcc9c6", "on-tertiary-fixed": "#00201c", "surface-container": "#eaedff", "secondary-fixed-dim": "#b9c7df", "error-container": "#ffdad6", "on-primary-fixed": "#00201d", "surface-container-low": "#f2f3ff", "tertiary-fixed": "#bdece2", "background": "#faf8ff", "error": "#ba1a1a", "surface-dim": "#d2d9f4", "secondary-container": "#d5e3fc", "on-primary-container": "#f4fffc", "on-tertiary-fixed-variant": "#224e47", "on-secondary": "#ffffff", "surface-variant": "#dae2fd", "on-error": "#ffffff", "primary-fixed-dim": "#6bd8cb", "secondary": "#515f74", "tertiary": "#38645c", "primary": "#00685f", "primary-container": "#008378", "on-tertiary-container": "#f4fffb", "primary-fixed": "#89f5e7", "on-tertiary": "#ffffff", "secondary-fixed": "#d5e3fc", "outline": "#6d7a77", "surface-bright": "#faf8ff", "on-primary-fixed-variant": "#005049", "on-background": "#131b2e", "surface-tint": "#006a61", "inverse-primary": "#6bd8cb", "surface": "#faf8ff", "surface-container-highest": "#dae2fd", "on-error-container": "#93000a", "inverse-on-surface": "#eef0ff", "inverse-surface": "#283044", "on-surface-variant": "#3d4947", "tertiary-container": "#517d75", "tertiary-fixed-dim": "#a2d0c6", "on-primary": "#ffffff", "on-secondary-fixed": "#0d1c2e", "surface-container-high": "#e2e7ff", "on-secondary-fixed-variant": "#3a485b", "on-secondary-container": "#57657a", "on-surface": "#131b2e", "surface-container-lowest": "#ffffff" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter-mobile": "0.75rem", "margin-mobile": "1rem", "gutter": "1.5rem", "space-xl": "2.5rem", "space-xs": "0.375rem", "space-lg": "1.5rem", "space-md": "1rem", "space-sm": "0.5rem", "margin": "2.5rem" }, fontFamily: { "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "label-sm": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "body-md": ["Inter"], "label-md": ["Inter"], "headline-xl": ["Plus Jakarta Sans"], "label-lg": ["Inter"] }, fontSize: { "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg-mobile": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "label-sm": ["14px", { "lineHeight": "18px", "fontWeight": "600" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "label-md": ["14px", { "lineHeight": "20px", "fontWeight": "500" }], "headline-xl": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-lg": ["15px", { "lineHeight": "20px", "fontWeight": "500" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="w-full bg-surface-container-low px-margin-mobile py-space-xs flex items-center justify-center gap-1.5"><span class="material-symbols-outlined text-secondary text-[14px]">info</span><span class="font-label-sm text-label-sm text-secondary tracking-tight text-center truncate">Demo library · AI-generated and stock images · not your real photos</span></div><div class="h-16 px-margin-mobile flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Recall Brandmark" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V-atcjrU6s2aTvpO-Vmv2iWOOF3HgaV-2ZgLjB08e6oXUBrEf1l-qyXom3GYsW_0ERYqR7-uPyF1uDA0CzjPqM-ny5FhDXy_Bwdd_USREjf3GafqX89QG96DyvPQqgdArmVMVSbXjfnMkq4QSdjnJnxb6fwKtMOuKX7oH_wZV6fW8SzJEH4yg2V8h6sDBndgIObMYqwqOIiCZ45TXq2tvOIIGKOqW6b0cUTqIfnAknHRXCSN2dtCI7FeSE"/><span class="font-headline-md text-headline-md tracking-tight text-on-surface">Recall</span></div><div class="flex items-center gap-space-xs"><div class="px-space-sm py-1 rounded-full bg-surface-container flex items-center gap-1"><span class="material-symbols-outlined text-primary text-[16px]">arrow_back_ios_new</span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Memory Stream</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-1"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-24 pb-20 bg-surface"><div class="flex flex-col w-full">
+<!-- Interactive Memory Search & Assistant Trigger -->
+<div class="px-margin-mobile pt-space-xs pb-space-sm flex flex-col gap-space-xs">
+<!-- Search Bar -->
+<div class="relative w-full">
+<div class="w-full bg-surface-container-lowest rounded-xl shadow-sm px-space-md py-3 flex items-center gap-space-sm transition-all focus-within:ring-2 focus-within:ring-primary">
+<span class="material-symbols-outlined text-secondary text-[22px]">search</span>
+<input class="w-full bg-transparent text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none" id="photoSearchInput" placeholder="Search your photos" type="text"/>
+<button class="hidden text-secondary hover:text-on-surface p-0.5" id="clearSearchBtn">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+<!-- AI Memory Prompt / Fuzzy Recall Pill Banner -->
+<div class="w-full bg-surface-container-low rounded-xl p-space-sm flex items-center justify-between gap-space-sm shadow-sm">
+<div class="flex items-center gap-space-xs min-w-0">
+<div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold truncate">Can't pinpoint the date?</span>
+<span class="px-1.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-[10px] uppercase font-bold tracking-wider">New</span>
+</div>
+<p class="font-body-md text-[12px] text-on-surface-variant truncate">Describe sensory cues, weather, or who was there</p>
+</div>
+</div>
+<button class="shrink-0 bg-surface-container-lowest hover:bg-surface-container text-primary font-label-sm text-label-sm px-3 py-1.5 rounded-full flex items-center gap-1 shadow-sm transition-colors active:scale-95" id="helpRememberBtn">
+<span>Help me remember</span>
+<span class="material-symbols-outlined text-[16px]">arrow_back_ios_new</span>
+</button>
+</div>
+<!-- Interactive Fuzzy Recall Clues Tray (Collapsible) -->
+<div class="hidden bg-surface-container-lowest rounded-xl p-space-md shadow-md flex flex-col gap-space-sm transition-all duration-300" id="recallDrawer">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">psychology</span>
+<span class="font-headline-md text-[15px] font-semibold text-on-surface">Memory Clues</span>
+</div>
+<button class="text-secondary p-1" id="closeRecallDrawer">
+<span class="material-symbols-outlined text-[18px]">expand_less</span>
+</button>
+</div>
+<div class="flex flex-wrap gap-1.5">
+<button class="clue-chip px-3 py-1 rounded-full bg-surface-container-low text-secondary font-label-sm text-[12px] hover:bg-secondary-container transition-colors" data-clue="Chai Tapri">☕ Chai Tapri · Pune</button>
+<button class="clue-chip px-3 py-1 rounded-full bg-surface-container-low text-secondary font-label-sm text-[12px] hover:bg-secondary-container transition-colors" data-clue="Rainy Edinburgh">🌧️ Edinburgh Library Cafe</button>
+<button class="clue-chip px-3 py-1 rounded-full bg-surface-container-low text-secondary font-label-sm text-[12px] hover:bg-secondary-container transition-colors" data-clue="Dublin Pub">🍻 Dublin Winter Stroll</button>
+<button class="clue-chip px-3 py-1 rounded-full bg-surface-container-low text-secondary font-label-sm text-[12px] hover:bg-secondary-container transition-colors" data-clue="Airport Bangalore">✈️ Landing in BLR</button>
+</div>
+</div>
+</div>
+<!-- Photo Grid Content Feed -->
+<div class="flex flex-col gap-space-lg px-margin-mobile pb-space-xl">
+<!-- Section 1: Feb 2026 -->
+<section class="flex flex-col gap-space-xs">
+<div class="sticky top-16 z-20 bg-surface/95 backdrop-blur-md py-2 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<h2 class="font-headline-md text-headline-md text-on-surface">February 2026</h2>
+<span class="text-secondary font-body-md text-body-md">·</span>
+<span class="text-secondary font-body-md text-body-md truncate">Back in India</span>
+</div>
+<span class="font-label-sm text-[12px] text-on-surface-variant font-medium bg-surface-container px-2 py-0.5 rounded-full">18 photos</span>
+</div>
+<div class="grid grid-cols-3 gap-1.5">
+<div class="relative aspect-square rounded-lg overflow-hidden bg-surface-container group cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Sunlit morning scene from a modern apartment balcony in Bangalore with blooming bougainvillea, warm golden hour sunlight casting diagonal shadows, and a gentle steam rising from a clay mug of filter coffee on an outdoor wooden table." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOs5j7Du8C7PL87kY-Tv_U7hMl9n3YuQjpGVz4ttKPH2qAirUk0f6MJutL_4LXVaarP8-MKFFew66CX4ls8CqOwWJbMyCVR0uSBS791PlKoTAQC0ox5CxGdGmd0dgS71pLcV6JP38eSOzzvGo5KMoF7eNL9yJpfgTi9jBhTN5FcDY3B8yvy2jgJewpgfRb2nRCViwj6S26hUuW9wk0-DaRnuyoGRH-iM4EsslPzZTJTfF9T0hZ6bjVyg"/>
+</div>
+<div class="relative aspect-square rounded-lg overflow-hidden bg-surface-container group cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Kempegowda Bangalore airport arrival terminal bustling with travelers under warm woven wooden architectural canopy, luggage carts, friendly welcoming hugs between family members, captured with warm editorial daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1dnbXCKULVeB5yzaPHaX6udOA8-qc8XGqi85yN5GefzS_8JvcwNK8SszWbdDyCKeVYgQB3iQVLPT-Lgp16AZmkHHIt0s0jGfT4jhLeRl5iYxLy84mtw0lrxooIri_g_v2JwkZep3MkQuCHZ6kxlyC7wtSKlPaBIN6MIly8A9Anh9D00l2W-roMpsDdiAk638eM0U_BU4xIXKJEy7vHuCfcmxTeHB6d7k-boQzrXWQxCMgfzxS-krtSA"/>
+</div>
+<div class="relative aspect-square rounded-lg overflow-hidden bg-surface-container group cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Close up photograph of vibrant South Indian family dinner feast served on broad green banana leaf, including golden crisp dosas, coconut chutneys, vibrant curries, hands dipping food joyfully in natural warm ambient light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfem-IG15qu6VqNxXgIHjLQABAbPav8eRm6iUTBDkugPLXQAE7Txjcb_i7l4wRF45biU5Zs4DICeEXI_OxHn8x_d38t6uyrE04zXYRNPQMmaaGo_kC8TL1Bcd3uNZV-3IEewTkZ_cTuOOyjPX9NNqM0BPK8bdIsiETJji9nK_z6L2_rjI__jazll4xuUbtHSyfWe3tHyCCZRmgXOZCgCuMVjiOw_CW4tw3-iujz_q-WCxT15vXZN9K3A"/>
+</div>
+<div class="relative aspect-square rounded-lg overflow-hidden bg-surface-container group cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Lively street corner in Indiranagar Bangalore during golden dusk, auto-rickshaws with yellow tops, lush rain trees overhanging modern cafes, glowing store signs and pedestrians laughing on the pavement." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrMjkjc4TwYqLXVf2an2Dd_EY1zScYpvR_OgrUSMdt132KbBZN0qRuWxJmmWifRKXcDZ-XuWuD7hemUjlAStJM751d09YJBHlbrNEXkiLQ7L9ptbLNecEPuOIQUfa7DBN1mn7PFMkMPZbW0ppDpadrBf8RJN8EPzFJ2AOWaAdx-wfONL2xmv-x0lwQ-UIBNyi2Icpz6xl8oNb8-7sBsiUSfklfV1rKS-suzE0_Y09KakDxsx2b6d_gzw"/>
+</div>
+<div class="relative aspect-square rounded-lg overflow-hidden bg-surface-container group cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Serene living room interior with soft sunlight filtering through sheer cotton curtains, brass diya, open book, and sleeping indie dog on handwoven dhurrie rug in Bangalore." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWGSUqZgpz6M6oPGrt6zU2oqp2iETjwnnBYv246e6MHQ4UrzGNOoBUoN0IVpy5elbEA_jipWycABPAUChtP8JPVlW2SPd9k8yUzx8yWJpT8d1s15Eawu-qXJMTUfPUf3T4TJy8mfgcgG-eUs5ISj5fc8MWAFDI067MwB0DwIujtNIFd4VJQ5N2XT6s8BUOqIXaXc9O4riCz0BGMPrT9e5eNfYIjqvDqO25A58V5lIhrInRUiGxHE7Few"/>
+</div>
+<div class="relative aspect-square rounded-lg overflow-hidden bg-surface-container group cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Overhead view of two friends toasting copper glasses of fresh sugarcane juice with crushed mint and lemon at a charming roadside stall in Hyderabad with warm sun flare." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJSh66XvYLFWPhgOJS2FUQlNTdD-XtcGJCOqzYeE7EJrgwP3Xu5Yvg0ZwCLLMVuowioGqSPFpt9e2h4n8naL918Ye7BRr_aZE6RH1CCzxL6S1DOTbMg_9cG1SM53E6WZxzQ5jLZnO7-bk37-chihHx8yX5_9bfjUzk3GdRWwL04G7IQc5V0gEaV9P_afQha3a-NBfHe6k5wbEvIUzFJcMAa_m5YjPfm54RgNBAJKO2BKtl9_vkbTavww"/>
+</div>
+</div>
+</section>
+<!-- Section 2: Dec 2025 -->
+<section class="flex flex-col gap-space-xs">
+<div class="sticky top-16 z-20 bg-surface/95 backdrop-blur-md py-2 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<h2 class="font-headline-md text-headline-md text-on-surface">December 2025</h2>
+<span class="text-secondary font-body-md text-body-md">·</span>
+<span class="text-secondary font-body-md text-body-md truncate">Dublin, Ireland</span>
+</div>
+<span class="font-label-sm text-[12px] text-on-surface-variant font-medium bg-surface-container px-2 py-0.5 rounded-full">24 photos</span>
+</div>
+<div class="grid grid-cols-3 gap-1.5">
+<div class="relative aspect-square rounded-lg overflow-hidden bg-surface-container group cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Misty wet winter evening cobblestones in Temple Bar Dublin with warm yellow reflections of festive holiday fairy lights, vintage Victorian pub facades, and silhouettes of friends walking with coats." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDS7EBXQwJxT9TSdBnzOUG1Bon43tK1cLmHJBFyIcOTENjAc8vIm_qDE_mA5-nB0Iy8St1wXTx3H1gybnszsL0uvJMLF8JRAdGXK-SkQLqL4vzya0E0EBYAtffB-51svLsVkoUgsLK4NzYi-sELgKutkGY1Ic7wZ0PHPTNVTUU5LtP2ZKqFc-sGObFWNE-WH73xg_3sD5zLLcG5RL7Y_q2F-gaJKwzZigaT1qVYhwBkSMMQGd-T7swG9Q"/>
+</div>
+<div class="relative aspect-square rounded-lg overflow-hidden bg-surface-container group cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Trinity College Dublin courtyard in winter dusk, historic limestone library building illuminated by warm amber lanterns, light frost dusting green lawn, quiet cinematic mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKJtOBqLd2jDgW6GEgcXioS2NgGJbgQiKIBmehylb9B4tSOGQHYA2mTx_Ic9X4vv2WczfwmSBIU4DtdmXYcz9T-nA--8HIOyJYJS7g7X0OB3SOIv2sLxS3mLREqSKk7lXznxsnZErdQenOh3n2ls-gbGVZKk1qEVrzsd8vvgxRT2GxzkGiKgnJpPDIGaVoCVHf7xL-MSAjaWCml8UTQUwc8vZksza0nSm3aLPZGtVqBGcbdghezTUNTQ"/>
+</div>
+<div class="relative aspect-square rounded-lg overflow-hidden bg-surface-container group cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Cozy interior of an authentic Dublin pub with dark mahogany wood panelling, pints of creamy dark stout with shamrock foam tops on a rustic wooden table with laughing coworkers in woolen sweaters." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4VrmriXB2SmLnUfCXA1VTvdBsoaNKEJHz3vEiy3aUDnAPU8OfeHqxw-8lWN7qNzLJ9O2akCp5fS4iH7kddqYvv5Q3obOV0YxQDIEa7qE5yGB9_ZLMxSvJREXw-34Gk9wcV6wX-MicnqWcJNslE2hOGYkfMowbDzztVO7Qho6B1cs73FpSUCMCoP2YTICzLjjqsXiG0_4vUmBcAuAEvf2aYXb07AyB4GYXrnMuJL5u3C8VaTPCvwe73A"/>
+</div>
+</div>
+</section>
+<!-- Section 3: Oct 2024 -->
+<section class="flex flex-col gap-space-xs">
+<div class="sticky top-16 z-20 bg-surface/95 backdrop-blur-md py-2 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<h2 class="font-headline-md text-headline-md text-on-surface">October 2024</h2>
+<span class="text-secondary font-body-md text-body-md">·</span>
+<span class="text-secondary font-body-md text-body-md truncate">Dublin, Ireland</span>
+</div>
+<span class="font-label-sm text-[12px] text-on-surface-variant font-medium bg-surface-container px-2 py-0.5 rounded-full">12 photos</span>
+</div>
+<div class="grid grid-cols-3 gap-1.5">
+<div class="relative aspect-square rounded-lg overflow-hidden bg-surface-container group cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Golden autumn foliage canopy in Phoenix Park Dublin with red deer herd grazing peacefully in distant golden mist, crisp morning dew on orange fallen leaves." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTiWzuSAluPBCbUP6f1Dvd1eHXuhmXbLLDRiDxu-GL_o595vB0zvL32Kpe1gHQocY7ZyeE_O4RL533Lj1FyjHB_54kxPcHPfXva4yvXDCw5PSkG-8_xaBQsc3u6iP3z_LmTeFsvH5mL_QNEqAnnowb9p43rQn7v_xRN9oFPvVL8iG6_la951Y6ACQuHrbq2A9AJ9jM4dcgT0fr3ylZ1pPRDCCUHzK6Ng9iC0kVq1aw-5W4tEWyhYLOfg"/>
+</div>
+<div class="relative aspect-square rounded-lg overflow-hidden bg-surface-container group cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Modern tech office meetup space in Dublin Grand Canal Dock with floor-to-ceiling glass windows overlooking water, friendly colleagues chatting over coffee mugs and notebooks." src="https://lh3.googleusercontent.com/aida-public/AB6AXuASeFtyTSJD4wBQqGlX01vHv2V0hIcfHO4mhn7fpWcyYQxwgm_qP_11aUAgjWgGCJbOOWzVsa1eIqz_MJV4KJp1UF0hWPn_Uy_L0qNoxCfFGeTOGqv-uTBhjb3jZyh997TBN5B0JyioK0Z4uyo_s1pA34rEIsXiUclBxoEKDLh_ks7xNO2fTB9VDjJHKIX23WOrtRPjMgPbfXu7LILRoRT473bjR9usPWi1bR3zA5EiIAR7U0wsDTDGyQ"/>
+</div>
+<div class="relative aspect-square rounded-lg overflow-hidden bg-surface-container group cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Scenic view along River Liffey Dublin at sunset with Ha'penny Bridge arches glowing orange against purple clouds and gentle water ripples reflecting city lights." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2RzcW12P7mVbxSJlkJND5Mggess3D8i29CldM_YyX6xO6Ugk4kclXK_RP6AxsqGh1Ha8SWlYWa0KkLXTKWEoVx-BZqTIielwsdzTj5Me1n-bFTBcXsalanpIKez2qprOy-OhzWAQxhlfveAZTF2zXmzK_5DCJL-vEMAKjuRpLRr31P39-DKWXqzb8yvA6TArFY1zVOuAfOxIjiDFyQ3LD9VBBtKLOafcLUXCyNzPV15KXCw2VmNjeKg"/>
+</div>
+</div>
+</section>
+<!-- Section 4: May 2024 · Edinburgh (Featuring Edinburgh Cafe reference photo) -->
+<section class="flex flex-col gap-space-xs">
+<div class="sticky top-16 z-20 bg-surface/95 backdrop-blur-md py-2 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<h2 class="font-headline-md text-headline-md text-on-surface">May 2024</h2>
+<span class="text-secondary font-body-md text-body-md">·</span>
+<span class="text-secondary font-body-md text-body-md truncate">Edinburgh</span>
+</div>
+<span class="font-label-sm text-[12px] text-on-surface-variant font-medium bg-surface-container px-2 py-0.5 rounded-full">15 photos</span>
+</div>
+<div class="grid grid-cols-3 gap-1.5">
+<!-- Target Memory Thumbnail Preview (Edinburgh library cafe) -->
+<div class="relative aspect-square rounded-lg overflow-hidden bg-surface-container group cursor-pointer shadow-sm">
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Warm intimate candid photo of three university friends laughing joyfully inside a historic stone arch cafe in Edinburgh with large window overlooking rainy Old Town cobblestones, cups of latte, notebooks, books on wooden table, soft brass lamp lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYHR3tQVhOt3ywIIYm2926wLLR4IhguGCRgRVOHTNzGjMx8t8olYQXv3p4CSeuO0BYafzC7NQVCrCE5qsnrL6XJXuauVYpLlN7juU6jMGTVEYkv6WA3yQioqgozXX6TflKawZWKqF49SE2LEx6I4Y_-c3xu_f8SaScPFWAndTWG-NwnhRtAJFRnxUBnZN7VMWCyXtOBVKiCSbAjDBx84RL9tbDG4rA_YWf9bfBvrS-UWGoBjBFAly4QA"/>
+<div class="absolute bottom-1 right-1 bg-on-background/70 backdrop-blur-sm rounded px-1 text-[10px] text-white flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[10px]">place</span>
+<span>Old Town</span>
+</div>
+</div>
+<div class="relative aspect-square rounded-lg overflow-hidden bg-surface-container group cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Graduation celebration on University of Edinburgh historic quadrangle with students in black academic robes tossing mortarboards into blue sky with Victorian gothic architecture in background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsDVKMXpUXvEXH4mG6cs99BjdQICUx7UC9TRGqjyX8g-FKwPC70IKscPkYLLlThkc_PPGsrdcf1JjPUDLZXQsOrNOFQVttxkdXFWaFGbz323J2ABX-9P0HzW8gbj68fiO14_bhSksI1BtcB_ec0gAbg46JLUVVia8kBaJV9scytB0MwwIEcu0aOu6N68zD2QWqELB6-Kns1icRzKWBA2Re-b_6reImWos8hYiDeLpyAp5bKGgBhrNWyQ"/>
+</div>
+<div class="relative aspect-square rounded-lg overflow-hidden bg-surface-container group cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Dramatic view looking up Victoria Street Edinburgh with its colorful curved storefronts, stone stairways, and misty Scottish drizzle in early spring." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOydZMJ2t77pv1VYBkpcYDS31vGeS1Ubvzz-s9GWlcaAf7BLH8z9SD4ONF2Cl7zAPeW5xB2m2xArw4ldGyVUdAXSw8m8pb2H3IXSlh-ZAktvljVeT5NRYtkdh7f_zcY2Zm4w9ZW41cdH-ia_s4Sw8x4I8Jo7Thh3m6spNic_Gxa8aiGxz9dI9-TLTv3wg2e3YFBcSkSYwsVi1ClYUICG8RZ0c06wWvFXsoM9JkbagwQ-sE6Cu_PMPBpQ"/>
+</div>
+</div>
+</section>
+<!-- Section 5: November 2020 · Pune (Featuring Chai Tapri reference photo) -->
+<section class="flex flex-col gap-space-xs">
+<div class="sticky top-16 z-20 bg-surface/95 backdrop-blur-md py-2 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<h2 class="font-headline-md text-headline-md text-on-surface">November 2020</h2>
+<span class="text-secondary font-body-md text-body-md">·</span>
+<span class="text-secondary font-body-md text-body-md truncate">Pune</span>
+</div>
+<span class="font-label-sm text-[12px] text-on-surface-variant font-medium bg-surface-container px-2 py-0.5 rounded-full">31 photos</span>
+</div>
+<div class="grid grid-cols-3 gap-1.5">
+<!-- Target Task Memory Photo: College Chai Tapri outside campus -->
+<div class="relative aspect-square rounded-lg overflow-hidden bg-surface-container group cursor-pointer transition-all duration-300" id="targetMemoryItem">
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Candid authentic documentary photo of a group of five Indian college students laughing heartily around a rustic metal table at an outdoor roadside chai tapri outside campus in Pune, holding cutting chai glasses and bun maska, golden sun flare streaming through trees." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-X9E2Aakn5JmzC7-FX6ufyh1hhizSLg3D4RbaBSWj4muIB5MYB_drCYgFkiR_WyCzNUalC_gse0OMvK8qymofg7yeo7TLkYrZiifDZ4AQSP4Iebrwe1wFnF7LfWW8pHxM5mROs0IGeGIdeBKuZnZS8YKXyN6da581rQBG6-BIYO9CsqaMWzgmokiDo15ymR9DdxRPYfhakm8Xdfs3qLiAv1B-D5ONvulEByVQwvwJWxpFsIMQi88-JQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-1.5">
+<span class="text-white font-label-sm text-[10px] font-semibold truncate">FC Road Chai</span>
+</div>
+<div class="target-marker hidden absolute top-1 right-1 w-5 h-5 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-md animate-pulse">
+<span class="material-symbols-outlined text-[13px]">check</span>
+</div>
+</div>
+<div class="relative aspect-square rounded-lg overflow-hidden bg-surface-container group cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Fergusson College campus main heritage stone building with lush green trees, bicycles parked in rows, students carrying backpacks walking in dappled afternoon sunlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvNUCCCvTuJXPAgYyq5M2cf8dDyeEf_u6fsXg7eaYepjpF8ymodDxcPgiTvReGAczWjv03YZnjqRZ8NAMaDO5XxGrsm2qEDqO90OexAjRDZ8WkGcHfznuh5LDMFl-uqnEKpKzKHy-F1Sy0k4IrJjZjvCNF8PgpqxL_AR0qYE-4SLIi2un3Sz_SwvWFxqeFmVhRIAQ0v9FFnlvzABQKyezwF8XZN7o_mp6DTVctlPFREiAvajd1C8bSjw"/>
+</div>
+<div class="relative aspect-square rounded-lg overflow-hidden bg-surface-container group cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Close up steaming cutting chai being poured from high metal kettle into traditional transparent fluted tea glasses with fresh cardamom and ginger at an authentic street stall." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9GnZ9PxfIKT4gjl0YexDz29K7LoUwU1EGGRzK2seRNvRyI0yDeY47THLX2pF9dDA-Nwi4NiZg0jkZNvnsgDvp3cfliniTfhfxY6a5JL_u0FtDlxgivsqOyRFLjSZ1lTgv3utQ5BSweI_hy8ItYqCH0Ml6vfjs7pMifEBZ31t8s_0oiOH_u3jlGt6ouKsyiiwQfFTevuDmzl3zXJmCwa6erl409K87pPKtdpZ74QtMKwsipPS72ib47Q"/>
+</div>
+<div class="relative aspect-square rounded-lg overflow-hidden bg-surface-container group cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Sunset over Vetal Tekdi hills in Pune with silhouettes of young friends sitting on rocks overlooking the warm glowing city panorama below." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-i934XbQtN4YQ8XR-8w9lq9Ny7n7xeT-vmt1h7QwRX69KY4VJn1GjXOyZOiwZY4RixjoegI1bih4YkFv9lDNA9UTL1qLlE0w_MPqS_g83QmSA-ySl_KWJ2vZ1e_we03dxsJH_Q682adDXcCyUC-RXetqco9dFwxuzw9Bi_nq9KSMzAKBVTjLRQ3T6ArLX9_ewdpfOmXVJougfKGuDZUWEE9OFvpkeZiQ_jgJKncgJitT-s2SrkF8gxQ"/>
+</div>
+<div class="relative aspect-square rounded-lg overflow-hidden bg-surface-container group cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Late night college hostel study session with open engineering textbooks, laptop glow, empty maggi bowls, and scribbled whiteboards." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaTI5R59gobsFCDqucM0UIHVa1MtBMgRrQyh5pmUGHmc5NsYEKRooXq3Lz6c07rSbL-dAvniefN_kCSWZOTAXON1g_ocq9O5CNVbV6DggIyrSet7ikFyz5P88n0Xm3T6VQKmzZdkRo7vTVFi501z4CSboFpO8Iqbw86V4nqplZZGMVUeyvM3J-OFNN4VZc7jRZTbrRoH31uFr8SWXqQcJJOoXN0zB71f8vNitJIq7302GJUm1ivXr-IA"/>
+</div>
+<div class="relative aspect-square rounded-lg overflow-hidden bg-surface-container group cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Scooter ride on Senapati Bapat Road Pune during breezy winter evening with jacket zipped up, street lamps bokeh in backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMBjR2t2T7M8TXztoWVQBFyja1l-YHKs4c7iTfaoRKiQd2oX29jCTNNf4m2BDctK3xWWyGbT9zJb7Cl3SoPOyWi0nao1aOF4T93dipx_4KgMa-MWxu50t-S6Pogv7EdMD5DmLn_Gvyhk1OTc6K9_kvDpeHU7-g6vSzZh5Bho5xQn_yqVf-Q0BDtl4ugN7uDkkwflHy4gvKauRdRG1rVKVnGcON0u2QmK2YjBTiTj_ok2AGUBcHTKfG7w"/>
+</div>
+</div>
+</section>
+</div>
+<!-- Collapsible Test Session Floating Widget -->
+<div class="fixed bottom-20 right-3 z-40 max-w-[320px] transition-all duration-300">
+<!-- Collapsed Button Pill (Hidden by default, shown when collapsed) -->
+<button class="hidden bg-surface-container-lowest text-on-surface shadow-xl rounded-full px-3.5 py-2 flex items-center gap-2 transition-transform active:scale-95" id="testPillMini">
+<span class="text-[14px]">🧪</span>
+<span class="font-label-sm text-[12px] font-bold text-primary">Test #402</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">expand_less</span>
+</button>
+<!-- Expanded Test Session Card -->
+<div class="bg-surface-container-lowest text-on-surface rounded-xl shadow-2xl p-3.5 flex flex-col gap-2.5 transition-all" id="testSessionCard">
+<div class="flex items-center justify-between pb-1">
+<div class="flex items-center gap-1.5">
+<span class="text-[16px]">🧪</span>
+<span class="font-headline-md text-[13px] font-bold tracking-tight text-on-surface">Test Session #402</span>
+</div>
+<button class="text-secondary hover:text-on-surface p-1 rounded-full" id="collapseTestBtn">
+<span class="material-symbols-outlined text-[18px]">expand_more</span>
+</button>
+</div>
+<div class="bg-surface-container-low rounded-lg p-2.5 flex flex-col gap-1 text-[11px]">
+<div class="flex items-center justify-between text-secondary">
+<span class="font-label-sm text-[11px]">Participant</span>
+<span class="font-semibold text-on-surface font-label-sm text-[11px]">P-Ananya · Study A</span>
+</div>
+<div class="flex flex-col gap-0.5 pt-1">
+<span class="text-secondary font-label-sm text-[11px] font-medium">Task:</span>
+<p class="font-body-md text-[11px] text-on-surface font-semibold leading-snug">
+            "Find the photo of college chai break outside campus"
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-2 pt-0.5">
+<button class="flex-1 bg-primary hover:bg-primary-container text-on-primary font-label-sm text-[12px] py-1.5 px-3 rounded-lg shadow-sm font-semibold flex items-center justify-center gap-1 transition-colors" id="startTaskBtn">
+<span class="material-symbols-outlined text-[14px]">play_arrow</span>
+<span>Start task</span>
+</button>
+<button class="bg-surface-container-low hover:bg-surface-container text-secondary font-label-sm text-[12px] py-1.5 px-2.5 rounded-lg transition-colors" id="giveUpBtn">
+          Give up
+        </button>
+</div>
+</div>
+</div>
+<!-- Interactive Found Toast Notification -->
+<div class="fixed top-24 left-1/2 -translate-x-1/2 z-50 hidden bg-primary text-on-primary px-4 py-2.5 rounded-full shadow-xl flex items-center gap-2 text-label-sm font-semibold transition-all duration-300" id="foundNotification">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Memory found! Task completed ✨</span>
+</div>
+</div>
+<script>
+  // DOM Interactive elements
+  const helpRememberBtn = document.getElementById('helpRememberBtn');
+  const recallDrawer = document.getElementById('recallDrawer');
+  const closeRecallDrawer = document.getElementById('closeRecallDrawer');
+  const searchInput = document.getElementById('photoSearchInput');
+  const clearSearchBtn = document.getElementById('clearSearchBtn');
+  const clueChips = document.querySelectorAll('.clue-chip');
+  const testSessionCard = document.getElementById('testSessionCard');
+  const testPillMini = document.getElementById('testPillMini');
+  const collapseTestBtn = document.getElementById('collapseTestBtn');
+  const startTaskBtn = document.getElementById('startTaskBtn');
+  const targetMemoryItem = document.getElementById('targetMemoryItem');
+  const foundNotification = document.getElementById('foundNotification');
+
+  // Toggle Fuzzy Memory Assistant Clues Drawer
+  if (helpRememberBtn && recallDrawer) {
+    helpRememberBtn.addEventListener('click', () => {
+      recallDrawer.classList.toggle('hidden');
+    });
+  }
+
+  if (closeRecallDrawer && recallDrawer) {
+    closeRecallDrawer.addEventListener('click', () => {
+      recallDrawer.classList.add('hidden');
+    });
+  }
+
+  // Clue chips auto-populate search input and focus
+  clueChips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      const clue = chip.getAttribute('data-clue');
+      if (searchInput) {
+        searchInput.value = clue;
+        clearSearchBtn.classList.remove('hidden');
+        recallDrawer.classList.add('hidden');
+      }
+    });
+  });
+
+  // Search input listeners
+  if (searchInput && clearSearchBtn) {
+    searchInput.addEventListener('input', () => {
+      if (searchInput.value.length > 0) {
+        clearSearchBtn.classList.remove('hidden');
+      } else {
+        clearSearchBtn.classList.add('hidden');
+      }
+    });
+
+    clearSearchBtn.addEventListener('click', () => {
+      searchInput.value = '';
+      clearSearchBtn.classList.add('hidden');
+      searchInput.focus();
+    });
+  }
+
+  // Test session collapse / expand toggle
+  if (collapseTestBtn && testPillMini && testSessionCard) {
+    collapseTestBtn.addEventListener('click', () => {
+      testSessionCard.classList.add('hidden');
+      testPillMini.classList.remove('hidden');
+    });
+
+    testPillMini.addEventListener('click', () => {
+      testPillMini.classList.add('hidden');
+      testSessionCard.classList.remove('hidden');
+    });
+  }
+
+  // Start Task Action: Scrolls softly to the Pune tapri section and highlights target
+  if (startTaskBtn && targetMemoryItem) {
+    startTaskBtn.addEventListener('click', () => {
+      startTaskBtn.innerHTML = '<span class="material-symbols-outlined text-[14px]">timer</span><span>Task in progress</span>';
+      startTaskBtn.classList.add('bg-primary-container');
+
+      // Scroll smoothly down towards target
+      targetMemoryItem.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+      // Highlight target container softly
+      setTimeout(() => {
+        targetMemoryItem.classList.add('scale-105', 'shadow-lg');
+        const marker = targetMemoryItem.querySelector('.target-marker');
+        if (marker) marker.classList.remove('hidden');
+      }, 500);
+    });
+  }
+
+  // Target item click interaction (Completing the usability test)
+  if (targetMemoryItem && foundNotification) {
+    targetMemoryItem.addEventListener('click', () => {
+      foundNotification.classList.remove('hidden');
+      setTimeout(() => {
+        foundNotification.classList.add('hidden');
+      }, 3500);
+    });
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.04)]" data-active-classes="text-primary font-semibold"><div class="flex justify-around items-center h-16 px-gutter-mobile"><a class="flex flex-col items-center justify-center gap-0.5 min-w-[54px] min-h-[44px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="memory-stream" href="#"><span class="material-symbols-outlined text-[22px]">nest_farsight_weather</span><span class="font-label-sm text-label-sm">Memories</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[54px] min-h-[44px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="natural-search" href="#"><span class="material-symbols-outlined text-[22px]">manage_search</span><span class="font-label-sm text-label-sm">Recall</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[54px] min-h-[44px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="photo-timeline" href="#"><span class="material-symbols-outlined text-[22px]">calendar_today</span><span class="font-label-sm text-label-sm">Timeline</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[54px] min-h-[44px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="saved-albums" href="#"><span class="material-symbols-outlined text-[22px]">photo_library</span><span class="font-label-sm text-label-sm">Albums</span></a></div></nav></body></html>

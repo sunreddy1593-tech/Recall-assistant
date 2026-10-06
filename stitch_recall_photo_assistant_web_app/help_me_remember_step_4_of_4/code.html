@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#faf8ff;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "outline-variant": "#bcc9c6", "on-tertiary-fixed": "#00201c", "surface-container": "#eaedff", "secondary-fixed-dim": "#b9c7df", "error-container": "#ffdad6", "on-primary-fixed": "#00201d", "surface-container-low": "#f2f3ff", "tertiary-fixed": "#bdece2", "background": "#faf8ff", "error": "#ba1a1a", "surface-dim": "#d2d9f4", "secondary-container": "#d5e3fc", "on-primary-container": "#f4fffc", "on-tertiary-fixed-variant": "#224e47", "on-secondary": "#ffffff", "surface-variant": "#dae2fd", "on-error": "#ffffff", "primary-fixed-dim": "#6bd8cb", "secondary": "#515f74", "tertiary": "#38645c", "primary": "#00685f", "primary-container": "#008378", "on-tertiary-container": "#f4fffb", "primary-fixed": "#89f5e7", "on-tertiary": "#ffffff", "secondary-fixed": "#d5e3fc", "outline": "#6d7a77", "surface-bright": "#faf8ff", "on-primary-fixed-variant": "#005049", "on-background": "#131b2e", "surface-tint": "#006a61", "inverse-primary": "#6bd8cb", "surface": "#faf8ff", "surface-container-highest": "#dae2fd", "on-error-container": "#93000a", "inverse-on-surface": "#eef0ff", "inverse-surface": "#283044", "on-surface-variant": "#3d4947", "tertiary-container": "#517d75", "tertiary-fixed-dim": "#a2d0c6", "on-primary": "#ffffff", "on-secondary-fixed": "#0d1c2e", "surface-container-high": "#e2e7ff", "on-secondary-fixed-variant": "#3a485b", "on-secondary-container": "#57657a", "on-surface": "#131b2e", "surface-container-lowest": "#ffffff" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter-mobile": "0.75rem", "margin-mobile": "1rem", "gutter": "1.5rem", "space-xl": "2.5rem", "space-xs": "0.375rem", "space-lg": "1.5rem", "space-md": "1rem", "space-sm": "0.5rem", "margin": "2.5rem" }, fontFamily: { "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "label-sm": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "body-md": ["Inter"], "label-md": ["Inter"], "headline-xl": ["Plus Jakarta Sans"], "label-lg": ["Inter"] }, fontSize: { "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg-mobile": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "label-sm": ["14px", { "lineHeight": "18px", "fontWeight": "600" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "label-md": ["14px", { "lineHeight": "20px", "fontWeight": "500" }], "headline-xl": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-lg": ["15px", { "lineHeight": "20px", "fontWeight": "500" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-surface text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="w-full bg-surface-container-low px-margin-mobile py-space-xs flex items-center justify-center gap-1.5"><span class="material-symbols-outlined text-secondary text-[14px]">info</span><span class="font-label-sm text-label-sm text-secondary tracking-tight text-center truncate">Demo library · AI-generated and stock images · not your real photos</span></div><div class="h-16 px-gutter-mobile flex items-center justify-between"><div class="flex items-center gap-space-xs"><button aria-label="Go back" class="min-w-[44px] min-h-[44px] flex items-center justify-center text-on-surface hover:text-primary transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="Recall Brandmark" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V-atcjrU6s2aTvpO-Vmv2iWOOF3HgaV-2ZgLjB08e6oXUBrEf1l-qyXom3GYsW_0ERYqR7-uPyF1uDA0CzjPqM-ny5FhDXy_Bwdd_USREjf3GafqX89QG96DyvPQqgdArmVMVSbXjfnMkq4QSdjnJnxb6fwKtMOuKX7oH_wZV6fW8SzJEH4yg2V8h6sDBndgIObMYqwqOIiCZ45TXq2tvOIIGKOqW6b0cUTqIfnAknHRXCSN2dtCI7FeSE"/><h1 class="font-headline-md text-headline-md tracking-tight text-on-surface truncate">Memory Cue Inspector</h1></div><div class="flex items-center gap-space-xs"><button aria-label="Return to library" class="min-w-[44px] min-h-[44px] flex items-center justify-center text-secondary hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">grid_view</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-24 pb-safe bg-surface"><div class="flex flex-col w-full px-margin-mobile pb-space-xl">
+<!-- Recall Guide Step Tracker Header -->
+<div class="flex flex-col gap-space-xs mt-space-sm mb-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-primary">psychology</span>
+        Recall Guide
+      </span>
+<span class="font-label-sm text-label-sm bg-secondary-container text-on-secondary-container px-2.5 py-0.5 rounded-full font-semibold">
+        STEP 4 OF 4 · FINAL CUE
+      </span>
+</div>
+<div class="flex items-start justify-between gap-space-sm mt-1">
+<div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Help me remember</h2>
+<p class="font-body-md text-body-md text-secondary mt-0.5">Narrowed down to 6 candidate photos across 2 moments</p>
+</div>
+<div class="flex-shrink-0 bg-primary-fixed text-on-primary-fixed px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<span class="font-label-sm text-label-sm font-semibold">6 photos · 2 moments</span>
+</div>
+</div>
+<!-- Stepper Indicator -->
+<div class="grid grid-cols-4 gap-2 pt-3 pb-1">
+<!-- Step 1 Complete -->
+<div class="flex flex-col items-center gap-1">
+<div class="w-7 h-7 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed">
+<span class="material-symbols-outlined text-[16px] font-bold">check</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-medium">When</span>
+</div>
+<!-- Step 2 Complete -->
+<div class="flex flex-col items-center gap-1">
+<div class="w-7 h-7 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed">
+<span class="material-symbols-outlined text-[16px] font-bold">check</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Who</span>
+</div>
+<!-- Step 3 Complete -->
+<div class="flex flex-col items-center gap-1">
+<div class="w-7 h-7 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed">
+<span class="material-symbols-outlined text-[16px] font-bold">check</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Where</span>
+</div>
+<!-- Step 4 Active -->
+<div class="flex flex-col items-center gap-1">
+<div class="w-7 h-7 rounded-full bg-primary flex items-center justify-center text-on-primary shadow-sm ring-4 ring-primary-fixed/40">
+<span class="font-label-sm text-label-sm font-bold">4</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold">What</span>
+</div>
+</div>
+</div>
+<!-- Context Memory So Far -->
+<div class="bg-surface-container-low rounded-xl p-space-md mb-space-md">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Your memory so far</span>
+<span class="font-label-sm text-label-sm text-primary">Tap chip to edit</span>
+</div>
+<div class="flex flex-wrap gap-2">
+<button class="bg-surface-container-lowest text-on-surface px-3 py-1.5 rounded-full font-label-md text-label-md flex items-center gap-1.5 shadow-sm active:scale-95 transition-transform" type="button">
+<span>📅 College · 2018–22</span>
+<span class="material-symbols-outlined text-[14px] text-secondary">close</span>
+</button>
+<button class="bg-surface-container-lowest text-on-surface px-3 py-1.5 rounded-full font-label-md text-label-md flex items-center gap-1.5 shadow-sm active:scale-95 transition-transform" type="button">
+<span>👥 Meera &amp; Arjun</span>
+<span class="material-symbols-outlined text-[14px] text-secondary">close</span>
+</button>
+<button class="bg-surface-container-lowest text-on-surface px-3 py-1.5 rounded-full font-label-md text-label-md flex items-center gap-1.5 shadow-sm active:scale-95 transition-transform" type="button">
+<span>📍 Pune · FC Road</span>
+<span class="material-symbols-outlined text-[14px] text-secondary">close</span>
+</button>
+</div>
+</div>
+<!-- Content Type Filter -->
+<div class="flex items-center gap-2 mb-space-lg overflow-x-auto pb-1 no-scrollbar">
+<span class="font-label-sm text-label-sm text-secondary font-semibold mr-1 shrink-0">Content Type:</span>
+<button class="bg-primary-fixed text-on-primary-fixed px-3 py-1 rounded-full font-label-md text-label-md flex items-center gap-1 font-semibold shrink-0 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[15px] font-bold">check</span>
+<span>Photos</span>
+</button>
+<button class="bg-surface-container-lowest text-secondary px-3 py-1 rounded-full font-label-md text-label-md shrink-0 shadow-sm hover:text-on-surface" type="button">
+      Screenshots
+    </button>
+<button class="bg-surface-container-lowest text-secondary px-3 py-1 rounded-full font-label-md text-label-md shrink-0 shadow-sm hover:text-on-surface" type="button">
+      Documents
+    </button>
+</div>
+<!-- Section Title & Intro -->
+<div class="mb-space-md">
+<h3 class="font-headline-md text-headline-md text-on-surface">What was happening?</h3>
+<p class="font-body-md text-body-md text-secondary mt-0.5">Pick the event or activity Recall identified from your photo clusters.</p>
+</div>
+<!-- Event & Activity Cards Stack -->
+<div aria-label="Detected activities" class="flex flex-col gap-space-sm mb-space-lg" id="activity-group" role="radiogroup">
+<!-- Card 1: Selected Chai Break -->
+<div aria-checked="true" class="activity-card group bg-tertiary-fixed/30 rounded-xl p-3 flex items-center gap-3.5 shadow-sm cursor-pointer transition-all hover:bg-tertiary-fixed/40" role="radio" tabindex="0">
+<div class="w-16 h-16 rounded-lg overflow-hidden shrink-0 bg-surface-container shadow-inner relative">
+<img alt="Friends having tea at a stall in Pune" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VoH_f0757foJYMe26uWpETatlaWxuT3t12BhQU4RUQIyFAZ6Kt12GeCxDqNHWojZ9YtoR0zs1aFR3SCECRyNkDuglQKNbyU6s6vyG0UvoA6LwpUWvKI9l-C1__e-uGBRWb5b6XlrX0Tefx3F-gcs0V8QdQk8eMvCGFrkwx_ysM2JvneH0qYwyof9DPM87RM27ocDZ2iliCbuHfZXtb_p4nzkCHFZAizhyOhNFijzleCfKkpbj-YIT1pWhL"/>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-md text-[16px] leading-[22px] font-semibold text-on-surface truncate">Campus chai break &amp; hangout</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">(6)</span>
+</div>
+<p class="font-body-md text-body-md text-secondary line-clamp-2 mt-0.5">Late afternoon golden hour, chai glasses on table, laughs with Meera &amp; Arjun</p>
+<div class="mt-1.5 flex items-center gap-1 text-primary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>✓ Selected</span>
+</div>
+</div>
+<div class="shrink-0 w-6 h-6 rounded-full bg-primary flex items-center justify-center text-on-primary shadow-sm">
+<span class="material-symbols-outlined text-[16px] font-bold">check</span>
+</div>
+</div>
+<!-- Card 2: Birthday Dinner -->
+<div aria-checked="false" class="activity-card group bg-surface-container-lowest rounded-xl p-3 flex items-center gap-3.5 shadow-sm cursor-pointer transition-all hover:bg-surface-container-low" role="radio" tabindex="0">
+<div class="w-16 h-16 rounded-lg overflow-hidden shrink-0 bg-surface-container shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Warm rooftop birthday party dinner with intimate candle lighting, friends smiling around a chocolate cake, soft bokeh background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAl8Z-214nB07r4dWUUTRGmsMG086lYiaMcxbhH6kG_kDwT9K-UsRPRgEyDcbWVSwyg1v_fVV-3W2Gk7lXIufrEVzoRm5V4VYVCtPfry_1-KGWnlWDGIcoQIKZowgB7Qf7h73X5rXhqjlkwNEcocfGCMifp2Ny757tIVWUFL9KCro-XI_BKGcxkZ69SM_h4d-2MNS2wr62EQmlxyKDXDucWDUNEjnaqbQng6jpvuQdJXb5jeqdF3wTy2Q"/>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-md text-[16px] leading-[22px] font-semibold text-on-surface truncate">Birthday dinner</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">(3)</span>
+</div>
+<p class="font-body-md text-body-md text-secondary line-clamp-2 mt-0.5">Rooftop dining with candles &amp; cake cutting</p>
+</div>
+<div class="shrink-0 w-6 h-6 rounded-full bg-surface-container flex items-center justify-center text-secondary">
+<div class="w-2.5 h-2.5 rounded-full bg-transparent"></div>
+</div>
+</div>
+<!-- Card 3: College Fest -->
+<div aria-checked="false" class="activity-card group bg-surface-container-lowest rounded-xl p-3 flex items-center gap-3.5 shadow-sm cursor-pointer transition-all hover:bg-surface-container-low" role="radio" tabindex="0">
+<div class="w-16 h-16 rounded-lg overflow-hidden shrink-0 bg-surface-container shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Vibrant outdoor college festival amphitheater stage, colorful banners, student crowd applauding under ambient evening lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxvPA-nGH3LNWISEAAghaB1WE8k-LsgpGmNgPQQXJXOy8zioHLvQj2CgXj5CiPuYnRsDQfC6E7gP5g6ejuBNOdFQN6YRzqSzc8XAVAw1fpoBl7BfS1yw9fiZEos2mn9UV22khuiO7Ljdrhsvjh5DrBVK-ptDGmQIpHCXiaQf0RJxkv5u2A7LI_Ui3N_G540UKByMWLv8Z_U0nQFxsMKtD7ItXABmDNqkDqa4M73nX4s9q_P5BmfY-m5g"/>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-md text-[16px] leading-[22px] font-semibold text-on-surface truncate">College fest</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">(6)</span>
+</div>
+<p class="font-body-md text-body-md text-secondary line-clamp-2 mt-0.5">Cultural evening, badges, crowd and campus stage</p>
+</div>
+<div class="shrink-0 w-6 h-6 rounded-full bg-surface-container flex items-center justify-center text-secondary">
+<div class="w-2.5 h-2.5 rounded-full bg-transparent"></div>
+</div>
+</div>
+<!-- Card 4: Café Visit -->
+<div aria-checked="false" class="activity-card group bg-surface-container-lowest rounded-xl p-3 flex items-center gap-3.5 shadow-sm cursor-pointer transition-all hover:bg-surface-container-low" role="radio" tabindex="0">
+<div class="w-16 h-16 rounded-lg overflow-hidden shrink-0 bg-surface-container shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Cozy wooden café table with two ceramic cappuccino mugs, college notebooks, soft afternoon sunlight through café window" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDh0f4K_-WRjm3S4m2ayAbD6ERkOGqOahzTTGIluYIYevzpNl2G_W7UXFRKT6FTJU6nUl3Bf10qSGlqBoVyqnnJOTaKpdoq1uu6sqompYpN-HvtgtXvZFWGTUEQtswDI6Cy2WwkSn-bgwjtILG4BG__k_YSMYlsm9hZwdScoUa73pIpfqjKQXAonq8jvl90oewgLqPZswIm08PecBgE9o9pIVWycpxyw3Cbush3qFf5VDfg9QpERe6cmg"/>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-md text-[16px] leading-[22px] font-semibold text-on-surface truncate">Café visit</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">(2)</span>
+</div>
+<p class="font-body-md text-body-md text-secondary line-clamp-2 mt-0.5">Quiet afternoon study session, warm coffee cups</p>
+</div>
+<div class="shrink-0 w-6 h-6 rounded-full bg-surface-container flex items-center justify-center text-secondary">
+<div class="w-2.5 h-2.5 rounded-full bg-transparent"></div>
+</div>
+</div>
+<!-- Card 5: Beach Day -->
+<div aria-checked="false" class="activity-card group bg-surface-container-lowest rounded-xl p-3 flex items-center gap-3.5 shadow-sm cursor-pointer transition-all hover:bg-surface-container-low" role="radio" tabindex="0">
+<div class="w-16 h-16 rounded-lg overflow-hidden shrink-0 bg-surface-container shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Sunlit sandy beach coastline during sunset trip, gentle sea foam waves, footprints on wet shoreline in golden light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOwnFXbVM3rWIAQ-NzIW5CLPhGKPtODlu8P3ZuxfK4N9N0Fr5g15lKS29x6OeXGfoTxIUQ8PHohQlzwNZ0TkZXmnreDfiW8uoHdLdxuYXe7q6HJYHuxPx9NbJI-3KmCucHhCEiGmceelT_mA5fISGZLCHozppBawaKrsAu0Yy_RMGvGg9N5M3Kkk5uFEESpoqCxjQw5cZytPs3wVquJUYRdm9KCuSnBnp1hwkfUu7mnEeFbZoz5FyT8Q"/>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-md text-[16px] leading-[22px] font-semibold text-on-surface truncate">Beach day</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">(5)</span>
+</div>
+<p class="font-body-md text-body-md text-secondary line-clamp-2 mt-0.5">Sunny coastal trip, sand and outdoor stroll</p>
+</div>
+<div class="shrink-0 w-6 h-6 rounded-full bg-surface-container flex items-center justify-center text-secondary">
+<div class="w-2.5 h-2.5 rounded-full bg-transparent"></div>
+</div>
+</div>
+</div>
+<!-- Collapsible Freeform Sensory Input -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm mb-space-lg">
+<button aria-expanded="true" class="w-full flex items-center justify-between text-left focus:outline-none" id="sensory-toggle" type="button">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<span class="font-headline-md text-[16px] leading-[22px] font-semibold text-on-surface">Anything else you remember? (Optional)</span>
+</div>
+<span class="material-symbols-outlined text-secondary text-[22px] transition-transform duration-200" id="sensory-chevron">expand_less</span>
+</button>
+<div class="mt-space-sm flex flex-col gap-2.5" id="sensory-content">
+<div class="relative bg-surface-container-low rounded-xl p-3 focus-within:bg-surface-container">
+<textarea class="w-full bg-transparent font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none resize-none" placeholder="e.g. balloons, red saree, face mask, rainy cobblestones, steel tea glasses" rows="2"></textarea>
+</div>
+<div class="flex flex-wrap items-center gap-1.5 pt-0.5">
+<span class="font-label-sm text-label-sm text-secondary mr-1">Suggestions:</span>
+<button class="suggestion-chip bg-surface-container text-on-surface-variant px-2.5 py-1 rounded-full font-label-sm text-label-sm hover:bg-secondary-container transition-colors" type="button">
+          + Red saree
+        </button>
+<button class="suggestion-chip bg-primary-fixed text-on-primary-fixed font-semibold px-2.5 py-1 rounded-full font-label-sm text-label-sm hover:bg-primary-fixed-dim transition-colors" type="button">
+          + Steel tea glasses
+        </button>
+<button class="suggestion-chip bg-surface-container text-on-surface-variant px-2.5 py-1 rounded-full font-label-sm text-label-sm hover:bg-secondary-container transition-colors" type="button">
+          + Bun maska
+        </button>
+<button class="suggestion-chip bg-surface-container text-on-surface-variant px-2.5 py-1 rounded-full font-label-sm text-label-sm hover:bg-secondary-container transition-colors" type="button">
+          + Exam day
+        </button>
+</div>
+</div>
+</div>
+<!-- Bottom Action Section -->
+<div class="flex flex-col gap-space-sm bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center gap-2">
+<button class="flex-1 bg-surface-container text-on-surface py-3 px-4 rounded-xl font-label-lg text-label-lg font-semibold text-center hover:bg-surface-container-high transition-colors" type="button">
+        Not sure
+      </button>
+<button class="px-4 py-3 text-secondary font-label-lg text-label-lg font-medium hover:text-on-surface transition-colors" type="button">
+        Skip
+      </button>
+<button class="flex-[2] bg-primary text-on-primary py-3 px-4 rounded-xl font-label-lg text-label-lg font-semibold flex items-center justify-center gap-1.5 shadow-md hover:bg-primary-container active:scale-[0.98] transition-all" type="button">
+<span>Review 2 Moments (6 photos)</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<!-- Test Session Persona Pill -->
+<div class="flex items-center justify-center gap-1.5 pt-1 text-secondary">
+<span class="font-label-sm text-label-sm">🧪 TEST SESSION #402 · Persona: Ananya</span>
+</div>
+</div>
+</div>
+<script>
+  // Collapsible toggle logic for sensory notes
+  const sensoryBtn = document.getElementById('sensory-toggle');
+  const sensoryContent = document.getElementById('sensory-content');
+  const sensoryChevron = document.getElementById('sensory-chevron');
+
+  if (sensoryBtn && sensoryContent && sensoryChevron) {
+    sensoryBtn.addEventListener('click', () => {
+      const isExpanded = sensoryBtn.getAttribute('aria-expanded') === 'true';
+      sensoryBtn.setAttribute('aria-expanded', !isExpanded);
+      if (isExpanded) {
+        sensoryContent.classList.add('hidden');
+        sensoryChevron.textContent = 'expand_more';
+      } else {
+        sensoryContent.classList.remove('hidden');
+        sensoryChevron.textContent = 'expand_less';
+      }
+    });
+  }
+
+  // Suggestion chips insertion micro-interaction
+  const chips = document.querySelectorAll('.suggestion-chip');
+  const textarea = document.querySelector('textarea');
+  chips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      if (textarea) {
+        const textToInsert = chip.textContent.replace('+', '').trim();
+        if (textarea.value.trim().length > 0) {
+          textarea.value += ', ' + textToInsert;
+        } else {
+          textarea.value = textToInsert;
+        }
+        textarea.focus();
+      }
+    });
+  });
+</script></main></body></html>

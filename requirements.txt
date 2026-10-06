@@ -1,0 +1,6 @@
+streamlit
+pandas
+Pillow
+reverse_geocoder
+requests
+pytest

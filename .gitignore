@@ -1,0 +1,19 @@
+# Secrets
+.streamlit/secrets.toml
+
+# Caches
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Logs
+logs/
+*.log
+
+# Environments
+.env
+.venv/
+venv/
+
+# Keep data
+!data/index.json
