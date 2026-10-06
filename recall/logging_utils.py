@@ -37,7 +37,8 @@ def log_event(session_id, participant, task, event, detail=None, filters=None, n
         
     if webhook_url and source == "participant":
         try:
-            requests.post(webhook_url, json=event_data, timeout=5)
+            import threading
+            threading.Thread(target=lambda: requests.post(webhook_url, json=event_data, timeout=5), daemon=True).start()
         except:
             pass
 

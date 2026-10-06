@@ -21,23 +21,31 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 LOG_FILE = "logs/events.jsonl"
+df = pd.DataFrame()
 
-if not os.path.exists(LOG_FILE):
-    st.info("No test logs recorded yet. Start a task from the sidebar to generate logs.")
+if 'LOGS_SHEET_CSV_URL' in st.secrets:
+    csv_url = st.secrets['LOGS_SHEET_CSV_URL']
+    if "/edit" in csv_url:
+        csv_url = csv_url.replace("/edit?", "/export?format=csv&").replace("#", "&")
+    try:
+        df = pd.read_csv(csv_url)
+    except Exception as e:
+        st.error(f"Failed to load logs from Google Sheets: {e}")
 else:
-    data = []
-    with open(LOG_FILE, "r") as f:
-        for line in f:
-            if line.strip():
-                try:
-                    data.append(json.loads(line))
-                except:
-                    pass
-                
-    if not data:
-        st.info("No log entries found.")
-    else:
+    if os.path.exists(LOG_FILE):
+        data = []
+        with open(LOG_FILE, "r") as f:
+            for line in f:
+                if line.strip():
+                    try:
+                        data.append(json.loads(line))
+                    except:
+                        pass
         df = pd.DataFrame(data)
+
+if df.empty:
+    st.info("No log entries found.")
+else:
         
         show_all = st.checkbox("Show all sources (including tests)", value=False)
         if not show_all and 'source' in df.columns:

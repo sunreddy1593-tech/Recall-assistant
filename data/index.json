@@ -480,6 +480,262 @@
       "text_in_image": "",
       "mood": "neutral"
     },
+    "bday_2019_p1.jpg": {
+      "id": "bday_2019_p1.jpg",
+      "taken_at": "2019-01-01T00:00:00",
+      "lat": 0.0,
+      "lon": 0.0,
+      "place": "Unknown",
+      "city": null,
+      "people": [],
+      "caption": "Placeholder caption for bday_2019_p1.jpg",
+      "scene": "outdoor",
+      "activity": "unknown",
+      "objects": [],
+      "clothing_colours": [],
+      "text_in_image": "Notes",
+      "mood": "neutral"
+    },
+    "sibling_award.jpg": {
+      "id": "sibling_award.jpg",
+      "taken_at": "2019-01-01T00:00:00",
+      "lat": 0.0,
+      "lon": 0.0,
+      "place": "Unknown",
+      "city": null,
+      "people": [],
+      "caption": "Placeholder caption for sibling_award.jpg",
+      "scene": "outdoor",
+      "activity": "unknown",
+      "objects": [],
+      "clothing_colours": [],
+      "text_in_image": "Notes",
+      "mood": "neutral"
+    },
+    "bday_2019_p2.jpg": {
+      "id": "bday_2019_p2.jpg",
+      "taken_at": "2019-01-01T00:00:00",
+      "lat": 0.0,
+      "lon": 0.0,
+      "place": "Unknown",
+      "city": null,
+      "people": [],
+      "caption": "Placeholder caption for bday_2019_p2.jpg",
+      "scene": "outdoor",
+      "activity": "unknown",
+      "objects": [],
+      "clothing_colours": [],
+      "text_in_image": "Notes",
+      "mood": "neutral"
+    },
+    "bday_2019_p3.jpg": {
+      "id": "bday_2019_p3.jpg",
+      "taken_at": "2019-01-01T00:00:00",
+      "lat": 0.0,
+      "lon": 0.0,
+      "place": "Unknown",
+      "city": null,
+      "people": [],
+      "caption": "Placeholder caption for bday_2019_p3.jpg",
+      "scene": "outdoor",
+      "activity": "unknown",
+      "objects": [],
+      "clothing_colours": [],
+      "text_in_image": "Notes",
+      "mood": "neutral"
+    },
+    "bday_2020.jpg": {
+      "id": "bday_2020.jpg",
+      "taken_at": "2019-01-01T00:00:00",
+      "lat": 0.0,
+      "lon": 0.0,
+      "place": "Unknown",
+      "city": null,
+      "people": [],
+      "caption": "Placeholder caption for bday_2020.jpg",
+      "scene": "outdoor",
+      "activity": "unknown",
+      "objects": [],
+      "clothing_colours": [],
+      "text_in_image": "Notes",
+      "mood": "neutral"
+    },
+    "bill_screenshot.jpg": {
+      "id": "bill_screenshot.jpg",
+      "taken_at": "2019-01-01T00:00:00",
+      "lat": 0.0,
+      "lon": 0.0,
+      "place": "Unknown",
+      "city": null,
+      "people": [],
+      "caption": "Placeholder caption for bill_screenshot.jpg",
+      "scene": "outdoor",
+      "activity": "unknown",
+      "objects": [],
+      "clothing_colours": [],
+      "text_in_image": "Notes",
+      "mood": "neutral"
+    },
+    "flight_screenshot.jpg": {
+      "id": "flight_screenshot.jpg",
+      "taken_at": "2019-01-01T00:00:00",
+      "lat": 0.0,
+      "lon": 0.0,
+      "place": "Unknown",
+      "city": null,
+      "people": [],
+      "caption": "Placeholder caption for flight_screenshot.jpg",
+      "scene": "outdoor",
+      "activity": "unknown",
+      "objects": [],
+      "clothing_colours": [],
+      "text_in_image": "Notes",
+      "mood": "neutral"
+    },
+    "sibling_distractor.jpg": {
+      "id": "sibling_distractor.jpg",
+      "taken_at": "2019-01-01T00:00:00",
+      "lat": 0.0,
+      "lon": 0.0,
+      "place": "Unknown",
+      "city": null,
+      "people": [],
+      "caption": "Placeholder caption for sibling_distractor.jpg",
+      "scene": "outdoor",
+      "activity": "unknown",
+      "objects": [],
+      "clothing_colours": [],
+      "text_in_image": "Notes",
+      "mood": "neutral"
+    },
+    "goa_cafe.jpg": {
+      "id": "goa_cafe.jpg",
+      "taken_at": "2019-01-01T00:00:00",
+      "lat": 0.0,
+      "lon": 0.0,
+      "place": "Unknown",
+      "city": null,
+      "people": [],
+      "caption": "Placeholder caption for goa_cafe.jpg",
+      "scene": "outdoor",
+      "activity": "unknown",
+      "objects": [],
+      "clothing_colours": [],
+      "text_in_image": "Notes",
+      "mood": "neutral"
+    },
+    "goa_distractor.jpg": {
+      "id": "goa_distractor.jpg",
+      "taken_at": "2019-01-01T00:00:00",
+      "lat": 0.0,
+      "lon": 0.0,
+      "place": "Unknown",
+      "city": null,
+      "people": [],
+      "caption": "Placeholder caption for goa_distractor.jpg",
+      "scene": "outdoor",
+      "activity": "unknown",
+      "objects": [],
+      "clothing_colours": [],
+      "text_in_image": "Notes",
+      "mood": "neutral"
+    },
+    "ireland_distractor.jpg": {
+      "id": "ireland_distractor.jpg",
+      "taken_at": "2019-01-01T00:00:00",
+      "lat": 0.0,
+      "lon": 0.0,
+      "place": "Unknown",
+      "city": null,
+      "people": [],
+      "caption": "Placeholder caption for ireland_distractor.jpg",
+      "scene": "outdoor",
+      "activity": "unknown",
+      "objects": [],
+      "clothing_colours": [],
+      "text_in_image": "Notes",
+      "mood": "neutral"
+    },
+    "ireland_job.jpg": {
+      "id": "ireland_job.jpg",
+      "taken_at": "2019-01-01T00:00:00",
+      "lat": 0.0,
+      "lon": 0.0,
+      "place": "Unknown",
+      "city": null,
+      "people": [],
+      "caption": "Placeholder caption for ireland_job.jpg",
+      "scene": "outdoor",
+      "activity": "unknown",
+      "objects": [],
+      "clothing_colours": [],
+      "text_in_image": "Notes",
+      "mood": "neutral"
+    },
+    "meme_screenshot.jpg": {
+      "id": "meme_screenshot.jpg",
+      "taken_at": "2019-01-01T00:00:00",
+      "lat": 0.0,
+      "lon": 0.0,
+      "place": "Unknown",
+      "city": null,
+      "people": [],
+      "caption": "Placeholder caption for meme_screenshot.jpg",
+      "scene": "outdoor",
+      "activity": "unknown",
+      "objects": [],
+      "clothing_colours": [],
+      "text_in_image": "Notes",
+      "mood": "neutral"
+    },
+    "scotland_distractor1.jpg": {
+      "id": "scotland_distractor1.jpg",
+      "taken_at": "2019-01-01T00:00:00",
+      "lat": 0.0,
+      "lon": 0.0,
+      "place": "Unknown",
+      "city": null,
+      "people": [],
+      "caption": "Placeholder caption for scotland_distractor1.jpg",
+      "scene": "outdoor",
+      "activity": "unknown",
+      "objects": [],
+      "clothing_colours": [],
+      "text_in_image": "Notes",
+      "mood": "neutral"
+    },
+    "scotland_mask.jpg": {
+      "id": "scotland_mask.jpg",
+      "taken_at": "2019-01-01T00:00:00",
+      "lat": 0.0,
+      "lon": 0.0,
+      "place": "Unknown",
+      "city": null,
+      "people": [],
+      "caption": "Placeholder caption for scotland_mask.jpg",
+      "scene": "outdoor",
+      "activity": "unknown",
+      "objects": [],
+      "clothing_colours": [],
+      "text_in_image": "Notes",
+      "mood": "neutral"
+    },
+    "goa_cafe_old.jpg": {
+      "id": "goa_cafe_old.jpg",
+      "taken_at": "2019-01-01T00:00:00",
+      "lat": 0.0,
+      "lon": 0.0,
+      "place": "Unknown",
+      "city": null,
+      "people": [],
+      "caption": "Placeholder caption for goa_cafe_old.jpg",
+      "scene": "outdoor",
+      "activity": "unknown",
+      "objects": [],
+      "clothing_colours": [],
+      "text_in_image": "Notes",
+      "mood": "neutral"
+    },
     "2019-01-25_Hyderabad/IMG_20190125_001.jpg": {
       "id": "2019-01-25_Hyderabad/IMG_20190125_001.jpg",
       "taken_at": "2019-01-25T09:19:51",
@@ -2387,262 +2643,6 @@
       "clothing_colours": [],
       "text_in_image": "",
       "mood": "neutral"
-    },
-    "bday_2019_p1.jpg": {
-      "id": "bday_2019_p1.jpg",
-      "taken_at": "2019-01-01T00:00:00",
-      "lat": null,
-      "lon": null,
-      "place": "Unknown place",
-      "city": null,
-      "people": [],
-      "caption": "Placeholder caption for bday_2019_p1.jpg",
-      "scene": "outdoor",
-      "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
-      "text_in_image": "",
-      "mood": "neutral"
-    },
-    "bday_2019_p2.jpg": {
-      "id": "bday_2019_p2.jpg",
-      "taken_at": "2019-01-01T00:00:00",
-      "lat": null,
-      "lon": null,
-      "place": "Unknown place",
-      "city": null,
-      "people": [],
-      "caption": "Placeholder caption for bday_2019_p2.jpg",
-      "scene": "outdoor",
-      "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
-      "text_in_image": "",
-      "mood": "neutral"
-    },
-    "bday_2019_p3.jpg": {
-      "id": "bday_2019_p3.jpg",
-      "taken_at": "2019-01-01T00:00:00",
-      "lat": null,
-      "lon": null,
-      "place": "Unknown place",
-      "city": null,
-      "people": [],
-      "caption": "Placeholder caption for bday_2019_p3.jpg",
-      "scene": "outdoor",
-      "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
-      "text_in_image": "",
-      "mood": "neutral"
-    },
-    "bday_2020.jpg": {
-      "id": "bday_2020.jpg",
-      "taken_at": "2019-01-01T00:00:00",
-      "lat": null,
-      "lon": null,
-      "place": "Unknown place",
-      "city": null,
-      "people": [],
-      "caption": "Placeholder caption for bday_2020.jpg",
-      "scene": "outdoor",
-      "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
-      "text_in_image": "",
-      "mood": "neutral"
-    },
-    "bill_screenshot.jpg": {
-      "id": "bill_screenshot.jpg",
-      "taken_at": "2019-01-01T00:00:00",
-      "lat": null,
-      "lon": null,
-      "place": "Unknown place",
-      "city": null,
-      "people": [],
-      "caption": "Placeholder caption for bill_screenshot.jpg",
-      "scene": "outdoor",
-      "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
-      "text_in_image": "",
-      "mood": "neutral"
-    },
-    "flight_screenshot.jpg": {
-      "id": "flight_screenshot.jpg",
-      "taken_at": "2019-01-01T00:00:00",
-      "lat": null,
-      "lon": null,
-      "place": "Unknown place",
-      "city": null,
-      "people": [],
-      "caption": "Placeholder caption for flight_screenshot.jpg",
-      "scene": "outdoor",
-      "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
-      "text_in_image": "",
-      "mood": "neutral"
-    },
-    "goa_cafe.jpg": {
-      "id": "goa_cafe.jpg",
-      "taken_at": "2019-01-01T00:00:00",
-      "lat": null,
-      "lon": null,
-      "place": "Unknown place",
-      "city": null,
-      "people": [],
-      "caption": "Placeholder caption for goa_cafe.jpg",
-      "scene": "outdoor",
-      "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
-      "text_in_image": "",
-      "mood": "neutral"
-    },
-    "goa_cafe_old.jpg": {
-      "id": "goa_cafe_old.jpg",
-      "taken_at": "2019-01-01T00:00:00",
-      "lat": null,
-      "lon": null,
-      "place": "Unknown place",
-      "city": null,
-      "people": [],
-      "caption": "Placeholder caption for goa_cafe_old.jpg",
-      "scene": "outdoor",
-      "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
-      "text_in_image": "",
-      "mood": "neutral"
-    },
-    "goa_distractor.jpg": {
-      "id": "goa_distractor.jpg",
-      "taken_at": "2019-01-01T00:00:00",
-      "lat": null,
-      "lon": null,
-      "place": "Unknown place",
-      "city": null,
-      "people": [],
-      "caption": "Placeholder caption for goa_distractor.jpg",
-      "scene": "outdoor",
-      "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
-      "text_in_image": "",
-      "mood": "neutral"
-    },
-    "ireland_distractor.jpg": {
-      "id": "ireland_distractor.jpg",
-      "taken_at": "2019-01-01T00:00:00",
-      "lat": null,
-      "lon": null,
-      "place": "Unknown place",
-      "city": null,
-      "people": [],
-      "caption": "Placeholder caption for ireland_distractor.jpg",
-      "scene": "outdoor",
-      "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
-      "text_in_image": "",
-      "mood": "neutral"
-    },
-    "ireland_job.jpg": {
-      "id": "ireland_job.jpg",
-      "taken_at": "2019-01-01T00:00:00",
-      "lat": null,
-      "lon": null,
-      "place": "Unknown place",
-      "city": null,
-      "people": [],
-      "caption": "Placeholder caption for ireland_job.jpg",
-      "scene": "outdoor",
-      "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
-      "text_in_image": "",
-      "mood": "neutral"
-    },
-    "meme_screenshot.jpg": {
-      "id": "meme_screenshot.jpg",
-      "taken_at": "2019-01-01T00:00:00",
-      "lat": null,
-      "lon": null,
-      "place": "Unknown place",
-      "city": null,
-      "people": [],
-      "caption": "Placeholder caption for meme_screenshot.jpg",
-      "scene": "outdoor",
-      "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
-      "text_in_image": "",
-      "mood": "neutral"
-    },
-    "scotland_distractor1.jpg": {
-      "id": "scotland_distractor1.jpg",
-      "taken_at": "2019-01-01T00:00:00",
-      "lat": null,
-      "lon": null,
-      "place": "Unknown place",
-      "city": null,
-      "people": [],
-      "caption": "Placeholder caption for scotland_distractor1.jpg",
-      "scene": "outdoor",
-      "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
-      "text_in_image": "",
-      "mood": "neutral"
-    },
-    "scotland_mask.jpg": {
-      "id": "scotland_mask.jpg",
-      "taken_at": "2019-01-01T00:00:00",
-      "lat": null,
-      "lon": null,
-      "place": "Unknown place",
-      "city": null,
-      "people": [],
-      "caption": "Placeholder caption for scotland_mask.jpg",
-      "scene": "outdoor",
-      "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
-      "text_in_image": "",
-      "mood": "neutral"
-    },
-    "sibling_award.jpg": {
-      "id": "sibling_award.jpg",
-      "taken_at": "2019-01-01T00:00:00",
-      "lat": null,
-      "lon": null,
-      "place": "Unknown place",
-      "city": null,
-      "people": [],
-      "caption": "Placeholder caption for sibling_award.jpg",
-      "scene": "outdoor",
-      "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
-      "text_in_image": "",
-      "mood": "neutral"
-    },
-    "sibling_distractor.jpg": {
-      "id": "sibling_distractor.jpg",
-      "taken_at": "2019-01-01T00:00:00",
-      "lat": null,
-      "lon": null,
-      "place": "Unknown place",
-      "city": null,
-      "people": [],
-      "caption": "Placeholder caption for sibling_distractor.jpg",
-      "scene": "outdoor",
-      "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
-      "text_in_image": "",
-      "mood": "neutral"
     }
   },
   "events": [
@@ -2787,6 +2787,33 @@
       "event_type": "other"
     },
     {
+      "id": "evt_20190101T000000_16",
+      "start": "2019-01-01T00:00:00",
+      "end": "2019-01-01T00:00:00",
+      "photo_ids": [
+        "bday_2019_p1.jpg",
+        "sibling_award.jpg",
+        "bday_2019_p2.jpg",
+        "bday_2019_p3.jpg",
+        "bday_2020.jpg",
+        "bill_screenshot.jpg",
+        "flight_screenshot.jpg",
+        "sibling_distractor.jpg",
+        "goa_cafe.jpg",
+        "goa_distractor.jpg",
+        "ireland_distractor.jpg",
+        "ireland_job.jpg",
+        "meme_screenshot.jpg",
+        "scotland_distractor1.jpg",
+        "scotland_mask.jpg",
+        "goa_cafe_old.jpg"
+      ],
+      "place": "Unknown",
+      "people": [],
+      "event_label": "Placeholder Event",
+      "event_type": "other"
+    },
+    {
       "id": "evt_20190125T091951_1",
       "start": "2019-01-25T09:19:51",
       "end": "2019-01-25T09:19:51",
@@ -2811,9 +2838,9 @@
       ],
       "place": "Pune Viman Nagar",
       "people": [
+        "Meera",
         "Arjun",
-        "Riya",
-        "Meera"
+        "Riya"
       ],
       "event_label": "Placeholder Event",
       "event_type": "other"
@@ -2861,9 +2888,9 @@
       ],
       "place": "Goa Panjim",
       "people": [
+        "Meera",
         "Arjun",
-        "Riya",
-        "Meera"
+        "Riya"
       ],
       "event_label": "Placeholder Event",
       "event_type": "other"
@@ -2877,8 +2904,8 @@
       ],
       "place": "Pune Koregaon Park",
       "people": [
-        "Riya",
-        "Meera"
+        "Meera",
+        "Riya"
       ],
       "event_label": "Placeholder Event",
       "event_type": "other"
@@ -3458,198 +3485,6 @@
       "people": [],
       "event_label": "Placeholder Event",
       "event_type": "other"
-    },
-    {
-      "id": "evt_2019-01-01T00:00:00_1",
-      "start": "2019-01-01T00:00:00",
-      "end": "2019-01-01T00:00:00",
-      "photo_ids": [
-        "bday_2019_p1.jpg"
-      ],
-      "place": "Unknown place",
-      "people": [],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
-    },
-    {
-      "id": "evt_2019-01-01T00:00:00_1",
-      "start": "2019-01-01T00:00:00",
-      "end": "2019-01-01T00:00:00",
-      "photo_ids": [
-        "bday_2019_p2.jpg"
-      ],
-      "place": "Unknown place",
-      "people": [],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
-    },
-    {
-      "id": "evt_2019-01-01T00:00:00_1",
-      "start": "2019-01-01T00:00:00",
-      "end": "2019-01-01T00:00:00",
-      "photo_ids": [
-        "bday_2019_p3.jpg"
-      ],
-      "place": "Unknown place",
-      "people": [],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
-    },
-    {
-      "id": "evt_2019-01-01T00:00:00_1",
-      "start": "2019-01-01T00:00:00",
-      "end": "2019-01-01T00:00:00",
-      "photo_ids": [
-        "bday_2020.jpg"
-      ],
-      "place": "Unknown place",
-      "people": [],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
-    },
-    {
-      "id": "evt_2019-01-01T00:00:00_1",
-      "start": "2019-01-01T00:00:00",
-      "end": "2019-01-01T00:00:00",
-      "photo_ids": [
-        "bill_screenshot.jpg"
-      ],
-      "place": "Unknown place",
-      "people": [],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
-    },
-    {
-      "id": "evt_2019-01-01T00:00:00_1",
-      "start": "2019-01-01T00:00:00",
-      "end": "2019-01-01T00:00:00",
-      "photo_ids": [
-        "flight_screenshot.jpg"
-      ],
-      "place": "Unknown place",
-      "people": [],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
-    },
-    {
-      "id": "evt_2019-01-01T00:00:00_1",
-      "start": "2019-01-01T00:00:00",
-      "end": "2019-01-01T00:00:00",
-      "photo_ids": [
-        "goa_cafe.jpg"
-      ],
-      "place": "Unknown place",
-      "people": [],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
-    },
-    {
-      "id": "evt_2019-01-01T00:00:00_1",
-      "start": "2019-01-01T00:00:00",
-      "end": "2019-01-01T00:00:00",
-      "photo_ids": [
-        "goa_cafe_old.jpg"
-      ],
-      "place": "Unknown place",
-      "people": [],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
-    },
-    {
-      "id": "evt_2019-01-01T00:00:00_1",
-      "start": "2019-01-01T00:00:00",
-      "end": "2019-01-01T00:00:00",
-      "photo_ids": [
-        "goa_distractor.jpg"
-      ],
-      "place": "Unknown place",
-      "people": [],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
-    },
-    {
-      "id": "evt_2019-01-01T00:00:00_1",
-      "start": "2019-01-01T00:00:00",
-      "end": "2019-01-01T00:00:00",
-      "photo_ids": [
-        "ireland_distractor.jpg"
-      ],
-      "place": "Unknown place",
-      "people": [],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
-    },
-    {
-      "id": "evt_2019-01-01T00:00:00_1",
-      "start": "2019-01-01T00:00:00",
-      "end": "2019-01-01T00:00:00",
-      "photo_ids": [
-        "ireland_job.jpg"
-      ],
-      "place": "Unknown place",
-      "people": [],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
-    },
-    {
-      "id": "evt_2019-01-01T00:00:00_1",
-      "start": "2019-01-01T00:00:00",
-      "end": "2019-01-01T00:00:00",
-      "photo_ids": [
-        "meme_screenshot.jpg"
-      ],
-      "place": "Unknown place",
-      "people": [],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
-    },
-    {
-      "id": "evt_2019-01-01T00:00:00_1",
-      "start": "2019-01-01T00:00:00",
-      "end": "2019-01-01T00:00:00",
-      "photo_ids": [
-        "scotland_distractor1.jpg"
-      ],
-      "place": "Unknown place",
-      "people": [],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
-    },
-    {
-      "id": "evt_2019-01-01T00:00:00_1",
-      "start": "2019-01-01T00:00:00",
-      "end": "2019-01-01T00:00:00",
-      "photo_ids": [
-        "scotland_mask.jpg"
-      ],
-      "place": "Unknown place",
-      "people": [],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
-    },
-    {
-      "id": "evt_2019-01-01T00:00:00_1",
-      "start": "2019-01-01T00:00:00",
-      "end": "2019-01-01T00:00:00",
-      "photo_ids": [
-        "sibling_award.jpg"
-      ],
-      "place": "Unknown place",
-      "people": [],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
-    },
-    {
-      "id": "evt_2019-01-01T00:00:00_1",
-      "start": "2019-01-01T00:00:00",
-      "end": "2019-01-01T00:00:00",
-      "photo_ids": [
-        "sibling_distractor.jpg"
-      ],
-      "place": "Unknown place",
-      "people": [],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
     }
   ],
   "chapters": [
@@ -3697,12 +3532,12 @@
     }
   ],
   "people": [
-    "Riya",
-    "Arjun",
-    "Ananya",
-    "Rohan",
     "Tom",
+    "Rohan",
+    "Ananya",
+    "Arjun",
+    "Kabir",
     "Meera",
-    "Kabir"
+    "Riya"
   ]
 }
