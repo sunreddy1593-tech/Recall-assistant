@@ -13,6 +13,11 @@ load_css()
 
 index = load_index()
 
+def update_search_query():
+    if 'photoSearchInput' in st.session_state:
+        st.session_state['active_search_query'] = st.session_state['photoSearchInput']
+        st.session_state['search_page'] = 0
+
 # Initialize session states
 if 'filters' not in st.session_state:
     st.session_state['filters'] = {}
@@ -292,7 +297,7 @@ if st.session_state['viewing_event']:
         else:
             eligible_pids = [pid for pid in event['photo_ids'] if pid not in st.session_state.get('rejected_photos', set())]
     elif st.session_state['app_mode'] == 'search':
-        query = st.session_state.get('photoSearchInput', '')
+        query = st.session_state.get('active_search_query', '')
         if query:
             q_lower = query.lower()
             matched = set()
@@ -484,7 +489,7 @@ if st.session_state['app_mode'] == 'search':
     with col_s1:
         if 'photoSearchInput' not in st.session_state:
             st.session_state['photoSearchInput'] = st.session_state.get('active_search_query', '')
-        query = st.text_input("Search photos", placeholder="Search your photos (e.g. Goa 2021, Scotland rain, Chai tapri)...", key="photoSearchInput", label_visibility="collapsed")
+        st.text_input("Search photos", placeholder="Search your photos (e.g. Goa 2021, Scotland rain, Chai tapri)...", key="photoSearchInput", label_visibility="collapsed", on_change=update_search_query)
     with col_s2:
         if st.button("✨ Help me remember", type="primary", key="btn_help_remember_main", use_container_width=True):
             st.session_state['app_mode'] = 'help'
@@ -508,11 +513,9 @@ if st.session_state['app_mode'] == 'search':
         </div>
     """, unsafe_allow_html=True)
 
+    query = st.session_state.get('active_search_query', '')
+
     if query:
-        if query != st.session_state.get('active_search_query', ''):
-            st.session_state['active_search_query'] = query
-            st.session_state['search_page'] = 0
-            
         if st.session_state.get('last_query') != query:
             st.session_state['search_retries'] += 1
             st.session_state['last_query'] = query
@@ -612,10 +615,6 @@ if st.session_state['app_mode'] == 'search':
                     st.rerun()
 
     else:
-        if st.session_state.get('active_search_query'):
-            st.session_state['active_search_query'] = ""
-            st.session_state['search_page'] = 0
-            
         # Screen 01 Default Timeline Feed
         # Group library photos by Chapter / Month for rich timeline browsing
         st.markdown("<div style='margin-top: 12px;'></div>", unsafe_allow_html=True)
