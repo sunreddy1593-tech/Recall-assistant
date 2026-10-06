@@ -166,3 +166,63 @@ def test_when_step_not_sure_clears_time(mock_post):
     
     at.button("back_to_1").click().run()
     assert 'era_box' not in at.session_state or not at.session_state['era_box']
+
+@patch('recall.logging_utils.requests.post')
+def test_bug1_search_rejection_exclusion_and_state(mock_post):
+    at = AppTest.from_file("../app.py").run()
+    at.sidebar.button[0].click().run()
+    
+    at.text_input("photoSearchInput").input("scotland").run()
+    
+    matched_keys = [k for k in at.button if k.key and k.key.startswith("srch_view_")]
+    if not matched_keys: return # skip if no data
+    first_pid = matched_keys[0].key.replace("srch_view_", "")
+    
+    matched_keys[0].click().run()
+    at.button(f"reject_focus_{first_pid}").click().run()
+    
+    if at.session_state['viewing_event']:
+        at.button("btn_back_to_results").click().run()
+        
+    assert at.text_input("photoSearchInput").value == "scotland"
+    
+    new_matched_keys = [k for k in at.button if k.key and k.key.startswith("srch_view_")]
+    assert first_pid not in [k.key.replace("srch_view_", "") for k in new_matched_keys]
+    
+    at.text_input("photoSearchInput").input("").run()
+    assert len([k for k in at.button if k.key and k.key.startswith("srch_view_")]) == 0
+
+
+@patch('recall.logging_utils.requests.post')
+def test_bug2_pagination(mock_post):
+    at = AppTest.from_file("../app.py").run()
+    at.sidebar.button[0].click().run()
+    
+    at.text_input("photoSearchInput").input("e").run()
+    
+    buttons = [k for k in at.button if k.key and k.key.startswith("srch_view_")]
+    assert len(buttons) <= 4
+    
+    show_more = [b for b in at.button if b.label == "Show more"]
+    if show_more:
+        show_more[0].click().run()
+        buttons_page_2 = [k for k in at.button if k.key and k.key.startswith("srch_view_")]
+        assert len(buttons_page_2) > len(buttons)
+        assert len(buttons_page_2) <= 8
+
+
+@patch('recall.logging_utils.requests.post')
+def test_bug3_raw_html_zero_results(mock_post):
+    at = AppTest.from_file("../app.py").run()
+    at.sidebar.button[0].click().run()
+    
+    at.text_input("photoSearchInput").input("zzzznomatchtest").run()
+    
+    rendered_md = [m.value for m in at.markdown]
+    has_zero_results = any("0 photos found" in m for m in rendered_md)
+    assert has_zero_results
+    
+    for m in rendered_md:
+        if "0 photos found" in m:
+            assert "\n" not in m
+            assert "    </div>" not in m

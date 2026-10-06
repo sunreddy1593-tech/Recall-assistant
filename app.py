@@ -32,8 +32,12 @@ if 'step_history' not in st.session_state:
     st.session_state['step_history'] = []
 if 'rejected_photos' not in st.session_state:
     st.session_state['rejected_photos'] = set()
+if 'active_search_query' not in st.session_state:
+    st.session_state['active_search_query'] = ""
+if 'search_page' not in st.session_state:
+    st.session_state['search_page'] = 0
 
-WIDGET_KEYS = ['photoSearchInput', 'desc_input_box', 'era_box', 'pills_q1_chaps', 'pills_q1_years', 'seg_group_dynamic', 'pills_q2_who', 'unnamed_person_box', 'pills_vibe', 'pills_q3_where', 'pills_q4_type', 'pills_q4_what', 'q4_detail_box', 'rerank_detail_box', 'show_describe_box', 'last_query']
+WIDGET_KEYS = ['photoSearchInput', 'desc_input_box', 'era_box', 'pills_q1_chaps', 'pills_q1_years', 'seg_group_dynamic', 'pills_q2_who', 'unnamed_person_box', 'pills_vibe', 'pills_q3_where', 'pills_q4_type', 'pills_q4_what', 'q4_detail_box', 'rerank_detail_box', 'show_describe_box', 'last_query', 'active_search_query', 'search_page']
 
 
 # Sidebar: Test Session
@@ -478,6 +482,8 @@ if st.session_state['app_mode'] == 'search':
     # Search Bar Row
     col_s1, col_s2 = st.columns([4, 1.2])
     with col_s1:
+        if 'photoSearchInput' not in st.session_state:
+            st.session_state['photoSearchInput'] = st.session_state.get('active_search_query', '')
         query = st.text_input("Search photos", placeholder="Search your photos (e.g. Goa 2021, Scotland rain, Chai tapri)...", key="photoSearchInput", label_visibility="collapsed")
     with col_s2:
         if st.button("✨ Help me remember", type="primary", key="btn_help_remember_main", use_container_width=True):
@@ -503,33 +509,45 @@ if st.session_state['app_mode'] == 'search':
     """, unsafe_allow_html=True)
 
     if query:
+        if query != st.session_state.get('active_search_query', ''):
+            st.session_state['active_search_query'] = query
+            st.session_state['search_page'] = 0
+            
         if st.session_state.get('last_query') != query:
             st.session_state['search_retries'] += 1
             st.session_state['last_query'] = query
+            
         q_lower = query.lower()
-        matched = []
+        matched_all = []
+        rejected = st.session_state.get('rejected_photos', set())
         for pid, p in index['photos'].items():
             text_to_search = f"{p.get('place','')} {p.get('city','')} {' '.join(p.get('people',[]))} {p.get('text_in_image','')} {p.get('description','')} {p.get('activity','')} {p.get('scene','')}".lower()
             if q_lower in text_to_search:
-                matched.append(pid)
-
+                matched_all.append(pid)
+                
+        matched = [pid for pid in matched_all if pid not in rejected]
         n = len(matched)
+        n_all = len(matched_all)
 
-        # SCREEN 02: SEARCH FLOODED
+        if n == 0 and n_all > 0:
+            st.warning("All matching photos have been rejected.")
+            col_r1, col_r2 = st.columns(2)
+            with col_r1:
+                if st.button("Restore rejected photos", use_container_width=True):
+                    st.session_state['rejected_photos'] = set()
+                    st.session_state['search_page'] = 0
+                    st.rerun()
+            st.stop()
+
         is_broad = n > 40 or (n > 1 and st.session_state.get('search_retries', 0) >= 2)
         if n == 0 or is_broad:
             broad_pill = '<span class="memory-stream-pill" style="background:#FFDAD6; color:#BA1A1A; font-size:11px; margin-left: 8px;">BROAD SEARCH</span>' if is_broad else ''
             header_text = f"{n} photos found" if is_broad else "0 photos found"
-            st.markdown(f"""
-                <div style="margin-top: 12px; margin-bottom: 8px; display: flex; align-items: center; justify-content: space-between;">
-                    <div>
-                        <h2 style="margin: 0; display: inline;">{header_text}</h2>
-                        {broad_pill}
-                    </div>
-                </div>
-            """, unsafe_allow_html=True)
+            st.markdown(
+                f'<div style="margin-top: 12px; margin-bottom: 8px; display: flex; align-items: center; justify-content: space-between;">'
+                f'<div><h2 style="margin: 0; display: inline;">{header_text}</h2>{broad_pill}</div>'
+                f'</div>', unsafe_allow_html=True)
 
-            # Friendly Intervention Banner Card
             with st.container():
                 st.markdown("""
                     <div class="callout-card" style="border: 1.5px solid #00685F; background: linear-gradient(135deg, #F2F3FF 0%, #EAEDFF 100%);">
@@ -559,36 +577,45 @@ if st.session_state['app_mode'] == 'search':
                 with col_c2:
                     st.caption("Guided step-by-step recall: When, Who, Where, What")
 
-            # Show photo sample
-            if matched:
+        if n > 0:
+            if is_broad:
                 st.markdown("#### Photo search results:")
-                cols = st.columns(min(n, 6))
-                for i, pid in enumerate(matched[:6]):
-                    with cols[i]:
-                        st.image(f"library/photos/{pid}", use_container_width=True)
-                        if st.button("View photo", key=f"srch_view_broad_{pid}", use_container_width=True):
-                            ev = next((e for e in index['events'] if pid in e['photo_ids']), None)
-                            if ev:
-                                log_event(st.session_state.get('session_id'), st.session_state.get('participant'), st.session_state.get('task'), "moment_open", detail=ev['id'], step=get_step())
-                                st.session_state['viewing_event'] = ev['id']
-                                st.session_state['selected_photo_pid'] = pid
-                                st.rerun()
-        else:
-            st.markdown(f"<h3>Found {n} photos</h3>", unsafe_allow_html=True)
-            cols = st.columns(min(n, 4))
-            for i, pid in enumerate(matched[:4]):
-                with cols[i]:
+            else:
+                st.markdown(f"<h3>Found {n} photos</h3>", unsafe_allow_html=True)
+                
+            page_size = 4
+            page = st.session_state.get('search_page', 0)
+            if page * page_size >= n:
+                page = max(0, (n - 1) // page_size)
+                st.session_state['search_page'] = page
+                
+            displayed = matched[0 : (page + 1) * page_size]
+            
+            if n > page_size:
+                st.caption(f"Showing 1–{len(displayed)} of {n} matching photos.")
+                
+            cols = st.columns(4)
+            for i, pid in enumerate(displayed):
+                with cols[i % 4]:
                     st.image(f"library/photos/{pid}", use_container_width=True)
                     if st.button("View photo", key=f"srch_view_{pid}", use_container_width=True):
-                        # Find event for this photo
                         ev = next((e for e in index['events'] if pid in e['photo_ids']), None)
                         if ev:
                             log_event(st.session_state.get('session_id'), st.session_state.get('participant'), st.session_state.get('task'), "moment_open", detail=ev['id'], step=get_step())
                             st.session_state['viewing_event'] = ev['id']
                             st.session_state['selected_photo_pid'] = pid
                             st.rerun()
+                            
+            if len(displayed) < n:
+                if st.button("Show more", use_container_width=True):
+                    st.session_state['search_page'] = page + 1
+                    st.rerun()
 
     else:
+        if st.session_state.get('active_search_query'):
+            st.session_state['active_search_query'] = ""
+            st.session_state['search_page'] = 0
+            
         # Screen 01 Default Timeline Feed
         # Group library photos by Chapter / Month for rich timeline browsing
         st.markdown("<div style='margin-top: 12px;'></div>", unsafe_allow_html=True)
