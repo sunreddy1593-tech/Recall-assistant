@@ -53,11 +53,14 @@ def main():
                 det = str(ev.get("detail", ""))
                 selected_photo = det.split(" in ")[0] if " in " in det else det
                 
-        if selected_photo in target_photos:
-            success = "Y"
+        if task == "FREE":
+            success = "N/A"
+            target_str = "Free Exploration"
+        else:
+            if selected_photo in target_photos:
+                success = "Y"
+            target_str = target_photos[0] if target_photos else "Unknown"
             
-        target_str = target_photos[0] if target_photos else "Unknown"
-        
         print(f"{participant or 'Unknown':<12} | {str(task)[:10] if task else 'Unknown':<10} | {success:<8} | {steps:<6} | {elapsed:<10.1f} | {target_str[:30]:<30} | {selected_photo[:30]:<30}")
 
 if __name__ == "__main__":

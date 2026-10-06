@@ -44,21 +44,22 @@ with st.sidebar:
     """, unsafe_allow_html=True)
     
     participant = st.selectbox("Participant code", ["P-Ananya · Study A", "P1", "P2", "P3", "P4", "P5", "P6", "P7", "P8", "P9", "Guest"], key="sb_participant")
-    task_options = [
-        "Find the photo of college chai break outside campus",
-        "Find Scotland face mask photo",
-        "Find Dublin pub celebration",
-        "Find Bangalore airport arrival",
-        "Find Pune birthday rooftop photo",
-        "Free search"
-    ]
-    task = st.selectbox("Task", task_options, key="sb_task")
+    task_map = {
+        "Task 1": "S1",
+        "Task 2": "S2",
+        "Task 3": "S3",
+        "Task 4": "S4",
+        "Task 5": "S5",
+        "Task 6": "S6",
+        "Free search": "FREE"
+    }
+    task = st.selectbox("Task", list(task_map.keys()), key="sb_task")
     
     col_st1, col_st2 = st.columns([1.5, 1])
     with col_st1:
         if st.button("▶ Start task", type="primary", use_container_width=True):
             p_code = participant.split(" · ")[0]
-            start_task(p_code, task)
+            start_task(p_code, task_map[task])
             st.session_state['filters'] = {}
             st.session_state['viewing_event'] = None
             st.session_state['selected_photo_pid'] = None
@@ -84,7 +85,7 @@ with st.sidebar:
             <div style="background-color: #EAEDFF; border-radius: 10px; padding: 10px; margin-bottom: 12px; font-size: 12px; color: #131B2E;">
                 <div style="font-weight: 600; color: #00685F; margin-bottom: 2px;">⚡ Active Test Session</div>
                 <div style="color: #515F74;"><b>{st.session_state.get('participant')}</b></div>
-                <div style="margin-top: 4px; font-style: italic;">"{st.session_state.get('task')}"</div>
+                <div style="margin-top: 4px; font-style: italic;">Task ID: {st.session_state.get('task')}</div>
             </div>
         """, unsafe_allow_html=True)
 

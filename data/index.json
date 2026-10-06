@@ -8,13 +8,20 @@
       "place": "Hyderabad",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2013-06-20_Hyderabad/IMG_20130620_003.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2013-06-20_Hyderabad/IMG_20130620_001.jpg": {
       "id": "2013-06-20_Hyderabad/IMG_20130620_001.jpg",
@@ -24,13 +31,20 @@
       "place": "Hyderabad",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2013-06-20_Hyderabad/IMG_20130620_001.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2013-06-20_Hyderabad/IMG_20130620_002.jpg": {
       "id": "2013-06-20_Hyderabad/IMG_20130620_002.jpg",
@@ -40,13 +54,20 @@
       "place": "Hyderabad",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2013-06-20_Hyderabad/IMG_20130620_002.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2013-08-15_Hyderabad/IMG_20130815_003.jpg": {
       "id": "2013-08-15_Hyderabad/IMG_20130815_003.jpg",
@@ -56,13 +77,20 @@
       "place": "Hyderabad",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2013-08-15_Hyderabad/IMG_20130815_003.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2013-08-15_Hyderabad/IMG_20130815_001.jpg": {
       "id": "2013-08-15_Hyderabad/IMG_20130815_001.jpg",
@@ -72,13 +100,20 @@
       "place": "Hyderabad",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2013-08-15_Hyderabad/IMG_20130815_001.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2013-08-15_Hyderabad/IMG_20130815_002.jpg": {
       "id": "2013-08-15_Hyderabad/IMG_20130815_002.jpg",
@@ -88,13 +123,20 @@
       "place": "Hyderabad",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2013-08-15_Hyderabad/IMG_20130815_002.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2014-11-14_Hyderabad/IMG_20141114_005.jpg": {
       "id": "2014-11-14_Hyderabad/IMG_20141114_005.jpg",
@@ -104,13 +146,20 @@
       "place": "Hyderabad",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2014-11-14_Hyderabad/IMG_20141114_005.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2014-11-14_Hyderabad/IMG_20141114_006.jpg": {
       "id": "2014-11-14_Hyderabad/IMG_20141114_006.jpg",
@@ -120,13 +169,20 @@
       "place": "Hyderabad",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2014-11-14_Hyderabad/IMG_20141114_006.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2014-11-14_Hyderabad/IMG_20141114_003.jpg": {
       "id": "2014-11-14_Hyderabad/IMG_20141114_003.jpg",
@@ -136,13 +192,20 @@
       "place": "Hyderabad",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2014-11-14_Hyderabad/IMG_20141114_003.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2014-11-14_Hyderabad/IMG_20141114_002.jpg": {
       "id": "2014-11-14_Hyderabad/IMG_20141114_002.jpg",
@@ -152,13 +215,20 @@
       "place": "Hyderabad",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2014-11-14_Hyderabad/IMG_20141114_002.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2014-11-14_Hyderabad/IMG_20141114_004.jpg": {
       "id": "2014-11-14_Hyderabad/IMG_20141114_004.jpg",
@@ -168,13 +238,20 @@
       "place": "Hyderabad",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2014-11-14_Hyderabad/IMG_20141114_004.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2014-11-14_Hyderabad/IMG_20141114_001.jpg": {
       "id": "2014-11-14_Hyderabad/IMG_20141114_001.jpg",
@@ -184,13 +261,20 @@
       "place": "Hyderabad",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2014-11-14_Hyderabad/IMG_20141114_001.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2015-05-10_Hyderabad/IMG_20150510_002.jpg": {
       "id": "2015-05-10_Hyderabad/IMG_20150510_002.jpg",
@@ -200,13 +284,20 @@
       "place": "Hyderabad",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2015-05-10_Hyderabad/IMG_20150510_002.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2015-05-10_Hyderabad/IMG_20150510_003.jpg": {
       "id": "2015-05-10_Hyderabad/IMG_20150510_003.jpg",
@@ -216,13 +307,20 @@
       "place": "Hyderabad",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2015-05-10_Hyderabad/IMG_20150510_003.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2015-05-10_Hyderabad/IMG_20150510_001.jpg": {
       "id": "2015-05-10_Hyderabad/IMG_20150510_001.jpg",
@@ -232,13 +330,20 @@
       "place": "Hyderabad",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2015-05-10_Hyderabad/IMG_20150510_001.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2016-12-20_Hyderabad/IMG_20161220_005.jpg": {
       "id": "2016-12-20_Hyderabad/IMG_20161220_005.jpg",
@@ -248,13 +353,20 @@
       "place": "Hyderabad",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2016-12-20_Hyderabad/IMG_20161220_005.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2016-12-20_Hyderabad/IMG_20161220_002.jpg": {
       "id": "2016-12-20_Hyderabad/IMG_20161220_002.jpg",
@@ -264,13 +376,20 @@
       "place": "Hyderabad",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2016-12-20_Hyderabad/IMG_20161220_002.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2016-12-20_Hyderabad/IMG_20161220_004.jpg": {
       "id": "2016-12-20_Hyderabad/IMG_20161220_004.jpg",
@@ -280,13 +399,20 @@
       "place": "Hyderabad",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2016-12-20_Hyderabad/IMG_20161220_004.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2016-12-20_Hyderabad/IMG_20161220_001.jpg": {
       "id": "2016-12-20_Hyderabad/IMG_20161220_001.jpg",
@@ -296,13 +422,20 @@
       "place": "Hyderabad",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2016-12-20_Hyderabad/IMG_20161220_001.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2016-12-20_Hyderabad/IMG_20161220_003.jpg": {
       "id": "2016-12-20_Hyderabad/IMG_20161220_003.jpg",
@@ -312,13 +445,20 @@
       "place": "Hyderabad",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2016-12-20_Hyderabad/IMG_20161220_003.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2017-02-18_Hyderabad/IMG_20170218_002.jpg": {
       "id": "2017-02-18_Hyderabad/IMG_20170218_002.jpg",
@@ -328,13 +468,20 @@
       "place": "Hyderabad",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2017-02-18_Hyderabad/IMG_20170218_002.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2017-02-18_Hyderabad/IMG_20170218_001.jpg": {
       "id": "2017-02-18_Hyderabad/IMG_20170218_001.jpg",
@@ -344,13 +491,20 @@
       "place": "Hyderabad",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2017-02-18_Hyderabad/IMG_20170218_001.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2018-08-05_Pune/IMG_20180805_001.jpg": {
       "id": "2018-08-05_Pune/IMG_20180805_001.jpg",
@@ -360,13 +514,20 @@
       "place": "Pune",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2018-08-05_Pune/IMG_20180805_001.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2018-08-05_Pune/IMG_20180805_003.jpg": {
       "id": "2018-08-05_Pune/IMG_20180805_003.jpg",
@@ -376,13 +537,20 @@
       "place": "Pune",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2018-08-05_Pune/IMG_20180805_003.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2018-08-05_Pune/IMG_20180805_004.jpg": {
       "id": "2018-08-05_Pune/IMG_20180805_004.jpg",
@@ -392,13 +560,20 @@
       "place": "Pune",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2018-08-05_Pune/IMG_20180805_004.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2018-08-05_Pune/IMG_20180805_005.jpg": {
       "id": "2018-08-05_Pune/IMG_20180805_005.jpg",
@@ -408,13 +583,20 @@
       "place": "Pune",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2018-08-05_Pune/IMG_20180805_005.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2018-08-05_Pune/IMG_20180805_002.jpg": {
       "id": "2018-08-05_Pune/IMG_20180805_002.jpg",
@@ -424,13 +606,20 @@
       "place": "Pune",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2018-08-05_Pune/IMG_20180805_002.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2018-11-24_Pune/IMG_20181124_002.jpg": {
       "id": "2018-11-24_Pune/IMG_20181124_002.jpg",
@@ -440,13 +629,20 @@
       "place": "Pune",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2018-11-24_Pune/IMG_20181124_002.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2018-11-24_Pune/IMG_20181124_003.jpg": {
       "id": "2018-11-24_Pune/IMG_20181124_003.jpg",
@@ -456,13 +652,20 @@
       "place": "Pune",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2018-11-24_Pune/IMG_20181124_003.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2018-11-24_Pune/IMG_20181124_001.jpg": {
       "id": "2018-11-24_Pune/IMG_20181124_001.jpg",
@@ -472,13 +675,20 @@
       "place": "Pune",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2018-11-24_Pune/IMG_20181124_001.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "bday_2019_p1.jpg": {
       "id": "bday_2019_p1.jpg",
@@ -488,13 +698,20 @@
       "place": "Unknown",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for bday_2019_p1.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "Notes",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "sibling_award.jpg": {
       "id": "sibling_award.jpg",
@@ -504,13 +721,20 @@
       "place": "Unknown",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for sibling_award.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "Notes",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "bday_2019_p2.jpg": {
       "id": "bday_2019_p2.jpg",
@@ -520,13 +744,20 @@
       "place": "Unknown",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for bday_2019_p2.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "Notes",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "bday_2019_p3.jpg": {
       "id": "bday_2019_p3.jpg",
@@ -536,13 +767,20 @@
       "place": "Unknown",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for bday_2019_p3.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "Notes",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "bday_2020.jpg": {
       "id": "bday_2020.jpg",
@@ -552,13 +790,20 @@
       "place": "Unknown",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for bday_2020.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "Notes",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "bill_screenshot.jpg": {
       "id": "bill_screenshot.jpg",
@@ -568,13 +813,15 @@
       "place": "Unknown",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for bill_screenshot.jpg",
+      "caption": "Electricity bill for the month",
       "scene": "outdoor",
       "activity": "unknown",
       "objects": [],
       "clothing_colours": [],
-      "text_in_image": "Notes",
-      "mood": "neutral"
+      "text_in_image": "electricity bill; amount due; Demo Power",
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "screenshot"
     },
     "flight_screenshot.jpg": {
       "id": "flight_screenshot.jpg",
@@ -584,13 +831,15 @@
       "place": "Unknown",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for flight_screenshot.jpg",
+      "caption": "Screenshot of a meme or chat",
       "scene": "outdoor",
       "activity": "unknown",
       "objects": [],
       "clothing_colours": [],
-      "text_in_image": "Notes",
-      "mood": "neutral"
+      "text_in_image": "some text on screen",
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "screenshot"
     },
     "sibling_distractor.jpg": {
       "id": "sibling_distractor.jpg",
@@ -600,13 +849,20 @@
       "place": "Unknown",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for sibling_distractor.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "Notes",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "goa_cafe.jpg": {
       "id": "goa_cafe.jpg",
@@ -616,13 +872,20 @@
       "place": "Unknown",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for goa_cafe.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "Notes",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "goa_distractor.jpg": {
       "id": "goa_distractor.jpg",
@@ -632,13 +895,20 @@
       "place": "Unknown",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for goa_distractor.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "Notes",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "ireland_distractor.jpg": {
       "id": "ireland_distractor.jpg",
@@ -648,13 +918,20 @@
       "place": "Unknown",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for ireland_distractor.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "Notes",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "ireland_job.jpg": {
       "id": "ireland_job.jpg",
@@ -664,13 +941,20 @@
       "place": "Unknown",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for ireland_job.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "Notes",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "meme_screenshot.jpg": {
       "id": "meme_screenshot.jpg",
@@ -680,13 +964,15 @@
       "place": "Unknown",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for meme_screenshot.jpg",
+      "caption": "Screenshot of a meme or chat",
       "scene": "outdoor",
       "activity": "unknown",
       "objects": [],
       "clothing_colours": [],
-      "text_in_image": "Notes",
-      "mood": "neutral"
+      "text_in_image": "some text on screen",
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "screenshot"
     },
     "scotland_distractor1.jpg": {
       "id": "scotland_distractor1.jpg",
@@ -696,13 +982,20 @@
       "place": "Unknown",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for scotland_distractor1.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "Notes",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "scotland_mask.jpg": {
       "id": "scotland_mask.jpg",
@@ -712,13 +1005,20 @@
       "place": "Unknown",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for scotland_mask.jpg",
+      "caption": "Crouched on the floor wearing a face mask",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "Notes",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "goa_cafe_old.jpg": {
       "id": "goa_cafe_old.jpg",
@@ -728,13 +1028,20 @@
       "place": "Unknown",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for goa_cafe_old.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "Notes",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2019-01-25_Hyderabad/IMG_20190125_001.jpg": {
       "id": "2019-01-25_Hyderabad/IMG_20190125_001.jpg",
@@ -746,13 +1053,20 @@
       "people": [
         "Kabir"
       ],
-      "caption": "Placeholder caption for 2019-01-25_Hyderabad/IMG_20190125_001.jpg",
+      "caption": "Little brother with his school medal",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "school medal little brother",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2019-02-14_Pune-Viman-Nagar/IMG_20190214_003.jpg": {
       "id": "2019-02-14_Pune-Viman-Nagar/IMG_20190214_003.jpg",
@@ -765,13 +1079,20 @@
         "Riya",
         "Arjun"
       ],
-      "caption": "Placeholder caption for 2019-02-14_Pune-Viman-Nagar/IMG_20190214_003.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "birthday college friends",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2019-02-14_Pune-Koregaon-Park/IMG_20190214_002.jpg": {
       "id": "2019-02-14_Pune-Koregaon-Park/IMG_20190214_002.jpg",
@@ -785,13 +1106,20 @@
         "Meera",
         "Arjun"
       ],
-      "caption": "Placeholder caption for 2019-02-14_Pune-Koregaon-Park/IMG_20190214_002.jpg",
+      "caption": "Birthday night out with college friends",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "birthday college friends",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2019-02-14_Pune-FC-Road/IMG_20190214_001.jpg": {
       "id": "2019-02-14_Pune-FC-Road/IMG_20190214_001.jpg",
@@ -805,13 +1133,20 @@
         "Meera",
         "Arjun"
       ],
-      "caption": "Placeholder caption for 2019-02-14_Pune-FC-Road/IMG_20190214_001.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "birthday college friends",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2019-03-21_Pune/IMG_20190321_001.jpg": {
       "id": "2019-03-21_Pune/IMG_20190321_001.jpg",
@@ -821,13 +1156,20 @@
       "place": "Pune",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2019-03-21_Pune/IMG_20190321_001.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2019-09-28_Pune/IMG_20190928_005.jpg": {
       "id": "2019-09-28_Pune/IMG_20190928_005.jpg",
@@ -837,13 +1179,20 @@
       "place": "Pune",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2019-09-28_Pune/IMG_20190928_005.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2019-09-28_Pune/IMG_20190928_006.jpg": {
       "id": "2019-09-28_Pune/IMG_20190928_006.jpg",
@@ -853,13 +1202,20 @@
       "place": "Pune",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2019-09-28_Pune/IMG_20190928_006.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2019-09-28_Pune/IMG_20190928_003.jpg": {
       "id": "2019-09-28_Pune/IMG_20190928_003.jpg",
@@ -869,13 +1225,20 @@
       "place": "Pune",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2019-09-28_Pune/IMG_20190928_003.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2019-09-28_Pune/IMG_20190928_001.jpg": {
       "id": "2019-09-28_Pune/IMG_20190928_001.jpg",
@@ -885,13 +1248,20 @@
       "place": "Pune",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2019-09-28_Pune/IMG_20190928_001.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2019-09-28_Pune/IMG_20190928_002.jpg": {
       "id": "2019-09-28_Pune/IMG_20190928_002.jpg",
@@ -901,13 +1271,20 @@
       "place": "Pune",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2019-09-28_Pune/IMG_20190928_002.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2019-09-28_Pune/IMG_20190928_004.jpg": {
       "id": "2019-09-28_Pune/IMG_20190928_004.jpg",
@@ -917,13 +1294,20 @@
       "place": "Pune",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2019-09-28_Pune/IMG_20190928_004.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2019-12-28_Goa-Panjim/IMG_20191228_002.jpg": {
       "id": "2019-12-28_Goa-Panjim/IMG_20191228_002.jpg",
@@ -933,13 +1317,20 @@
       "place": "Goa Panjim",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2019-12-28_Goa-Panjim/IMG_20191228_002.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2019-12-28_Goa-Panjim/IMG_20191228_003.jpg": {
       "id": "2019-12-28_Goa-Panjim/IMG_20191228_003.jpg",
@@ -949,13 +1340,20 @@
       "place": "Goa Panjim",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2019-12-28_Goa-Panjim/IMG_20191228_003.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2019-12-28_Goa-Panjim/IMG_20191228_001.jpg": {
       "id": "2019-12-28_Goa-Panjim/IMG_20191228_001.jpg",
@@ -969,13 +1367,20 @@
         "Arjun",
         "Meera"
       ],
-      "caption": "Placeholder caption for 2019-12-28_Goa-Panjim/IMG_20191228_001.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2019-12-28_Goa-Panjim/IMG_20191228_005.jpg": {
       "id": "2019-12-28_Goa-Panjim/IMG_20191228_005.jpg",
@@ -985,13 +1390,20 @@
       "place": "Goa Panjim",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2019-12-28_Goa-Panjim/IMG_20191228_005.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2019-12-28_Goa-Panjim/IMG_20191228_006.jpg": {
       "id": "2019-12-28_Goa-Panjim/IMG_20191228_006.jpg",
@@ -1001,13 +1413,20 @@
       "place": "Goa Panjim",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2019-12-28_Goa-Panjim/IMG_20191228_006.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2019-12-28_Goa-Panjim/IMG_20191228_004.jpg": {
       "id": "2019-12-28_Goa-Panjim/IMG_20191228_004.jpg",
@@ -1017,13 +1436,20 @@
       "place": "Goa Panjim",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2019-12-28_Goa-Panjim/IMG_20191228_004.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2020-02-15_Pune-Koregaon-Park/IMG_20200215_001.jpg": {
       "id": "2020-02-15_Pune-Koregaon-Park/IMG_20200215_001.jpg",
@@ -1036,13 +1462,20 @@
         "Riya",
         "Meera"
       ],
-      "caption": "Placeholder caption for 2020-02-15_Pune-Koregaon-Park/IMG_20200215_001.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2021-12-18_Pune/IMG_20211218_001.jpg": {
       "id": "2021-12-18_Pune/IMG_20211218_001.jpg",
@@ -1052,13 +1485,20 @@
       "place": "Pune",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2021-12-18_Pune/IMG_20211218_001.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2021-12-18_Pune/IMG_20211218_003.jpg": {
       "id": "2021-12-18_Pune/IMG_20211218_003.jpg",
@@ -1068,13 +1508,20 @@
       "place": "Pune",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2021-12-18_Pune/IMG_20211218_003.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2021-12-18_Pune/IMG_20211218_004.jpg": {
       "id": "2021-12-18_Pune/IMG_20211218_004.jpg",
@@ -1084,13 +1531,20 @@
       "place": "Pune",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2021-12-18_Pune/IMG_20211218_004.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2021-12-18_Pune/IMG_20211218_002.jpg": {
       "id": "2021-12-18_Pune/IMG_20211218_002.jpg",
@@ -1100,13 +1554,20 @@
       "place": "Pune",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2021-12-18_Pune/IMG_20211218_002.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2022-02-10_Pune/IMG_20220210_003.jpg": {
       "id": "2022-02-10_Pune/IMG_20220210_003.jpg",
@@ -1116,13 +1577,20 @@
       "place": "Pune",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2022-02-10_Pune/IMG_20220210_003.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2022-02-10_Pune/IMG_20220210_008.jpg": {
       "id": "2022-02-10_Pune/IMG_20220210_008.jpg",
@@ -1132,13 +1600,20 @@
       "place": "Pune",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2022-02-10_Pune/IMG_20220210_008.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2022-02-10_Pune/IMG_20220210_005.jpg": {
       "id": "2022-02-10_Pune/IMG_20220210_005.jpg",
@@ -1148,13 +1623,20 @@
       "place": "Pune",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2022-02-10_Pune/IMG_20220210_005.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2022-02-10_Pune/IMG_20220210_007.jpg": {
       "id": "2022-02-10_Pune/IMG_20220210_007.jpg",
@@ -1164,13 +1646,20 @@
       "place": "Pune",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2022-02-10_Pune/IMG_20220210_007.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2022-02-10_Pune/IMG_20220210_002.jpg": {
       "id": "2022-02-10_Pune/IMG_20220210_002.jpg",
@@ -1180,13 +1669,20 @@
       "place": "Pune",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2022-02-10_Pune/IMG_20220210_002.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2022-02-10_Pune/IMG_20220210_001.jpg": {
       "id": "2022-02-10_Pune/IMG_20220210_001.jpg",
@@ -1196,13 +1692,20 @@
       "place": "Pune",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2022-02-10_Pune/IMG_20220210_001.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2022-02-10_Pune/IMG_20220210_006.jpg": {
       "id": "2022-02-10_Pune/IMG_20220210_006.jpg",
@@ -1212,13 +1715,20 @@
       "place": "Pune",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2022-02-10_Pune/IMG_20220210_006.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2022-02-10_Pune/IMG_20220210_004.jpg": {
       "id": "2022-02-10_Pune/IMG_20220210_004.jpg",
@@ -1228,13 +1738,20 @@
       "place": "Pune",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2022-02-10_Pune/IMG_20220210_004.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2022-05-28_Pune/IMG_20220528_002.jpg": {
       "id": "2022-05-28_Pune/IMG_20220528_002.jpg",
@@ -1244,13 +1761,20 @@
       "place": "Pune",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2022-05-28_Pune/IMG_20220528_002.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2022-05-28_Pune/IMG_20220528_001.jpg": {
       "id": "2022-05-28_Pune/IMG_20220528_001.jpg",
@@ -1260,13 +1784,20 @@
       "place": "Pune",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2022-05-28_Pune/IMG_20220528_001.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2022-07-04_Bengaluru-Koramangala/IMG_20220704_001.jpg": {
       "id": "2022-07-04_Bengaluru-Koramangala/IMG_20220704_001.jpg",
@@ -1279,13 +1810,20 @@
         "Rohan",
         "Ananya"
       ],
-      "caption": "Placeholder caption for 2022-07-04_Bengaluru-Koramangala/IMG_20220704_001.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2022-07-04_Bengaluru-Koramangala/IMG_20220704_004.jpg": {
       "id": "2022-07-04_Bengaluru-Koramangala/IMG_20220704_004.jpg",
@@ -1297,13 +1835,20 @@
       "people": [
         "Rohan"
       ],
-      "caption": "Placeholder caption for 2022-07-04_Bengaluru-Koramangala/IMG_20220704_004.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2022-07-04_Bengaluru-Koramangala/IMG_20220704_002.jpg": {
       "id": "2022-07-04_Bengaluru-Koramangala/IMG_20220704_002.jpg",
@@ -1315,13 +1860,20 @@
       "people": [
         "Rohan"
       ],
-      "caption": "Placeholder caption for 2022-07-04_Bengaluru-Koramangala/IMG_20220704_002.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2022-07-04_Bengaluru-Koramangala/IMG_20220704_003.jpg": {
       "id": "2022-07-04_Bengaluru-Koramangala/IMG_20220704_003.jpg",
@@ -1333,13 +1885,20 @@
       "people": [
         "Rohan"
       ],
-      "caption": "Placeholder caption for 2022-07-04_Bengaluru-Koramangala/IMG_20220704_003.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2022-11-18_Bengaluru-Indiranagar/IMG_20221118_005.jpg": {
       "id": "2022-11-18_Bengaluru-Indiranagar/IMG_20221118_005.jpg",
@@ -1351,13 +1910,20 @@
       "people": [
         "Rohan"
       ],
-      "caption": "Placeholder caption for 2022-11-18_Bengaluru-Indiranagar/IMG_20221118_005.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2022-11-18_Bengaluru-Indiranagar/IMG_20221118_004.jpg": {
       "id": "2022-11-18_Bengaluru-Indiranagar/IMG_20221118_004.jpg",
@@ -1369,13 +1935,20 @@
       "people": [
         "Rohan"
       ],
-      "caption": "Placeholder caption for 2022-11-18_Bengaluru-Indiranagar/IMG_20221118_004.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2022-11-18_Bengaluru-Indiranagar/IMG_20221118_006.jpg": {
       "id": "2022-11-18_Bengaluru-Indiranagar/IMG_20221118_006.jpg",
@@ -1385,13 +1958,20 @@
       "place": "Bengaluru Indiranagar",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2022-11-18_Bengaluru-Indiranagar/IMG_20221118_006.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2022-11-18_Bengaluru-Indiranagar/IMG_20221118_001.jpg": {
       "id": "2022-11-18_Bengaluru-Indiranagar/IMG_20221118_001.jpg",
@@ -1403,13 +1983,20 @@
       "people": [
         "Rohan"
       ],
-      "caption": "Placeholder caption for 2022-11-18_Bengaluru-Indiranagar/IMG_20221118_001.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2022-11-18_Bengaluru-Indiranagar/IMG_20221118_002.jpg": {
       "id": "2022-11-18_Bengaluru-Indiranagar/IMG_20221118_002.jpg",
@@ -1421,13 +2008,20 @@
       "people": [
         "Rohan"
       ],
-      "caption": "Placeholder caption for 2022-11-18_Bengaluru-Indiranagar/IMG_20221118_002.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2022-11-18_Bengaluru-Indiranagar/IMG_20221118_003.jpg": {
       "id": "2022-11-18_Bengaluru-Indiranagar/IMG_20221118_003.jpg",
@@ -1439,13 +2033,20 @@
       "people": [
         "Rohan"
       ],
-      "caption": "Placeholder caption for 2022-11-18_Bengaluru-Indiranagar/IMG_20221118_003.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2022-12-30_Goa-Anjuna/IMG_20221230_004.jpg": {
       "id": "2022-12-30_Goa-Anjuna/IMG_20221230_004.jpg",
@@ -1455,13 +2056,20 @@
       "place": "Goa Anjuna",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2022-12-30_Goa-Anjuna/IMG_20221230_004.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2022-12-30_Goa-Anjuna/IMG_20221230_006.jpg": {
       "id": "2022-12-30_Goa-Anjuna/IMG_20221230_006.jpg",
@@ -1471,13 +2079,20 @@
       "place": "Goa Anjuna",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2022-12-30_Goa-Anjuna/IMG_20221230_006.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "colourful cafe",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2022-12-30_Goa-Anjuna/IMG_20221230_005.jpg": {
       "id": "2022-12-30_Goa-Anjuna/IMG_20221230_005.jpg",
@@ -1487,13 +2102,20 @@
       "place": "Goa Anjuna",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2022-12-30_Goa-Anjuna/IMG_20221230_005.jpg",
+      "caption": "Colourful cafe on a Goa trip",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "colourful cafe",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2022-12-30_Goa-Anjuna/IMG_20221230_001.jpg": {
       "id": "2022-12-30_Goa-Anjuna/IMG_20221230_001.jpg",
@@ -1506,13 +2128,20 @@
         "Riya",
         "Arjun"
       ],
-      "caption": "Placeholder caption for 2022-12-30_Goa-Anjuna/IMG_20221230_001.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2022-12-30_Goa-Anjuna/IMG_20221230_003.jpg": {
       "id": "2022-12-30_Goa-Anjuna/IMG_20221230_003.jpg",
@@ -1522,13 +2151,20 @@
       "place": "Goa Anjuna",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2022-12-30_Goa-Anjuna/IMG_20221230_003.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2022-12-30_Goa-Anjuna/IMG_20221230_002.jpg": {
       "id": "2022-12-30_Goa-Anjuna/IMG_20221230_002.jpg",
@@ -1538,13 +2174,20 @@
       "place": "Goa Anjuna",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2022-12-30_Goa-Anjuna/IMG_20221230_002.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2023-03-10_Bengaluru-Whitefield/IMG_20230310_002.jpg": {
       "id": "2023-03-10_Bengaluru-Whitefield/IMG_20230310_002.jpg",
@@ -1556,13 +2199,20 @@
       "people": [
         "Rohan"
       ],
-      "caption": "Placeholder caption for 2023-03-10_Bengaluru-Whitefield/IMG_20230310_002.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2023-03-10_Bengaluru-Whitefield/IMG_20230310_003.jpg": {
       "id": "2023-03-10_Bengaluru-Whitefield/IMG_20230310_003.jpg",
@@ -1574,13 +2224,20 @@
       "people": [
         "Rohan"
       ],
-      "caption": "Placeholder caption for 2023-03-10_Bengaluru-Whitefield/IMG_20230310_003.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2023-03-10_Bengaluru-Whitefield/IMG_20230310_001.jpg": {
       "id": "2023-03-10_Bengaluru-Whitefield/IMG_20230310_001.jpg",
@@ -1592,13 +2249,20 @@
       "people": [
         "Rohan"
       ],
-      "caption": "Placeholder caption for 2023-03-10_Bengaluru-Whitefield/IMG_20230310_001.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2023-03-10_Bengaluru-Whitefield/IMG_20230310_004.jpg": {
       "id": "2023-03-10_Bengaluru-Whitefield/IMG_20230310_004.jpg",
@@ -1610,13 +2274,20 @@
       "people": [
         "Rohan"
       ],
-      "caption": "Placeholder caption for 2023-03-10_Bengaluru-Whitefield/IMG_20230310_004.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2023-05-20_Coorg/IMG_20230520_005.jpg": {
       "id": "2023-05-20_Coorg/IMG_20230520_005.jpg",
@@ -1626,13 +2297,20 @@
       "place": "Coorg",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2023-05-20_Coorg/IMG_20230520_005.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2023-05-20_Coorg/IMG_20230520_003.jpg": {
       "id": "2023-05-20_Coorg/IMG_20230520_003.jpg",
@@ -1642,13 +2320,20 @@
       "place": "Coorg",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2023-05-20_Coorg/IMG_20230520_003.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2023-05-20_Coorg/IMG_20230520_002.jpg": {
       "id": "2023-05-20_Coorg/IMG_20230520_002.jpg",
@@ -1658,13 +2343,20 @@
       "place": "Coorg",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2023-05-20_Coorg/IMG_20230520_002.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2023-05-20_Coorg/IMG_20230520_001.jpg": {
       "id": "2023-05-20_Coorg/IMG_20230520_001.jpg",
@@ -1674,13 +2366,20 @@
       "place": "Coorg",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2023-05-20_Coorg/IMG_20230520_001.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2023-05-20_Coorg/IMG_20230520_004.jpg": {
       "id": "2023-05-20_Coorg/IMG_20230520_004.jpg",
@@ -1690,13 +2389,20 @@
       "place": "Coorg",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2023-05-20_Coorg/IMG_20230520_004.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2023-07-14_Bengaluru/IMG_20230714_002.jpg": {
       "id": "2023-07-14_Bengaluru/IMG_20230714_002.jpg",
@@ -1708,13 +2414,20 @@
       "people": [
         "Rohan"
       ],
-      "caption": "Placeholder caption for 2023-07-14_Bengaluru/IMG_20230714_002.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2023-07-14_Bengaluru/IMG_20230714_001.jpg": {
       "id": "2023-07-14_Bengaluru/IMG_20230714_001.jpg",
@@ -1726,13 +2439,20 @@
       "people": [
         "Rohan"
       ],
-      "caption": "Placeholder caption for 2023-07-14_Bengaluru/IMG_20230714_001.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2023-09-15_Edinburgh/IMG_20230915_002.jpg": {
       "id": "2023-09-15_Edinburgh/IMG_20230915_002.jpg",
@@ -1744,13 +2464,20 @@
       "people": [
         "Ananya"
       ],
-      "caption": "Placeholder caption for 2023-09-15_Edinburgh/IMG_20230915_002.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2023-09-15_Edinburgh/IMG_20230915_001.jpg": {
       "id": "2023-09-15_Edinburgh/IMG_20230915_001.jpg",
@@ -1762,13 +2489,20 @@
       "people": [
         "Ananya"
       ],
-      "caption": "Placeholder caption for 2023-09-15_Edinburgh/IMG_20230915_001.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2023-09-15_Edinburgh/IMG_20230915_003.jpg": {
       "id": "2023-09-15_Edinburgh/IMG_20230915_003.jpg",
@@ -1780,13 +2514,20 @@
       "people": [
         "Ananya"
       ],
-      "caption": "Placeholder caption for 2023-09-15_Edinburgh/IMG_20230915_003.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2023-10-12_Edinburgh/IMG_20231012_001.jpg": {
       "id": "2023-10-12_Edinburgh/IMG_20231012_001.jpg",
@@ -1798,13 +2539,20 @@
       "people": [
         "Ananya"
       ],
-      "caption": "Placeholder caption for 2023-10-12_Edinburgh/IMG_20231012_001.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2023-10-12_Edinburgh/IMG_20231012_004.jpg": {
       "id": "2023-10-12_Edinburgh/IMG_20231012_004.jpg",
@@ -1816,13 +2564,20 @@
       "people": [
         "Ananya"
       ],
-      "caption": "Placeholder caption for 2023-10-12_Edinburgh/IMG_20231012_004.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2023-10-12_Edinburgh/IMG_20231012_002.jpg": {
       "id": "2023-10-12_Edinburgh/IMG_20231012_002.jpg",
@@ -1834,13 +2589,20 @@
       "people": [
         "Ananya"
       ],
-      "caption": "Placeholder caption for 2023-10-12_Edinburgh/IMG_20231012_002.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2023-10-12_Edinburgh/IMG_20231012_003.jpg": {
       "id": "2023-10-12_Edinburgh/IMG_20231012_003.jpg",
@@ -1852,13 +2614,20 @@
       "people": [
         "Ananya"
       ],
-      "caption": "Placeholder caption for 2023-10-12_Edinburgh/IMG_20231012_003.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2023-11-20_Edinburgh/IMG_20231120_008.jpg": {
       "id": "2023-11-20_Edinburgh/IMG_20231120_008.jpg",
@@ -1870,13 +2639,20 @@
       "people": [
         "Ananya"
       ],
-      "caption": "Placeholder caption for 2023-11-20_Edinburgh/IMG_20231120_008.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2023-11-20_Edinburgh/IMG_20231120_007.jpg": {
       "id": "2023-11-20_Edinburgh/IMG_20231120_007.jpg",
@@ -1888,13 +2664,20 @@
       "people": [
         "Ananya"
       ],
-      "caption": "Placeholder caption for 2023-11-20_Edinburgh/IMG_20231120_007.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2023-11-20_Edinburgh/IMG_20231120_006.jpg": {
       "id": "2023-11-20_Edinburgh/IMG_20231120_006.jpg",
@@ -1906,13 +2689,20 @@
       "people": [
         "Ananya"
       ],
-      "caption": "Placeholder caption for 2023-11-20_Edinburgh/IMG_20231120_006.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2023-11-20_Edinburgh/IMG_20231120_003.jpg": {
       "id": "2023-11-20_Edinburgh/IMG_20231120_003.jpg",
@@ -1924,13 +2714,20 @@
       "people": [
         "Ananya"
       ],
-      "caption": "Placeholder caption for 2023-11-20_Edinburgh/IMG_20231120_003.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2023-11-20_Edinburgh/IMG_20231120_005.jpg": {
       "id": "2023-11-20_Edinburgh/IMG_20231120_005.jpg",
@@ -1942,13 +2739,20 @@
       "people": [
         "Ananya"
       ],
-      "caption": "Placeholder caption for 2023-11-20_Edinburgh/IMG_20231120_005.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2023-11-20_Edinburgh/IMG_20231120_002.jpg": {
       "id": "2023-11-20_Edinburgh/IMG_20231120_002.jpg",
@@ -1960,13 +2764,20 @@
       "people": [
         "Ananya"
       ],
-      "caption": "Placeholder caption for 2023-11-20_Edinburgh/IMG_20231120_002.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2023-11-20_Edinburgh/IMG_20231120_009.jpg": {
       "id": "2023-11-20_Edinburgh/IMG_20231120_009.jpg",
@@ -1978,13 +2789,20 @@
       "people": [
         "Ananya"
       ],
-      "caption": "Placeholder caption for 2023-11-20_Edinburgh/IMG_20231120_009.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2023-11-20_Edinburgh/IMG_20231120_004.jpg": {
       "id": "2023-11-20_Edinburgh/IMG_20231120_004.jpg",
@@ -1996,13 +2814,20 @@
       "people": [
         "Ananya"
       ],
-      "caption": "Placeholder caption for 2023-11-20_Edinburgh/IMG_20231120_004.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2023-11-20_Edinburgh/IMG_20231120_001.jpg": {
       "id": "2023-11-20_Edinburgh/IMG_20231120_001.jpg",
@@ -2014,13 +2839,20 @@
       "people": [
         "Ananya"
       ],
-      "caption": "Placeholder caption for 2023-11-20_Edinburgh/IMG_20231120_001.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2023-11-20_Edinburgh/IMG_20231120_010.jpg": {
       "id": "2023-11-20_Edinburgh/IMG_20231120_010.jpg",
@@ -2032,13 +2864,20 @@
       "people": [
         "Ananya"
       ],
-      "caption": "Placeholder caption for 2023-11-20_Edinburgh/IMG_20231120_010.jpg",
+      "caption": "Crouched on the floor wearing a face mask",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "crouched on floor wearing face mask",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2024-01-08_Edinburgh/IMG_20240108_004.jpg": {
       "id": "2024-01-08_Edinburgh/IMG_20240108_004.jpg",
@@ -2050,13 +2889,20 @@
       "people": [
         "Ananya"
       ],
-      "caption": "Placeholder caption for 2024-01-08_Edinburgh/IMG_20240108_004.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2024-01-08_Edinburgh/IMG_20240108_002.jpg": {
       "id": "2024-01-08_Edinburgh/IMG_20240108_002.jpg",
@@ -2068,13 +2914,20 @@
       "people": [
         "Ananya"
       ],
-      "caption": "Placeholder caption for 2024-01-08_Edinburgh/IMG_20240108_002.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2024-01-08_Edinburgh/IMG_20240108_001.jpg": {
       "id": "2024-01-08_Edinburgh/IMG_20240108_001.jpg",
@@ -2086,13 +2939,20 @@
       "people": [
         "Ananya"
       ],
-      "caption": "Placeholder caption for 2024-01-08_Edinburgh/IMG_20240108_001.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2024-01-08_Edinburgh/IMG_20240108_003.jpg": {
       "id": "2024-01-08_Edinburgh/IMG_20240108_003.jpg",
@@ -2104,13 +2964,20 @@
       "people": [
         "Ananya"
       ],
-      "caption": "Placeholder caption for 2024-01-08_Edinburgh/IMG_20240108_003.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2024-03-16_Edinburgh-Portobello/IMG_20240316_001.jpg": {
       "id": "2024-03-16_Edinburgh-Portobello/IMG_20240316_001.jpg",
@@ -2122,13 +2989,20 @@
       "people": [
         "Ananya"
       ],
-      "caption": "Placeholder caption for 2024-03-16_Edinburgh-Portobello/IMG_20240316_001.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2024-04-06_Isle-of-Skye/IMG_20240406_002.jpg": {
       "id": "2024-04-06_Isle-of-Skye/IMG_20240406_002.jpg",
@@ -2138,13 +3012,20 @@
       "place": "Isle of Skye",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2024-04-06_Isle-of-Skye/IMG_20240406_002.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2024-04-06_Isle-of-Skye/IMG_20240406_001.jpg": {
       "id": "2024-04-06_Isle-of-Skye/IMG_20240406_001.jpg",
@@ -2154,13 +3035,20 @@
       "place": "Isle of Skye",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2024-04-06_Isle-of-Skye/IMG_20240406_001.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2024-10-14_Dublin/IMG_20241014_004.jpg": {
       "id": "2024-10-14_Dublin/IMG_20241014_004.jpg",
@@ -2170,13 +3058,20 @@
       "place": "Dublin",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2024-10-14_Dublin/IMG_20241014_004.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2024-10-14_Dublin/IMG_20241014_003.jpg": {
       "id": "2024-10-14_Dublin/IMG_20241014_003.jpg",
@@ -2186,13 +3081,20 @@
       "place": "Dublin",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2024-10-14_Dublin/IMG_20241014_003.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2024-10-14_Dublin/IMG_20241014_001.jpg": {
       "id": "2024-10-14_Dublin/IMG_20241014_001.jpg",
@@ -2202,13 +3104,20 @@
       "place": "Dublin",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2024-10-14_Dublin/IMG_20241014_001.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2024-10-14_Dublin/IMG_20241014_002.jpg": {
       "id": "2024-10-14_Dublin/IMG_20241014_002.jpg",
@@ -2218,13 +3127,20 @@
       "place": "Dublin",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2024-10-14_Dublin/IMG_20241014_002.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2025-02-08_Dublin/IMG_20250208_005.jpg": {
       "id": "2025-02-08_Dublin/IMG_20250208_005.jpg",
@@ -2234,13 +3150,20 @@
       "place": "Dublin",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2025-02-08_Dublin/IMG_20250208_005.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2025-02-08_Dublin/IMG_20250208_002.jpg": {
       "id": "2025-02-08_Dublin/IMG_20250208_002.jpg",
@@ -2250,13 +3173,20 @@
       "place": "Dublin",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2025-02-08_Dublin/IMG_20250208_002.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2025-02-08_Dublin/IMG_20250208_004.jpg": {
       "id": "2025-02-08_Dublin/IMG_20250208_004.jpg",
@@ -2266,13 +3196,20 @@
       "place": "Dublin",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2025-02-08_Dublin/IMG_20250208_004.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2025-02-08_Dublin/IMG_20250208_006.jpg": {
       "id": "2025-02-08_Dublin/IMG_20250208_006.jpg",
@@ -2282,13 +3219,20 @@
       "place": "Dublin",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2025-02-08_Dublin/IMG_20250208_006.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2025-02-08_Dublin/IMG_20250208_001.jpg": {
       "id": "2025-02-08_Dublin/IMG_20250208_001.jpg",
@@ -2300,13 +3244,20 @@
       "people": [
         "Tom"
       ],
-      "caption": "Placeholder caption for 2025-02-08_Dublin/IMG_20250208_001.jpg",
+      "caption": "Coworker in fast-food uniform",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "fast-food uniform",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2025-02-08_Dublin/IMG_20250208_003.jpg": {
       "id": "2025-02-08_Dublin/IMG_20250208_003.jpg",
@@ -2316,13 +3267,20 @@
       "place": "Dublin",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2025-02-08_Dublin/IMG_20250208_003.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2025-03-22_Dublin-Temple-Bar/IMG_20250322_001.jpg": {
       "id": "2025-03-22_Dublin-Temple-Bar/IMG_20250322_001.jpg",
@@ -2332,13 +3290,20 @@
       "place": "Dublin Temple Bar",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2025-03-22_Dublin-Temple-Bar/IMG_20250322_001.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2025-03-22_Dublin-Temple-Bar/IMG_20250322_002.jpg": {
       "id": "2025-03-22_Dublin-Temple-Bar/IMG_20250322_002.jpg",
@@ -2348,13 +3313,20 @@
       "place": "Dublin Temple Bar",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2025-03-22_Dublin-Temple-Bar/IMG_20250322_002.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2025-05-30_Howth/IMG_20250530_001.jpg": {
       "id": "2025-05-30_Howth/IMG_20250530_001.jpg",
@@ -2364,13 +3336,20 @@
       "place": "Howth",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2025-05-30_Howth/IMG_20250530_001.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2025-07-12_Galway/IMG_20250712_001.jpg": {
       "id": "2025-07-12_Galway/IMG_20250712_001.jpg",
@@ -2380,13 +3359,20 @@
       "place": "Galway",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2025-07-12_Galway/IMG_20250712_001.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2025-08-16_Cork/IMG_20250816_001.jpg": {
       "id": "2025-08-16_Cork/IMG_20250816_001.jpg",
@@ -2396,13 +3382,20 @@
       "place": "Cork",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2025-08-16_Cork/IMG_20250816_001.jpg",
+      "caption": "A view of the scene",
       "scene": "outdoor",
       "activity": "unknown",
-      "objects": [],
-      "clothing_colours": [],
+      "objects": [
+        "person",
+        "table"
+      ],
+      "clothing_colours": [
+        "casual"
+      ],
       "text_in_image": "",
-      "mood": "neutral"
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "photo"
     },
     "2026-06-14_NoLocation/IMG_20260614_003.jpg": {
       "id": "2026-06-14_NoLocation/IMG_20260614_003.jpg",
@@ -2412,13 +3405,15 @@
       "place": "Unknown place",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2026-06-14_NoLocation/IMG_20260614_003.jpg",
+      "caption": "Screenshot of a meme or chat",
       "scene": "outdoor",
       "activity": "unknown",
       "objects": [],
       "clothing_colours": [],
-      "text_in_image": "",
-      "mood": "neutral"
+      "text_in_image": "some text on screen",
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "screenshot"
     },
     "2026-06-14_NoLocation/IMG_20260614_002.jpg": {
       "id": "2026-06-14_NoLocation/IMG_20260614_002.jpg",
@@ -2428,13 +3423,15 @@
       "place": "Unknown place",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2026-06-14_NoLocation/IMG_20260614_002.jpg",
+      "caption": "Screenshot of a meme or chat",
       "scene": "outdoor",
       "activity": "unknown",
       "objects": [],
       "clothing_colours": [],
-      "text_in_image": "",
-      "mood": "neutral"
+      "text_in_image": "some text on screen",
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "screenshot"
     },
     "2026-06-14_NoLocation/IMG_20260614_001.jpg": {
       "id": "2026-06-14_NoLocation/IMG_20260614_001.jpg",
@@ -2444,13 +3441,15 @@
       "place": "Unknown place",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2026-06-14_NoLocation/IMG_20260614_001.jpg",
+      "caption": "Screenshot of a meme or chat",
       "scene": "outdoor",
       "activity": "unknown",
       "objects": [],
       "clothing_colours": [],
-      "text_in_image": "",
-      "mood": "neutral"
+      "text_in_image": "some text on screen",
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "screenshot"
     },
     "2026-08-03_NoLocation/IMG_20260803_003.jpg": {
       "id": "2026-08-03_NoLocation/IMG_20260803_003.jpg",
@@ -2460,13 +3459,15 @@
       "place": "Unknown place",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2026-08-03_NoLocation/IMG_20260803_003.jpg",
+      "caption": "Screenshot of a meme or chat",
       "scene": "outdoor",
       "activity": "unknown",
       "objects": [],
       "clothing_colours": [],
-      "text_in_image": "",
-      "mood": "neutral"
+      "text_in_image": "some text on screen",
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "screenshot"
     },
     "2026-08-03_NoLocation/IMG_20260803_001.jpg": {
       "id": "2026-08-03_NoLocation/IMG_20260803_001.jpg",
@@ -2476,13 +3477,15 @@
       "place": "Unknown place",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2026-08-03_NoLocation/IMG_20260803_001.jpg",
+      "caption": "Screenshot of a meme or chat",
       "scene": "outdoor",
       "activity": "unknown",
       "objects": [],
       "clothing_colours": [],
-      "text_in_image": "",
-      "mood": "neutral"
+      "text_in_image": "some text on screen",
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "screenshot"
     },
     "2026-08-03_NoLocation/IMG_20260803_002.jpg": {
       "id": "2026-08-03_NoLocation/IMG_20260803_002.jpg",
@@ -2492,13 +3495,15 @@
       "place": "Unknown place",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2026-08-03_NoLocation/IMG_20260803_002.jpg",
+      "caption": "Screenshot of a meme or chat",
       "scene": "outdoor",
       "activity": "unknown",
       "objects": [],
       "clothing_colours": [],
-      "text_in_image": "",
-      "mood": "neutral"
+      "text_in_image": "some text on screen",
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "screenshot"
     },
     "2026-09-21_NoLocation/IMG_20260921_002.jpg": {
       "id": "2026-09-21_NoLocation/IMG_20260921_002.jpg",
@@ -2508,13 +3513,15 @@
       "place": "Unknown place",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2026-09-21_NoLocation/IMG_20260921_002.jpg",
+      "caption": "Screenshot of a meme or chat",
       "scene": "outdoor",
       "activity": "unknown",
       "objects": [],
       "clothing_colours": [],
-      "text_in_image": "",
-      "mood": "neutral"
+      "text_in_image": "some text on screen",
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "screenshot"
     },
     "2026-09-21_NoLocation/IMG_20260921_004.jpg": {
       "id": "2026-09-21_NoLocation/IMG_20260921_004.jpg",
@@ -2524,13 +3531,15 @@
       "place": "Unknown place",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2026-09-21_NoLocation/IMG_20260921_004.jpg",
+      "caption": "Screenshot of a meme or chat",
       "scene": "outdoor",
       "activity": "unknown",
       "objects": [],
       "clothing_colours": [],
-      "text_in_image": "",
-      "mood": "neutral"
+      "text_in_image": "some text on screen",
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "screenshot"
     },
     "2026-09-21_NoLocation/IMG_20260921_003.jpg": {
       "id": "2026-09-21_NoLocation/IMG_20260921_003.jpg",
@@ -2540,13 +3549,15 @@
       "place": "Unknown place",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2026-09-21_NoLocation/IMG_20260921_003.jpg",
+      "caption": "Screenshot of a meme or chat",
       "scene": "outdoor",
       "activity": "unknown",
       "objects": [],
       "clothing_colours": [],
-      "text_in_image": "",
-      "mood": "neutral"
+      "text_in_image": "some text on screen",
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "screenshot"
     },
     "2026-09-21_NoLocation/IMG_20260921_001.jpg": {
       "id": "2026-09-21_NoLocation/IMG_20260921_001.jpg",
@@ -2556,13 +3567,15 @@
       "place": "Unknown place",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2026-09-21_NoLocation/IMG_20260921_001.jpg",
+      "caption": "Screenshot of a meme or chat",
       "scene": "outdoor",
       "activity": "unknown",
       "objects": [],
       "clothing_colours": [],
-      "text_in_image": "",
-      "mood": "neutral"
+      "text_in_image": "some text on screen",
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "screenshot"
     },
     "2026-10-05_NoLocation/IMG_20261005_001.jpg": {
       "id": "2026-10-05_NoLocation/IMG_20261005_001.jpg",
@@ -2572,13 +3585,15 @@
       "place": "Unknown place",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2026-10-05_NoLocation/IMG_20261005_001.jpg",
+      "caption": "Screenshot of a meme or chat",
       "scene": "outdoor",
       "activity": "unknown",
       "objects": [],
       "clothing_colours": [],
-      "text_in_image": "screenshot electricity bill",
-      "mood": "neutral"
+      "text_in_image": "electricity bill; amount due; Demo Power",
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "screenshot"
     },
     "2026-10-05_NoLocation/IMG_20261005_002.jpg": {
       "id": "2026-10-05_NoLocation/IMG_20261005_002.jpg",
@@ -2588,13 +3603,15 @@
       "place": "Unknown place",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2026-10-05_NoLocation/IMG_20261005_002.jpg",
+      "caption": "Screenshot of a meme or chat",
       "scene": "outdoor",
       "activity": "unknown",
       "objects": [],
       "clothing_colours": [],
-      "text_in_image": "",
-      "mood": "neutral"
+      "text_in_image": "electricity bill; amount due; Demo Power",
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "screenshot"
     },
     "2026-10-05_NoLocation/IMG_20261005_004.jpg": {
       "id": "2026-10-05_NoLocation/IMG_20261005_004.jpg",
@@ -2604,13 +3621,15 @@
       "place": "Unknown place",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2026-10-05_NoLocation/IMG_20261005_004.jpg",
+      "caption": "Screenshot of a meme or chat",
       "scene": "outdoor",
       "activity": "unknown",
       "objects": [],
       "clothing_colours": [],
-      "text_in_image": "",
-      "mood": "neutral"
+      "text_in_image": "electricity bill; amount due; Demo Power",
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "screenshot"
     },
     "2026-10-05_NoLocation/IMG_20261005_005.jpg": {
       "id": "2026-10-05_NoLocation/IMG_20261005_005.jpg",
@@ -2620,13 +3639,15 @@
       "place": "Unknown place",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2026-10-05_NoLocation/IMG_20261005_005.jpg",
+      "caption": "Screenshot of a meme or chat",
       "scene": "outdoor",
       "activity": "unknown",
       "objects": [],
       "clothing_colours": [],
-      "text_in_image": "",
-      "mood": "neutral"
+      "text_in_image": "electricity bill; amount due; Demo Power",
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "screenshot"
     },
     "2026-10-05_NoLocation/IMG_20261005_003.jpg": {
       "id": "2026-10-05_NoLocation/IMG_20261005_003.jpg",
@@ -2636,13 +3657,15 @@
       "place": "Unknown place",
       "city": null,
       "people": [],
-      "caption": "Placeholder caption for 2026-10-05_NoLocation/IMG_20261005_003.jpg",
+      "caption": "Screenshot of a meme or chat",
       "scene": "outdoor",
       "activity": "unknown",
       "objects": [],
       "clothing_colours": [],
-      "text_in_image": "",
-      "mood": "neutral"
+      "text_in_image": "electricity bill; amount due; Demo Power",
+      "mood": "neutral",
+      "label_source": "offline",
+      "type": "screenshot"
     }
   },
   "events": [
@@ -2657,8 +3680,10 @@
       ],
       "place": "Hyderabad",
       "people": [],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Event at 2013-06-20_Hyderabad",
+      "event_type": "family_home",
+      "type": "photo",
+      "label_source": "offline"
     },
     {
       "id": "evt_20130815T143924_3",
@@ -2671,8 +3696,10 @@
       ],
       "place": "Hyderabad",
       "people": [],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Event at 2013-08-15_Hyderabad",
+      "event_type": "family_home",
+      "type": "photo",
+      "label_source": "offline"
     },
     {
       "id": "evt_20141114T082740_1",
@@ -2683,8 +3710,10 @@
       ],
       "place": "Hyderabad",
       "people": [],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Event at 2014-11-14_Hyderabad",
+      "event_type": "family_home",
+      "type": "photo",
+      "label_source": "offline"
     },
     {
       "id": "evt_20141114T150133_5",
@@ -2699,8 +3728,10 @@
       ],
       "place": "Hyderabad",
       "people": [],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Event at 2014-11-14_Hyderabad",
+      "event_type": "family_home",
+      "type": "photo",
+      "label_source": "offline"
     },
     {
       "id": "evt_20150510T152132_3",
@@ -2713,8 +3744,10 @@
       ],
       "place": "Hyderabad",
       "people": [],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Event at 2015-05-10_Hyderabad",
+      "event_type": "family_home",
+      "type": "photo",
+      "label_source": "offline"
     },
     {
       "id": "evt_20161220T080017_5",
@@ -2729,8 +3762,10 @@
       ],
       "place": "Hyderabad",
       "people": [],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Event at 2016-12-20_Hyderabad",
+      "event_type": "family_home",
+      "type": "photo",
+      "label_source": "offline"
     },
     {
       "id": "evt_20170218T212155_2",
@@ -2742,8 +3777,10 @@
       ],
       "place": "Hyderabad",
       "people": [],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Event at 2017-02-18_Hyderabad",
+      "event_type": "family_home",
+      "type": "photo",
+      "label_source": "offline"
     },
     {
       "id": "evt_20180805T081553_5",
@@ -2758,8 +3795,10 @@
       ],
       "place": "Pune",
       "people": [],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Event at 2018-08-05_Pune",
+      "event_type": "family_home",
+      "type": "photo",
+      "label_source": "offline"
     },
     {
       "id": "evt_20181124T102334_1",
@@ -2770,8 +3809,10 @@
       ],
       "place": "Pune",
       "people": [],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Event at 2018-11-24_Pune",
+      "event_type": "family_home",
+      "type": "photo",
+      "label_source": "offline"
     },
     {
       "id": "evt_20181124T174501_2",
@@ -2783,11 +3824,13 @@
       ],
       "place": "Pune",
       "people": [],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Event at 2018-11-24_Pune",
+      "event_type": "family_home",
+      "type": "photo",
+      "label_source": "offline"
     },
     {
-      "id": "evt_20190101T000000_16",
+      "id": "evt_20190101T000000_5",
       "start": "2019-01-01T00:00:00",
       "end": "2019-01-01T00:00:00",
       "photo_ids": [
@@ -2795,23 +3838,90 @@
         "sibling_award.jpg",
         "bday_2019_p2.jpg",
         "bday_2019_p3.jpg",
-        "bday_2020.jpg",
-        "bill_screenshot.jpg",
-        "flight_screenshot.jpg",
+        "bday_2020.jpg"
+      ],
+      "place": "Unknown",
+      "people": [],
+      "event_label": "Event at root",
+      "event_type": "other",
+      "type": "photo",
+      "label_source": "offline"
+    },
+    {
+      "id": "evt_20190101T000000_1",
+      "start": "2019-01-01T00:00:00",
+      "end": "2019-01-01T00:00:00",
+      "photo_ids": [
+        "bill_screenshot.jpg"
+      ],
+      "place": "Unknown",
+      "people": [],
+      "event_label": "Screenshot",
+      "event_type": "screenshot",
+      "type": "screenshot",
+      "label_source": "offline"
+    },
+    {
+      "id": "evt_20190101T000000_1",
+      "start": "2019-01-01T00:00:00",
+      "end": "2019-01-01T00:00:00",
+      "photo_ids": [
+        "flight_screenshot.jpg"
+      ],
+      "place": "Unknown",
+      "people": [],
+      "event_label": "Screenshot",
+      "event_type": "screenshot",
+      "type": "screenshot",
+      "label_source": "offline"
+    },
+    {
+      "id": "evt_20190101T000000_5",
+      "start": "2019-01-01T00:00:00",
+      "end": "2019-01-01T00:00:00",
+      "photo_ids": [
         "sibling_distractor.jpg",
         "goa_cafe.jpg",
         "goa_distractor.jpg",
         "ireland_distractor.jpg",
-        "ireland_job.jpg",
-        "meme_screenshot.jpg",
+        "ireland_job.jpg"
+      ],
+      "place": "Unknown",
+      "people": [],
+      "event_label": "Event at root",
+      "event_type": "other",
+      "type": "photo",
+      "label_source": "offline"
+    },
+    {
+      "id": "evt_20190101T000000_1",
+      "start": "2019-01-01T00:00:00",
+      "end": "2019-01-01T00:00:00",
+      "photo_ids": [
+        "meme_screenshot.jpg"
+      ],
+      "place": "Unknown",
+      "people": [],
+      "event_label": "Screenshot",
+      "event_type": "screenshot",
+      "type": "screenshot",
+      "label_source": "offline"
+    },
+    {
+      "id": "evt_20190101T000000_3",
+      "start": "2019-01-01T00:00:00",
+      "end": "2019-01-01T00:00:00",
+      "photo_ids": [
         "scotland_distractor1.jpg",
         "scotland_mask.jpg",
         "goa_cafe_old.jpg"
       ],
       "place": "Unknown",
       "people": [],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Event at root",
+      "event_type": "other",
+      "type": "photo",
+      "label_source": "offline"
     },
     {
       "id": "evt_20190125T091951_1",
@@ -2824,8 +3934,10 @@
       "people": [
         "Kabir"
       ],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Event at 2019-01-25_Hyderabad",
+      "event_type": "family_home",
+      "type": "photo",
+      "label_source": "offline"
     },
     {
       "id": "evt_20190214T155054_3",
@@ -2839,11 +3951,13 @@
       "place": "Pune Viman Nagar",
       "people": [
         "Meera",
-        "Arjun",
-        "Riya"
+        "Riya",
+        "Arjun"
       ],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Event at 2019-02-14_Pune-Viman-Nagar",
+      "event_type": "family_home",
+      "type": "photo",
+      "label_source": "offline"
     },
     {
       "id": "evt_20190321T201501_1",
@@ -2854,8 +3968,10 @@
       ],
       "place": "Pune",
       "people": [],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Event at 2019-03-21_Pune",
+      "event_type": "family_home",
+      "type": "photo",
+      "label_source": "offline"
     },
     {
       "id": "evt_20190928T101553_6",
@@ -2871,8 +3987,10 @@
       ],
       "place": "Pune",
       "people": [],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Event at 2019-09-28_Pune",
+      "event_type": "family_home",
+      "type": "photo",
+      "label_source": "offline"
     },
     {
       "id": "evt_20191228T080457_6",
@@ -2889,11 +4007,13 @@
       "place": "Goa Panjim",
       "people": [
         "Meera",
-        "Arjun",
-        "Riya"
+        "Riya",
+        "Arjun"
       ],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Event at 2019-12-28_Goa-Panjim",
+      "event_type": "trip_sightseeing",
+      "type": "photo",
+      "label_source": "offline"
     },
     {
       "id": "evt_20200215T151613_1",
@@ -2904,11 +4024,13 @@
       ],
       "place": "Pune Koregaon Park",
       "people": [
-        "Meera",
-        "Riya"
+        "Riya",
+        "Meera"
       ],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Event at 2020-02-15_Pune-Koregaon-Park",
+      "event_type": "family_home",
+      "type": "photo",
+      "label_source": "offline"
     },
     {
       "id": "evt_20211218T105556_2",
@@ -2920,8 +4042,10 @@
       ],
       "place": "Pune",
       "people": [],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Event at 2021-12-18_Pune",
+      "event_type": "family_home",
+      "type": "photo",
+      "label_source": "offline"
     },
     {
       "id": "evt_20211218T214427_2",
@@ -2933,8 +4057,10 @@
       ],
       "place": "Pune",
       "people": [],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Event at 2021-12-18_Pune",
+      "event_type": "family_home",
+      "type": "photo",
+      "label_source": "offline"
     },
     {
       "id": "evt_20220210T103041_8",
@@ -2952,8 +4078,10 @@
       ],
       "place": "Pune",
       "people": [],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Event at 2022-02-10_Pune",
+      "event_type": "family_home",
+      "type": "photo",
+      "label_source": "offline"
     },
     {
       "id": "evt_20220528T090800_1",
@@ -2964,8 +4092,10 @@
       ],
       "place": "Pune",
       "people": [],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Event at 2022-05-28_Pune",
+      "event_type": "family_home",
+      "type": "photo",
+      "label_source": "offline"
     },
     {
       "id": "evt_20220528T181345_1",
@@ -2976,8 +4106,10 @@
       ],
       "place": "Pune",
       "people": [],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Event at 2022-05-28_Pune",
+      "event_type": "family_home",
+      "type": "photo",
+      "label_source": "offline"
     },
     {
       "id": "evt_20220704T093638_4",
@@ -2994,8 +4126,10 @@
         "Ananya",
         "Rohan"
       ],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Event at 2022-07-04_Bengaluru-Koramangala",
+      "event_type": "office_work",
+      "type": "photo",
+      "label_source": "offline"
     },
     {
       "id": "evt_20221118T093028_6",
@@ -3013,8 +4147,10 @@
       "people": [
         "Rohan"
       ],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Event at 2022-11-18_Bengaluru-Indiranagar",
+      "event_type": "office_work",
+      "type": "photo",
+      "label_source": "offline"
     },
     {
       "id": "evt_20221230T091757_6",
@@ -3030,11 +4166,13 @@
       ],
       "place": "Goa Anjuna",
       "people": [
-        "Arjun",
-        "Riya"
+        "Riya",
+        "Arjun"
       ],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Event at 2022-12-30_Goa-Anjuna",
+      "event_type": "trip_sightseeing",
+      "type": "photo",
+      "label_source": "offline"
     },
     {
       "id": "evt_20230310T082655_4",
@@ -3050,8 +4188,10 @@
       "people": [
         "Rohan"
       ],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Event at 2023-03-10_Bengaluru-Whitefield",
+      "event_type": "office_work",
+      "type": "photo",
+      "label_source": "offline"
     },
     {
       "id": "evt_20230520T081218_5",
@@ -3066,8 +4206,10 @@
       ],
       "place": "Coorg",
       "people": [],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Event at 2023-05-20_Coorg",
+      "event_type": "nature_hike",
+      "type": "photo",
+      "label_source": "offline"
     },
     {
       "id": "evt_20230714T101409_1",
@@ -3080,8 +4222,10 @@
       "people": [
         "Rohan"
       ],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Event at 2023-07-14_Bengaluru",
+      "event_type": "office_work",
+      "type": "photo",
+      "label_source": "offline"
     },
     {
       "id": "evt_20230714T170748_1",
@@ -3094,8 +4238,10 @@
       "people": [
         "Rohan"
       ],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Event at 2023-07-14_Bengaluru",
+      "event_type": "office_work",
+      "type": "photo",
+      "label_source": "offline"
     },
     {
       "id": "evt_20230915T081256_1",
@@ -3108,8 +4254,10 @@
       "people": [
         "Ananya"
       ],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Event at 2023-09-15_Edinburgh",
+      "event_type": "college_campus",
+      "type": "photo",
+      "label_source": "offline"
     },
     {
       "id": "evt_20230915T224829_2",
@@ -3123,8 +4271,10 @@
       "people": [
         "Ananya"
       ],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Event at 2023-09-15_Edinburgh",
+      "event_type": "college_campus",
+      "type": "photo",
+      "label_source": "offline"
     },
     {
       "id": "evt_20231012T080937_4",
@@ -3140,8 +4290,10 @@
       "people": [
         "Ananya"
       ],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Event at 2023-10-12_Edinburgh",
+      "event_type": "college_campus",
+      "type": "photo",
+      "label_source": "offline"
     },
     {
       "id": "evt_20231120T091150_10",
@@ -3163,8 +4315,10 @@
       "people": [
         "Ananya"
       ],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Event at 2023-11-20_Edinburgh",
+      "event_type": "college_campus",
+      "type": "photo",
+      "label_source": "offline"
     },
     {
       "id": "evt_20240108T112913_1",
@@ -3177,8 +4331,10 @@
       "people": [
         "Ananya"
       ],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Event at 2024-01-08_Edinburgh",
+      "event_type": "college_campus",
+      "type": "photo",
+      "label_source": "offline"
     },
     {
       "id": "evt_20240108T192846_3",
@@ -3193,8 +4349,10 @@
       "people": [
         "Ananya"
       ],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Event at 2024-01-08_Edinburgh",
+      "event_type": "college_campus",
+      "type": "photo",
+      "label_source": "offline"
     },
     {
       "id": "evt_20240316T195247_1",
@@ -3207,8 +4365,10 @@
       "people": [
         "Ananya"
       ],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Event at 2024-03-16_Edinburgh-Portobello",
+      "event_type": "college_campus",
+      "type": "photo",
+      "label_source": "offline"
     },
     {
       "id": "evt_20240406T210354_2",
@@ -3220,8 +4380,10 @@
       ],
       "place": "Isle of Skye",
       "people": [],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Event at 2024-04-06_Isle-of-Skye",
+      "event_type": "trip_sightseeing",
+      "type": "photo",
+      "label_source": "offline"
     },
     {
       "id": "evt_20241014T094803_4",
@@ -3235,8 +4397,10 @@
       ],
       "place": "Dublin",
       "people": [],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Event at 2024-10-14_Dublin",
+      "event_type": "office_work",
+      "type": "photo",
+      "label_source": "offline"
     },
     {
       "id": "evt_20250208T085816_6",
@@ -3254,8 +4418,10 @@
       "people": [
         "Tom"
       ],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Event at 2025-02-08_Dublin",
+      "event_type": "office_work",
+      "type": "photo",
+      "label_source": "offline"
     },
     {
       "id": "evt_20250322T180832_2",
@@ -3267,8 +4433,10 @@
       ],
       "place": "Dublin Temple Bar",
       "people": [],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Event at 2025-03-22_Dublin-Temple-Bar",
+      "event_type": "office_work",
+      "type": "photo",
+      "label_source": "offline"
     },
     {
       "id": "evt_20250530T135511_1",
@@ -3279,8 +4447,10 @@
       ],
       "place": "Howth",
       "people": [],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Event at 2025-05-30_Howth",
+      "event_type": "nature_hike",
+      "type": "photo",
+      "label_source": "offline"
     },
     {
       "id": "evt_20250712T124920_1",
@@ -3291,8 +4461,10 @@
       ],
       "place": "Galway",
       "people": [],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Event at 2025-07-12_Galway",
+      "event_type": "trip_sightseeing",
+      "type": "photo",
+      "label_source": "offline"
     },
     {
       "id": "evt_20250816T215118_1",
@@ -3303,8 +4475,10 @@
       ],
       "place": "Cork",
       "people": [],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Event at 2025-08-16_Cork",
+      "event_type": "trip_sightseeing",
+      "type": "photo",
+      "label_source": "offline"
     },
     {
       "id": "evt_20260614T115934_1",
@@ -3315,8 +4489,10 @@
       ],
       "place": "Unknown place",
       "people": [],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Screenshot",
+      "event_type": "screenshot",
+      "type": "screenshot",
+      "label_source": "offline"
     },
     {
       "id": "evt_20260614T170939_1",
@@ -3327,8 +4503,10 @@
       ],
       "place": "Unknown place",
       "people": [],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Screenshot",
+      "event_type": "screenshot",
+      "type": "screenshot",
+      "label_source": "offline"
     },
     {
       "id": "evt_20260614T210758_1",
@@ -3339,8 +4517,10 @@
       ],
       "place": "Unknown place",
       "people": [],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Screenshot",
+      "event_type": "screenshot",
+      "type": "screenshot",
+      "label_source": "offline"
     },
     {
       "id": "evt_20260803T105841_1",
@@ -3351,8 +4531,10 @@
       ],
       "place": "Unknown place",
       "people": [],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Screenshot",
+      "event_type": "screenshot",
+      "type": "screenshot",
+      "label_source": "offline"
     },
     {
       "id": "evt_20260803T172603_1",
@@ -3363,8 +4545,10 @@
       ],
       "place": "Unknown place",
       "people": [],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Screenshot",
+      "event_type": "screenshot",
+      "type": "screenshot",
+      "label_source": "offline"
     },
     {
       "id": "evt_20260803T205308_1",
@@ -3375,8 +4559,10 @@
       ],
       "place": "Unknown place",
       "people": [],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Screenshot",
+      "event_type": "screenshot",
+      "type": "screenshot",
+      "label_source": "offline"
     },
     {
       "id": "evt_20260921T100209_1",
@@ -3387,8 +4573,10 @@
       ],
       "place": "Unknown place",
       "people": [],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Screenshot",
+      "event_type": "screenshot",
+      "type": "screenshot",
+      "label_source": "offline"
     },
     {
       "id": "evt_20260921T112647_1",
@@ -3399,8 +4587,10 @@
       ],
       "place": "Unknown place",
       "people": [],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Screenshot",
+      "event_type": "screenshot",
+      "type": "screenshot",
+      "label_source": "offline"
     },
     {
       "id": "evt_20260921T165641_1",
@@ -3411,8 +4601,10 @@
       ],
       "place": "Unknown place",
       "people": [],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Screenshot",
+      "event_type": "screenshot",
+      "type": "screenshot",
+      "label_source": "offline"
     },
     {
       "id": "evt_20260921T212703_1",
@@ -3423,8 +4615,10 @@
       ],
       "place": "Unknown place",
       "people": [],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Screenshot",
+      "event_type": "screenshot",
+      "type": "screenshot",
+      "label_source": "offline"
     },
     {
       "id": "evt_20261005T163602_1",
@@ -3435,8 +4629,10 @@
       ],
       "place": "Unknown place",
       "people": [],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Screenshot",
+      "event_type": "screenshot",
+      "type": "screenshot",
+      "label_source": "offline"
     },
     {
       "id": "evt_20261005T164538_1",
@@ -3447,8 +4643,10 @@
       ],
       "place": "Unknown place",
       "people": [],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Screenshot",
+      "event_type": "screenshot",
+      "type": "screenshot",
+      "label_source": "offline"
     },
     {
       "id": "evt_20261005T181704_1",
@@ -3459,8 +4657,10 @@
       ],
       "place": "Unknown place",
       "people": [],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Screenshot",
+      "event_type": "screenshot",
+      "type": "screenshot",
+      "label_source": "offline"
     },
     {
       "id": "evt_20261005T214306_1",
@@ -3471,8 +4671,10 @@
       ],
       "place": "Unknown place",
       "people": [],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Screenshot",
+      "event_type": "screenshot",
+      "type": "screenshot",
+      "label_source": "offline"
     },
     {
       "id": "evt_20261005T224309_1",
@@ -3483,8 +4685,10 @@
       ],
       "place": "Unknown place",
       "people": [],
-      "event_label": "Placeholder Event",
-      "event_type": "other"
+      "event_label": "Screenshot",
+      "event_type": "screenshot",
+      "type": "screenshot",
+      "label_source": "offline"
     }
   ],
   "chapters": [
@@ -3532,12 +4736,12 @@
     }
   ],
   "people": [
-    "Tom",
-    "Rohan",
+    "Meera",
     "Ananya",
+    "Tom",
     "Arjun",
     "Kabir",
-    "Meera",
-    "Riya"
+    "Riya",
+    "Rohan"
   ]
 }

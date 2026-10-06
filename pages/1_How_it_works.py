@@ -98,9 +98,9 @@ Complete transparency into how the app uses AI in this MVP.
 <div class="retrieval-step-row">
 <div>
 <div style="font-weight: 600; color: #131B2E;">Event Labels & Captions</div>
-<div style="font-size: 13px; color: #515F74;">Identified and written by a Gemini Vision model during offline indexing.</div>
+<div style="font-size: 13px; color: #515F74;">For this demo, all event labels and captions were written offline and human-checked; in production they come from Photos' existing labels.</div>
 </div>
-<span class="memory-stream-pill" style="background:#EAEDFF; color:#515F74; font-size:11px;">AI (Precomputed)</span>
+<span class="memory-stream-pill" style="background:#EAEDFF; color:#515F74; font-size:11px;">Manual (Offline)</span>
 </div>
 
 <div class="retrieval-step-row">

@@ -68,12 +68,22 @@ def process_vision_batch(api_key, model, photo_batch):
             r = requests.post(url, json=payload, timeout=30)
             if r.status_code == 200:
                 text = r.json()['candidates'][0]['content']['parts'][0]['text']
+                # Strip markdown code blocks if present
+                if text.startswith("```json"):
+                    text = text.strip("`").replace("json\n", "", 1)
+                elif text.startswith("```"):
+                    text = text.strip("`")
+                    
                 res = json.loads(text)
                 if isinstance(res, list) and len(res) == len(photo_batch):
                     return res
+                else:
+                    print(f"Vision API validation failed: not a list or length mismatch. Expected {len(photo_batch)}, got {len(res) if isinstance(res, list) else type(res)}")
+            else:
+                print(f"Vision API HTTP Error {r.status_code}: {r.text}")
             time.sleep(2)
         except Exception as e:
-            print(f"Vision API error: {e}")
+            print(f"Vision API Exception: {e}")
             time.sleep(2)
     return None
 
@@ -95,12 +105,21 @@ def process_event_labels(api_key, model, event_captions):
             r = requests.post(url, json=payload, timeout=30)
             if r.status_code == 200:
                 text = r.json()['candidates'][0]['content']['parts'][0]['text']
+                if text.startswith("```json"):
+                    text = text.strip("`").replace("json\n", "", 1)
+                elif text.startswith("```"):
+                    text = text.strip("`")
+                    
                 res = json.loads(text)
                 if isinstance(res, list) and len(res) == len(event_captions):
                     return res
+                else:
+                    print(f"Event API validation failed: not a list or length mismatch.")
+            else:
+                print(f"Event API HTTP Error {r.status_code}: {r.text}")
             time.sleep(2)
         except Exception as e:
-            print(f"Event API error: {e}")
+            print(f"Event API Exception: {e}")
             time.sleep(2)
     return None
 
@@ -110,8 +129,8 @@ def main():
     args = parser.parse_args()
 
     api_key = None
-    vision_model = "gemini-1.5-flash"
-    text_model = "gemini-1.5-flash"
+    vision_model = "gemini-3.8-flash"
+    text_model = "gemini-3.8-flash"
     
     if not args.no_ai:
         try:
@@ -128,6 +147,12 @@ def main():
     
     df_manifest = pd.read_csv(manifest_path)
     df_chapters = pd.read_csv(chapters_path)
+    
+    photo_labels_df = pd.read_csv("library/photo_labels.csv") if os.path.exists("library/photo_labels.csv") else pd.DataFrame()
+    moment_labels_df = pd.read_csv("library/moment_labels.csv") if os.path.exists("library/moment_labels.csv") else pd.DataFrame()
+    
+    photo_labels_dict = photo_labels_df.set_index('filename').to_dict('index') if not photo_labels_df.empty else {}
+    moment_labels_dict = moment_labels_df.set_index('folder').to_dict('index') if not moment_labels_df.empty else {}
 
     df_manifest['taken_at'] = pd.to_datetime(df_manifest['taken_at'])
     df_manifest = df_manifest.sort_values('taken_at').reset_index(drop=True)
@@ -176,7 +201,7 @@ def main():
         notes = row['notes'] if 'notes' in row and not pd.isna(row['notes']) else ""
 
         is_document = False
-        if "screenshot" in notes.lower() or "bill" in notes.lower():
+        if "screenshot" in notes.lower() or "bill" in notes.lower() or "nolocation" in photo_id.lower() or "screenshot" in photo_id.lower():
             is_document = True
 
         photo_data = {
@@ -193,8 +218,20 @@ def main():
             "objects": [],
             "clothing_colours": [],
             "text_in_image": notes,
-            "mood": "neutral"
+            "mood": "neutral",
+            "label_source": "placeholder"
         }
+        
+        # Merge offline labels for photo
+        off_p = photo_labels_dict.get(photo_id, {})
+        if off_p:
+            photo_data["caption"] = str(off_p.get("caption", photo_data["caption"]))
+            photo_data["objects"] = [o.strip() for o in str(off_p.get("objects", "")).split(";") if o.strip() and str(o).lower() != "nan"]
+            if str(off_p.get("text_in_image", "")) != "nan":
+                photo_data["text_in_image"] = str(off_p.get("text_in_image", ""))
+            if str(off_p.get("clothing", "")) != "nan":
+                photo_data["clothing_colours"] = [c.strip() for c in str(off_p.get("clothing", "")).split(";") if c.strip() and str(c).lower() != "nan"]
+            photo_data["label_source"] = "offline"
         
         # Load from cache if exists
         f_hash = file_hash(f"library/photos/{photo_id}")
@@ -213,8 +250,14 @@ def main():
             if res:
                 for idx, v_data in enumerate(res):
                     pid = batch_buffer[idx][0]
-                    photos[pid].update(v_data)
+                    # Update fields but ensure label_source is 'ai'
+                    for k, v in v_data.items():
+                        if v: photos[pid][k] = v
+                    photos[pid]["label_source"] = "ai"
                     vision_cache[batch_buffer[idx][2]] = v_data
+                    cnt_vision_labelled += 1
+            else:
+                cnt_vision_failed += len(batch_buffer)
             batch_buffer = []
 
         if is_document or (not args.no_ai and photo_data.get('type') in ['document', 'screenshot']):
@@ -253,8 +296,13 @@ def main():
         if res:
             for idx, v_data in enumerate(res):
                 pid = batch_buffer[idx][0]
-                photos[pid].update(v_data)
+                for k, v in v_data.items():
+                    if v: photos[pid][k] = v
+                photos[pid]["label_source"] = "ai"
                 vision_cache[batch_buffer[idx][2]] = v_data
+                cnt_vision_labelled += 1
+        else:
+            cnt_vision_failed += len(batch_buffer)
                 
     if not args.no_ai:
         os.makedirs("data", exist_ok=True)
@@ -284,6 +332,26 @@ def main():
                 for j, e_data in enumerate(res):
                     events[event_batch[j][0]]['event_label'] = e_data.get('event_label', 'Event')
                     events[event_batch[j][0]]['event_type'] = e_data.get('event_type', 'other')
+                    events[event_batch[j][0]]['label_source'] = 'ai'
+
+    # Merge offline labels for events
+    for ev in events:
+        if ev.get("label_source") == "ai":
+            continue
+            
+        pids = ev.get("photo_ids", [])
+        if not pids: continue
+        folder = pids[0].split("/")[0] if "/" in pids[0] else "root"
+        off_m = moment_labels_dict.get(folder, {})
+        if off_m:
+            if ev.get("event_type", "other") not in ["screenshot", "document"]:
+                ev["event_label"] = off_m.get("event_label", ev["event_label"])
+                ev["event_type"] = off_m.get("event_type", ev["event_type"])
+            if str(off_m.get("type", "")) != "nan":
+                t_off = off_m.get("type", "photo")
+                if t_off != "photo" or ev.get("type", "photo") == "photo":
+                    ev["type"] = t_off
+            ev["label_source"] = "offline"
 
     chapters_data = df_chapters.to_dict('records')
     for c in chapters_data:
@@ -300,7 +368,47 @@ def main():
     os.makedirs("data", exist_ok=True)
     with open("data/index.json", "w") as f:
         json.dump(index_data, f, indent=2)
+        
+    cnt_label_source = {"ai": 0, "offline": 0, "placeholder": 0}
+    cnt_event_type = {}
+    cnt_type = {}
+    cnt_placeholder = 0
+    
+    for p in photos.values():
+        cnt_label_source[p.get("label_source", "placeholder")] += 1
+        if p.get("caption", "").startswith("Placeholder"):
+            cnt_placeholder += 1
+            
+        # Determine photo type from event
+        # We will do this later
+    
+    for ev in events:
+        cnt_label_source[ev.get("label_source", "placeholder")] += 1
+        et = ev.get("event_type", "other")
+        cnt_event_type[et] = cnt_event_type.get(et, 0) + 1
+        
+        # Propagate type to photos
+        t = ev.get("type", "photo")
+        cnt_type[t] = cnt_type.get(t, 0) + 1
+        for pid in ev.get("photo_ids", []):
+            photos[pid]["type"] = t
+            
+    # Count photo types separately to match "Type = Screenshots count > 0"
+    cnt_photo_type = {}
+    for p in photos.values():
+        pt = p.get("type", "photo")
+        cnt_photo_type[pt] = cnt_photo_type.get(pt, 0) + 1
+            
+    # update index.json again now that photos have type
+    with open("data/index.json", "w") as f:
+        json.dump(index_data, f, indent=2)
+            
     print(f"Index built with {len(photos)} photos and {len(events)} events.")
+    print(f"Counts by event_type: {cnt_event_type}")
+    print(f"Counts by type (events): {cnt_type}")
+    print(f"Counts by type (photos): {cnt_photo_type}")
+    print(f"Label source counts: {cnt_label_source}")
+    print(f"Placeholder count: {cnt_placeholder}")
 
 def create_event(photo_ids, photos_dict, no_ai):
     start_time = min([photos_dict[pid]['taken_at'] for pid in photo_ids])
@@ -319,10 +427,10 @@ def create_event(photo_ids, photos_dict, no_ai):
     if no_ai:
         texts = [photos_dict[pid].get('text_in_image', '').lower() for pid in photo_ids]
         combined_text = " ".join(texts)
-        if "screenshot" in combined_text:
+        if "screenshot" in combined_text or any("screenshot" in pid.lower() or "nolocation" in pid.lower() for pid in photo_ids):
             event_type = "screenshot"
             event_label = "Screenshot"
-        elif "bill" in combined_text or "receipt" in combined_text:
+        elif "bill" in combined_text or "receipt" in combined_text or any("bill" in pid.lower() for pid in photo_ids):
             event_type = "document"
             event_label = "Document"
         elif "birthday" in combined_text or "bday" in combined_text:
@@ -348,7 +456,9 @@ def create_event(photo_ids, photos_dict, no_ai):
         "place": dominant_place,
         "people": list(all_people),
         "event_label": event_label,
-        "event_type": event_type
+        "event_type": event_type,
+        "type": "screenshot" if event_type == "screenshot" else ("document" if event_type == "document" else "photo"),
+        "label_source": "placeholder"
     }
 
 if __name__ == "__main__":
