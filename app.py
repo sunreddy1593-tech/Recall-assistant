@@ -487,9 +487,7 @@ if st.session_state['app_mode'] == 'search':
     # Search Bar Row
     col_s1, col_s2 = st.columns([4, 1.2])
     with col_s1:
-        if 'photoSearchInput' not in st.session_state:
-            st.session_state['photoSearchInput'] = st.session_state.get('active_search_query', '')
-        st.text_input("Search photos", placeholder="Search your photos (e.g. Goa 2021, Scotland rain, Chai tapri)...", key="photoSearchInput", label_visibility="collapsed", on_change=update_search_query)
+        st.text_input("Search photos", value=st.session_state.get('active_search_query', ''), placeholder="Search your photos (e.g. Goa 2021, Scotland rain, Chai tapri)...", key="photoSearchInput", label_visibility="collapsed", on_change=update_search_query)
     with col_s2:
         if st.button("✨ Help me remember", type="primary", key="btn_help_remember_main", use_container_width=True):
             st.session_state['app_mode'] = 'help'
