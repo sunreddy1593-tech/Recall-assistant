@@ -72,6 +72,10 @@ def apply_filters(index, filters):
         y = str(filters["year"])
         matched_photos = {pid for pid in matched_photos if photos[pid]["taken_at"].startswith(y)}
         
+    if filters.get("years"):
+        years_set = {str(y) for y in filters["years"]}
+        matched_photos = {pid for pid in matched_photos if any(photos[pid]["taken_at"].startswith(y) for y in years_set)}
+        
     if filters.get("date_range"):
         start, end = filters["date_range"]
         matched_photos = {pid for pid in matched_photos if start <= photos[pid]["taken_at"] <= end}
