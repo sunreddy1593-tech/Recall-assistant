@@ -175,3 +175,59 @@ def test_describe_it_preserves_date_filter(mock_secrets, mock_post):
     assert at.session_state['filters'].get('date_range') == ("1990-01-01", "2020-03-15")
     assert at.session_state['filters'].get('era_chip') is not None
 
+from recall.index import load_index
+
+@patch('recall.ai.st.secrets')
+def test_real_index_electricity_bill_fallback(mock_secrets):
+    mock_secrets.get.return_value = None
+    real_index = load_index()
+    real_photos = list(real_index['photos'].values())
+    
+    # Verify metadata is correct in real index
+    target_photo = next((p for p in real_photos if p['id'] == '2026-10-05_NoLocation/IMG_20261005_001.jpg'), None)
+    assert target_photo is not None
+    assert "payment" in target_photo.get('text_in_image', '').lower()
+    
+    unrelated_photo = next((p for p in real_photos if p['id'] == '2026-10-05_NoLocation/IMG_20261005_002.jpg'), None)
+    assert unrelated_photo is not None
+    assert "electricity" not in unrelated_photo.get('text_in_image', '').lower()
+    
+    # 1. "The screenshot of the electricity bill I paid."
+    ranked1 = detail_rerank(real_photos, "The screenshot of the electricity bill I paid.")
+    assert ranked1[0] == "2026-10-05_NoLocation/IMG_20261005_001.jpg"
+    
+    # 2. "electricity" places genuine records ahead
+    ranked2 = detail_rerank(real_photos, "electricity")
+    # Could be either bill_screenshot.jpg or IMG_20261005_001.jpg in top positions
+    top_ids = ranked2[:2]
+    assert "2026-10-05_NoLocation/IMG_20261005_001.jpg" in top_ids
+    assert "bill_screenshot.jpg" in top_ids
+
+def test_generator_preserves_curated_labels():
+    import os, subprocess
+    os.makedirs('scratch/test_gen/library', exist_ok=True)
+    with open('scratch/test_gen/library/manifest.csv', 'w') as f:
+        f.write('filename\n')
+        f.write('2026-10-05_NoLocation/IMG_20261005_001.jpg\n')
+        f.write('2026-10-05_NoLocation/IMG_20261005_002.jpg\n')
+        f.write('2026-06-14_NoLocation/unknown_screenshot.jpg\n')
+    
+    with open('scratch/test_gen/library/photo_labels.csv', 'w') as f:
+        f.write('filename,caption,objects,clothing,text_in_image\n')
+        f.write('2026-10-05_NoLocation/IMG_20261005_001.jpg,Curated Caption,obj,cloth,Curated Text\n')
+    
+    with open('scripts/generate_labels.py', 'r') as src:
+        script = src.read()
+    
+    with open('scratch/test_gen/gen.py', 'w') as dst:
+        dst.write(script)
+    
+    subprocess.run(['python', 'gen.py'], cwd='scratch/test_gen', check=True)
+    
+    with open('scratch/test_gen/library/photo_labels.csv', 'r') as f:
+        content = f.read()
+    
+    assert 'Curated Caption' in content
+    assert 'Curated Text' in content
+    assert 'Screenshot of a meme or chat,,,' in content # Unknown screenshot has neutral description and no OCR
+

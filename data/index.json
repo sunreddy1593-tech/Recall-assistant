@@ -2101,7 +2101,7 @@
       "place": "Goa Anjuna",
       "city": null,
       "people": [],
-      "caption": "Sitting at a colourful caf\u00e9 in Anjuna, Goa, with bright murals on the walls.",
+      "caption": "Sitting at a colourful café in Anjuna, Goa, with bright murals on the walls.",
       "scene": "outdoor; colourful cafe",
       "activity": "relaxing at a cafe",
       "objects": "painted chairs; table; mural; iced coffee",
@@ -2112,7 +2112,7 @@
       "mood": "neutral",
       "label_source": "offline",
       "type": "photo",
-      "description": "Sitting at a colourful caf\u00e9 in Anjuna, Goa, with bright murals on the walls."
+      "description": "Sitting at a colourful café in Anjuna, Goa, with bright murals on the walls."
     },
     "2022-12-30_Goa-Anjuna/IMG_20221230_001.jpg": {
       "id": "2022-12-30_Goa-Anjuna/IMG_20221230_001.jpg",
@@ -3578,12 +3578,12 @@
       "place": "Unknown place",
       "city": null,
       "people": [],
-      "caption": "Screenshot of a meme or chat",
+      "caption": "Screenshot of electricity bill payment receipt",
       "scene": "outdoor",
       "activity": "unknown",
       "objects": [],
       "clothing_colours": [],
-      "text_in_image": "electricity bill; amount due; Demo Power",
+      "text_in_image": "Payment successful; ₹1,840.00; Your electricity bill has been paid successfully; Demo City Power",
       "mood": "neutral",
       "label_source": "offline",
       "type": "screenshot"
@@ -3596,12 +3596,12 @@
       "place": "Unknown place",
       "city": null,
       "people": [],
-      "caption": "Screenshot of a meme or chat",
+      "caption": "Screenshot of rent payment transfer",
       "scene": "outdoor",
       "activity": "unknown",
       "objects": [],
       "clothing_colours": [],
-      "text_in_image": "electricity bill; amount due; Demo Power",
+      "text_in_image": "Paid to Rohan Mehta; ₹18,000; October rent",
       "mood": "neutral",
       "label_source": "offline",
       "type": "screenshot"
@@ -3614,12 +3614,12 @@
       "place": "Unknown place",
       "city": null,
       "people": [],
-      "caption": "Screenshot of a meme or chat",
+      "caption": "Screenshot of cab booking confirmation",
       "scene": "outdoor",
       "activity": "unknown",
       "objects": [],
       "clothing_colours": [],
-      "text_in_image": "electricity bill; amount due; Demo Power",
+      "text_in_image": "Cab booking details; Bengaluru to Mysuru; ₹3,500",
       "mood": "neutral",
       "label_source": "offline",
       "type": "screenshot"
@@ -3632,12 +3632,12 @@
       "place": "Unknown place",
       "city": null,
       "people": [],
-      "caption": "Screenshot of a meme or chat",
+      "caption": "Screenshot of boarding pass",
       "scene": "outdoor",
       "activity": "unknown",
       "objects": [],
       "clothing_colours": [],
-      "text_in_image": "electricity bill; amount due; Demo Power",
+      "text_in_image": "Boarding pass; Demo Air; DEL to BLR; DA 204",
       "mood": "neutral",
       "label_source": "offline",
       "type": "screenshot"
@@ -3650,12 +3650,12 @@
       "place": "Unknown place",
       "city": null,
       "people": [],
-      "caption": "Screenshot of a meme or chat",
+      "caption": "Screenshot of e-prescription",
       "scene": "outdoor",
       "activity": "unknown",
       "objects": [],
       "clothing_colours": [],
-      "text_in_image": "electricity bill; amount due; Demo Power",
+      "text_in_image": "Demo Care Clinic; Influenza (flu); Demo medication",
       "mood": "neutral",
       "label_source": "offline",
       "type": "screenshot"
@@ -4686,7 +4686,7 @@
   ],
   "chapters": [
     {
-      "name": "School \u00b7 boy-cut era",
+      "name": "School · boy-cut era",
       "start": "2012-06-01T00:00:00",
       "end": "2015-05-31T00:00:00",
       "aliases": "boy cut;short hair;middle school;childhood"
@@ -4704,7 +4704,7 @@
       "aliases": "college;pune;hostel;engineering"
     },
     {
-      "name": "First job \u00b7 Bengaluru",
+      "name": "First job · Bengaluru",
       "start": "2022-06-01T00:00:00",
       "end": "2023-08-31T00:00:00",
       "aliases": "first job;office;bangalore"

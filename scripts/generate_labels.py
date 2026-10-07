@@ -5,8 +5,32 @@ import os
 manifest = pd.read_csv('library/manifest.csv')
 photos = manifest['filename'].tolist()
 
+existing_labels = {}
+if os.path.exists('library/photo_labels.csv'):
+    try:
+        df_ext = pd.read_csv('library/photo_labels.csv')
+        for _, row in df_ext.iterrows():
+            existing_labels[row['filename']] = {
+                'caption': row.get('caption', ''),
+                'objects': row.get('objects', ''),
+                'clothing': row.get('clothing', ''),
+                'text_in_image': row.get('text_in_image', '')
+            }
+    except Exception:
+        pass
+
 photo_labels = []
 for p in photos:
+    if p in existing_labels:
+        photo_labels.append({
+            'filename': p,
+            'caption': existing_labels[p]['caption'],
+            'objects': existing_labels[p]['objects'],
+            'clothing': existing_labels[p]['clothing'],
+            'text_in_image': existing_labels[p]['text_in_image']
+        })
+        continue
+
     lower = p.lower()
     p_type = 'photo'
     if 'screenshot' in lower or 'nolocation' in lower:
@@ -16,10 +40,10 @@ for p in photos:
 
     text = ""
     if p_type in ['screenshot', 'document']:
-        if 'bill' in lower or '2026-10-05' in lower:
+        if 'bill' in lower:
             text = "electricity bill; amount due; Demo Power"
         else:
-            text = "some text on screen"
+            text = ""
             
     caption = "A view of the scene"
     if 'mask' in lower or ('010' in lower and '2023-11-20' in lower):
