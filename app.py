@@ -679,7 +679,11 @@ elif st.session_state['app_mode'] == 'help':
                 if desc:
                     with st.spinner("Parsing episodic cues..."):
                         chips = parse_description(desc, index)
-                        st.session_state['filters'] = {}
+                        old_filters = st.session_state.get('filters', {})
+                        time_keys = ['chapters', 'years', 'year', 'date_range', 'era_chip']
+                        preserved_time = {k: old_filters[k] for k in time_keys if k in old_filters}
+
+                        st.session_state['filters'] = preserved_time
                         if chips.get("chapters"): st.session_state['filters']["chapters"] = chips["chapters"]
                         if chips.get("who"): st.session_state['filters']["who"] = chips["who"]
                         if chips.get("where"): st.session_state['filters']["where"] = chips["where"]
